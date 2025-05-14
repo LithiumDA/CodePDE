@@ -1,0 +1,18 @@
+Loaded data with shape: (100, 201, 1024)
+##### Running the solver on the given dataset #####
+##### Finished #####
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+**** Finished ****
+**** Spatio resolution 512 ****
+**** Finished ****
+**** Spatio resolution 1024 ****
+**** Finished ****
+**** Spatio resolution 2048 ****
+**** Finished ****
+Error measured at spatio resolution 256 is 2.610e-04
+Rate of convergence measured at spatio resolution 256 is 0.364
+Error measured at spatio resolution 512 is 2.028e-04
+Rate of convergence measured at spatio resolution 512 is 0.216
+Result summary
+nRMSE: 6.223e-04	| Time: 342.05s	| Average convergence rate: 0.290	|

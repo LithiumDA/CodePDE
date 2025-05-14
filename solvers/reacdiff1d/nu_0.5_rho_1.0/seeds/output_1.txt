@@ -1,0 +1,172 @@
+Loaded data with shape: (100, 101, 1024)
+##### Running the solver on the given dataset #####
+Using device: cuda
+Internal time step: 1e-06
+Solving for time 0.010000
+Solving for time 0.020000
+Solving for time 0.030000
+Solving for time 0.040000
+Solving for time 0.050000
+Solving for time 0.060000
+Solving for time 0.070000
+Solving for time 0.080000
+Solving for time 0.090000
+Solving for time 0.100000
+Solving for time 0.110000
+Solving for time 0.120000
+Solving for time 0.130000
+Solving for time 0.140000
+Solving for time 0.150000
+Solving for time 0.160000
+Solving for time 0.170000
+Solving for time 0.180000
+Solving for time 0.190000
+Solving for time 0.200000
+Solving for time 0.210000
+Solving for time 0.220000
+Solving for time 0.230000
+Solving for time 0.240000
+Solving for time 0.250000
+Solving for time 0.260000
+Solving for time 0.270000
+Solving for time 0.280000
+Solving for time 0.290000
+Solving for time 0.300000
+Solving for time 0.310000
+Solving for time 0.320000
+Solving for time 0.330000
+Solving for time 0.340000
+Solving for time 0.350000
+Solving for time 0.360000
+Solving for time 0.370000
+Solving for time 0.380000
+Solving for time 0.390000
+Solving for time 0.400000
+Solving for time 0.410000
+Solving for time 0.420000
+Solving for time 0.430000
+Solving for time 0.440000
+Solving for time 0.450000
+Solving for time 0.460000
+Solving for time 0.470000
+Solving for time 0.480000
+Solving for time 0.490000
+Solving for time 0.500000
+Solving for time 0.510000
+Solving for time 0.520000
+Solving for time 0.530000
+Solving for time 0.540000
+Solving for time 0.550000
+Solving for time 0.560000
+Solving for time 0.570000
+Solving for time 0.580000
+Solving for time 0.590000
+Solving for time 0.600000
+Solving for time 0.610000
+Solving for time 0.620000
+Solving for time 0.630000
+Solving for time 0.640000
+Solving for time 0.650000
+Solving for time 0.660000
+Solving for time 0.670000
+Solving for time 0.680000
+Solving for time 0.690000
+Solving for time 0.700000
+Solving for time 0.710000
+Solving for time 0.720000
+Solving for time 0.730000
+Solving for time 0.740000
+Solving for time 0.750000
+Solving for time 0.760000
+Solving for time 0.770000
+Solving for time 0.780000
+Solving for time 0.790000
+Solving for time 0.800000
+Solving for time 0.810000
+Solving for time 0.820000
+Solving for time 0.830000
+Solving for time 0.840000
+Solving for time 0.850000
+Solving for time 0.860000
+Solving for time 0.870000
+Solving for time 0.880000
+Solving for time 0.890000
+Solving for time 0.900000
+Solving for time 0.910000
+Solving for time 0.920000
+Solving for time 0.930000
+Solving for time 0.940000
+Solving for time 0.950000
+Solving for time 0.960000
+Solving for time 0.970000
+Solving for time 0.980000
+Solving for time 0.990000
+Solving for time 1.000000
+##### Finished #####
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+Using device: cuda
+Internal time step: 1e-06
+Solving for time 0.010000
+Solving for time 0.020000
+Solving for time 0.030000
+Solving for time 0.040000
+Solving for time 0.050000
+Solving for time 0.060000
+Solving for time 0.070000
+Solving for time 0.080000
+Solving for time 0.090000
+Solving for time 0.100000
+Solving for time 0.110000
+**** Finished ****
+**** Spatio resolution 512 ****
+Using device: cuda
+Internal time step: 1e-06
+Solving for time 0.010000
+Solving for time 0.020000
+Solving for time 0.030000
+Solving for time 0.040000
+Solving for time 0.050000
+Solving for time 0.060000
+Solving for time 0.070000
+Solving for time 0.080000
+Solving for time 0.090000
+Solving for time 0.100000
+Solving for time 0.110000
+**** Finished ****
+**** Spatio resolution 1024 ****
+Using device: cuda
+Internal time step: 1e-06
+Solving for time 0.010000
+Solving for time 0.020000
+Solving for time 0.030000
+Solving for time 0.040000
+Solving for time 0.050000
+Solving for time 0.060000
+Solving for time 0.070000
+Solving for time 0.080000
+Solving for time 0.090000
+Solving for time 0.100000
+Solving for time 0.110000
+**** Finished ****
+**** Spatio resolution 2048 ****
+Using device: cuda
+Internal time step: 1e-06
+Solving for time 0.010000
+Solving for time 0.020000
+Solving for time 0.030000
+Solving for time 0.040000
+Solving for time 0.050000
+Solving for time 0.060000
+Solving for time 0.070000
+Solving for time 0.080000
+Solving for time 0.090000
+Solving for time 0.100000
+Solving for time 0.110000
+**** Finished ****
+Error measured at spatio resolution 256 is 6.090e-05
+Rate of convergence measured at spatio resolution 256 is 0.075
+Error measured at spatio resolution 512 is 5.783e-05
+Rate of convergence measured at spatio resolution 512 is 1.633
+Result summary
+nRMSE: 5.191e-02	| Time: 796.18s	| Average convergence rate: 0.854	|

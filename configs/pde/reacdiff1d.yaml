@@ -1,0 +1,11 @@
+# @package pde
+name: reacdiff1d
+nu: 0.5 # choices: [0.5, 1.0, 2.0, 5.0]
+rho: 1.0 # choices: [1.0, 2.0, 5.0, 10.0]
+
+pde_setting_name: 'nu_${pde.nu}_rho_${pde.rho}'
+
+# To be appended to `root_dataset_folder` to get the full path
+dataset_folder_for_eval: ReactionDiffusion/ReacDiff_Nu${pde.nu}_Rho${pde.rho}_development.hdf5
+
+timeout: 2400

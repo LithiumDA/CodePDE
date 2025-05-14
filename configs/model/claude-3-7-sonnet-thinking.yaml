@@ -1,0 +1,6 @@
+# @package model
+family_name: claude
+name: claude-3-7-sonnet-20250219
+api_key: <API_KEY>
+
+thinking: True

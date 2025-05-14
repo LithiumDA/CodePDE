@@ -1,0 +1,112 @@
+Loaded data with shape: (100, 201, 1024)
+##### Running the solver on the given dataset #####
+Using device: cuda
+Using internal time step: 0.0001
+Warning: Numerical instability detected at t=0.00030000000000000003
+Reducing time step to 5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.00014999999257270247
+Reducing time step to 2.5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.00012499999138526618
+Reducing time step to 1.25e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.00012499999138526618
+Reducing time step to 6.25e-06 and restarting from previous solution
+Completed time step 20/200, t=0.2000
+Completed time step 40/200, t=0.4000
+Completed time step 60/200, t=0.6000
+Completed time step 80/200, t=0.8000
+Completed time step 100/200, t=1.0000
+Completed time step 120/200, t=1.2000
+Completed time step 140/200, t=1.4000
+Completed time step 160/200, t=1.6000
+Completed time step 180/200, t=1.8000
+Completed time step 200/200, t=2.0000
+##### Finished #####
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+Using device: cuda
+Using internal time step: 0.00023968449810713143
+Warning: Numerical instability detected at t=0.0014381069886427887
+Reducing time step to 0.00011984224905356572 and restarting from previous solution
+Completed time step 2/21, t=0.0200
+Completed time step 4/21, t=0.0400
+Completed time step 6/21, t=0.0600
+Completed time step 8/21, t=0.0800
+Completed time step 10/21, t=0.1000
+Completed time step 12/21, t=0.1200
+Completed time step 14/21, t=0.1400
+Completed time step 16/21, t=0.1600
+Completed time step 18/21, t=0.1800
+Completed time step 20/21, t=0.2000
+**** Finished ****
+**** Spatio resolution 512 ****
+Using device: cuda
+Using internal time step: 0.0001
+Warning: Numerical instability detected at t=0.0004
+Reducing time step to 5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.0004000000000000001
+Reducing time step to 2.5e-05 and restarting from previous solution
+Completed time step 2/21, t=0.0200
+Completed time step 4/21, t=0.0400
+Completed time step 6/21, t=0.0600
+Completed time step 8/21, t=0.0800
+Completed time step 10/21, t=0.1000
+Completed time step 12/21, t=0.1200
+Completed time step 14/21, t=0.1400
+Completed time step 16/21, t=0.1600
+Completed time step 18/21, t=0.1800
+Completed time step 20/21, t=0.2000
+**** Finished ****
+**** Spatio resolution 1024 ****
+Using device: cuda
+Using internal time step: 0.0001
+Warning: Numerical instability detected at t=0.00030000000000000003
+Reducing time step to 5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.00015000000000000001
+Reducing time step to 2.5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.0001
+Reducing time step to 1.25e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.00010000000000000002
+Reducing time step to 6.25e-06 and restarting from previous solution
+Completed time step 2/21, t=0.0200
+Completed time step 4/21, t=0.0400
+Completed time step 6/21, t=0.0600
+Completed time step 8/21, t=0.0800
+Completed time step 10/21, t=0.1000
+Completed time step 12/21, t=0.1200
+Completed time step 14/21, t=0.1400
+Completed time step 16/21, t=0.1600
+Completed time step 18/21, t=0.1800
+Completed time step 20/21, t=0.2000
+**** Finished ****
+**** Spatio resolution 2048 ****
+Using device: cuda
+Using internal time step: 0.0001
+Warning: Numerical instability detected at t=0.0002
+Reducing time step to 5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=0.0001
+Reducing time step to 2.5e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=7.500000000000001e-05
+Reducing time step to 1.25e-05 and restarting from previous solution
+Warning: Numerical instability detected at t=3.7500000000000003e-05
+Reducing time step to 6.25e-06 and restarting from previous solution
+Warning: Numerical instability detected at t=2.5e-05
+Reducing time step to 3.125e-06 and restarting from previous solution
+Warning: Numerical instability detected at t=2.8125000000000006e-05
+Reducing time step to 1.5625e-06 and restarting from previous solution
+Completed time step 2/21, t=0.0200
+Completed time step 4/21, t=0.0400
+Completed time step 6/21, t=0.0600
+Completed time step 8/21, t=0.0800
+Completed time step 10/21, t=0.1000
+Completed time step 12/21, t=0.1200
+Completed time step 14/21, t=0.1400
+Completed time step 16/21, t=0.1600
+Completed time step 18/21, t=0.1800
+Completed time step 20/21, t=0.2000
+**** Finished ****
+Error measured at spatio resolution 256 is 3.909e-06
+Rate of convergence measured at spatio resolution 256 is 0.863
+Error measured at spatio resolution 512 is 2.149e-06
+Rate of convergence measured at spatio resolution 512 is 0.212
+Result summary
+nRMSE: 6.405e-04	| Time: 427.25s	| Average convergence rate: 0.537	|

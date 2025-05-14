@@ -1,0 +1,19 @@
+Loaded data with shape: (100, 421, 421)
+##### Running the solver on the given dataset #####
+Batch 1/100Batch 2/100Batch 3/100Batch 4/100Batch 5/100Batch 6/100Batch 7/100Batch 8/100Batch 9/100Batch 10/100Batch 11/100Batch 12/100Batch 13/100Batch 14/100Batch 15/100Batch 16/100Batch 17/100Batch 18/100Batch 19/100Batch 20/100Batch 21/100Batch 22/100Batch 23/100Batch 24/100Batch 25/100Batch 26/100Batch 27/100Batch 28/100Batch 29/100Batch 30/100Batch 31/100Batch 32/100Batch 33/100Batch 34/100Batch 35/100Batch 36/100Batch 37/100Batch 38/100Batch 39/100Batch 40/100Batch 41/100Batch 42/100Batch 43/100Batch 44/100Batch 45/100Batch 46/100Batch 47/100Batch 48/100Batch 49/100Batch 50/100Batch 51/100Batch 52/100Batch 53/100Batch 54/100Batch 55/100Batch 56/100Batch 57/100Batch 58/100Batch 59/100Batch 60/100Batch 61/100Batch 62/100Batch 63/100Batch 64/100Batch 65/100Batch 66/100Batch 67/100Batch 68/100Batch 69/100Batch 70/100Batch 71/100Batch 72/100Batch 73/100Batch 74/100Batch 75/100Batch 76/100Batch 77/100Batch 78/100Batch 79/100Batch 80/100Batch 81/100Batch 82/100Batch 83/100Batch 84/100Batch 85/100Batch 86/100Batch 87/100Batch 88/100Batch 89/100Batch 90/100Batch 91/100Batch 92/100Batch 93/100Batch 94/100Batch 95/100Batch 96/100Batch 97/100Batch 98/100Batch 99/100Batch 100/100
+Solver completed with corrected sparse construction.
+##### Running convergence test for the solver #####
+Batch 1/8Batch 2/8Batch 3/8Batch 4/8Batch 5/8Batch 6/8Batch 7/8Batch 8/8
+Solver completed with corrected sparse construction.
+Batch 1/8Batch 2/8Batch 3/8Batch 4/8Batch 5/8Batch 6/8Batch 7/8Batch 8/8
+Solver completed with corrected sparse construction.
+Batch 1/8Batch 2/8Batch 3/8Batch 4/8Batch 5/8Batch 6/8Batch 7/8Batch 8/8
+Solver completed with corrected sparse construction.
+Batch 1/8Batch 2/8Batch 3/8Batch 4/8Batch 5/8Batch 6/8Batch 7/8Batch 8/8
+Solver completed with corrected sparse construction.
+Rate of convergence measured at spatio resolution 71 is 0.748
+Rate of convergence measured at spatio resolution 106 is 1.458
+Rate of convergence measured at spatio resolution 141 is 1.811
+Average rate of convergence is 1.339
+Result summary
+nRMSE: 4.799e-03	| Time: 401.88s	| Average convergence rate: 1.339	|

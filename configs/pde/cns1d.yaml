@@ -1,0 +1,10 @@
+# @package pde
+name: cns1d
+eta: 0.1 # choices: [0.01, 0.1, 1.e-8]
+
+pde_setting_name: 'eta_${pde.eta}'
+
+# To be appended to `root_dataset_folder` to get the full path
+dataset_folder_for_eval: CNS/1D_CFD_Rand_Eta${pde.eta}_Zeta${pde.eta}_periodic_Train_development.hdf5
+
+timeout: 2400

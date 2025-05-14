@@ -1,0 +1,9 @@
+# @package pde
+name: darcy
+
+pde_setting_name: 'beta_1.0'
+
+# To be appended to `root_dataset_folder` to get the full path
+dataset_folder_for_eval: Darcy/piececonst_r421_N1024_smooth1_sample50_development.hdf5
+
+timeout: 1200

@@ -1,0 +1,19 @@
+Loaded data with shape: (100, 421, 421)
+##### Running the solver on the given dataset #####
+Solving 100 PDE problems with grid size 421x421
+Total solving time: 15.0224 seconds
+##### Running convergence test for the solver #####
+Solving 8 PDE problems with grid size 71x71
+Total solving time: 0.5115 seconds
+Solving 8 PDE problems with grid size 106x106
+Total solving time: 0.6260 seconds
+Solving 8 PDE problems with grid size 141x141
+Total solving time: 0.6714 seconds
+Solving 8 PDE problems with grid size 211x211
+Total solving time: 1.0417 seconds
+Rate of convergence measured at spatio resolution 71 is 0.747
+Rate of convergence measured at spatio resolution 106 is 1.456
+Rate of convergence measured at spatio resolution 141 is 1.809
+Average rate of convergence is 1.337
+Result summary
+nRMSE: 4.798e-03	| Time: 15.04s	| Average convergence rate: 1.337	|

@@ -1,0 +1,4 @@
+# @package method
+name: repeated_sample
+num_repeated_samples: 2
+num_debugging_trials_per_sample: 5

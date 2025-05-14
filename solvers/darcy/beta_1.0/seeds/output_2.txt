@@ -1,0 +1,9 @@
+Loaded data with shape: (100, 421, 421)
+##### Running the solver on the given dataset #####
+##### Running convergence test for the solver #####
+Rate of convergence measured at spatio resolution 71 is 38.227
+Rate of convergence measured at spatio resolution 106 is 29.266
+Rate of convergence measured at spatio resolution 141 is 16.216
+Average rate of convergence is 27.903
+Result summary
+nRMSE: 4.799e-03	| Time: 12.93s	| Average convergence rate: 27.903	|

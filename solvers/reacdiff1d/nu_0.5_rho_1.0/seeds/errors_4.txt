@@ -1,0 +1,2 @@
+/usr0/home/username/work_space/llm_pde/reactdiff/reacdiff1d/nu_0.5_rho_1.0/repeated_sample/qwen-max/2025-03-21-11-31-53/solver.py:61: SparseEfficiencyWarning: spsolve requires A be CSC or CSR matrix format
+  u_next = spsolve(A, b_vector)

@@ -1,0 +1,9 @@
+# @package method
+num_repeated_samples: 2
+num_debugging_trials_per_sample: 5
+
+num_sample_for_refine: 5
+name: 'refine_sample${method.num_sample_for_refine}'
+
+start_round: 0
+use_sample_solver_init: True

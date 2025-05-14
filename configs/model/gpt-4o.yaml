@@ -1,0 +1,5 @@
+# @package model
+family_name: gpt
+name: gpt-4o-2024-08-06
+
+api_key: <API_KEY>

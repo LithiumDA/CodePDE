@@ -1,0 +1,14 @@
+torch
+torchvision
+bitsandbytes
+openai
+pandas
+tqdm
+h5py
+matplotlib
+numpy
+scipy
+hydra-core
+anthropic
+jax
+google-genai

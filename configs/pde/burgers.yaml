@@ -1,0 +1,10 @@
+# @package pde
+name: burgers
+nu: 0.01 # choices: [1.0, 2.0, 4.0, 0.1, 0.2, 0.4, 0.01, 0.02, 0.04, 0.001, 0.002, 0.004]
+
+pde_setting_name: nu_${pde.nu}
+
+# To be appended to `root_dataset_folder` to get the full path
+dataset_folder_for_eval: Burgers/1D_Burgers_Sols_Nu${pde.nu}_development.hdf5
+
+timeout: 1200

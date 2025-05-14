@@ -1,0 +1,6 @@
+round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
+27,0.004798,6.32,1.338,1,deepseek-reasoner,/usr0/home/username/work_space/llm_pde/archived_logs/darcy/beta_1.0/repeated_sample/deepseek-reasoner/merged
+1,0.004798,15.04,1.337,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/darcy/beta_1.0/repeated_sample/claude-3-7-sonnet-20250219/merged
+2,0.004799,12.93,27.903,1,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/darcy/beta_1.0/repeated_sample/qwq-plus/merged
+18,0.004799,401.88,1.339,6,deepseek-reasoner,/usr0/home/username/work_space/llm_pde/archived_logs/darcy/beta_1.0/repeated_sample/deepseek-reasoner/merged
+11,0.00483,19.55,1.304,3,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/darcy/beta_1.0/repeated_sample/qwq-plus/merged

@@ -1,0 +1,21 @@
+# @package _global_
+defaults:
+  - _self_
+  - pde: burgers
+  - model: gpt-4o
+  - method: repeated_sample
+
+log_path: ../working_logs
+# log_path: ../tmp_test
+
+folder_name_suffix: ''
+redirect_stdout: False
+assigned_gpu: 1
+
+working_folder: ${log_path}/${pde.name}/${pde.pde_setting_name}${folder_name_suffix}/${method.name}/${model.name}/${now:%Y-%m-%d-%H-%M-%S}/
+
+root_dataset_folder: <path_to_dataset_folder>
+
+hydra:
+  run:
+    dir: ${working_folder}

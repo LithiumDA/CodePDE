@@ -1,0 +1,6 @@
+round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
+20,0.001027,1.93,3.569,4,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/advection/beta_0.1/repeated_sample/qwq-plus/2025-03-21-06-46-23
+24,0.001052,0.3,0.832,1,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/advection/beta_0.1/repeated_sample/qwq-plus/2025-03-21-06-46-23
+27,0.001136,0.19,2.465,1,gemini-2.0-flash,/usr0/home/username/work_space/llm_pde/archived_logs/advection/beta_0.1/repeated_sample/gemini-2.0-flash/2025-03-19-13-41-58
+13,0.001324,4.23,0.932,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/advection/beta_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-03-19-12-52-32
+24,0.001534,0.35,0.732,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/advection/beta_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-03-19-12-52-32

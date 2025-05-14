@@ -1,0 +1,10 @@
+# @package pde
+name: advection
+beta: 0.1 # choices: [0.1, 0.2, 0.4, 0.7, 1.0, 2.0, 4.0, 7.0]
+
+pde_setting_name: 'beta_${pde.beta}'
+
+# To be appended to `root_dataset_folder` to get the full path
+dataset_folder_for_eval: Advection/1D_Advection_Sols_beta${pde.beta}_development.hdf5
+
+timeout: 1200

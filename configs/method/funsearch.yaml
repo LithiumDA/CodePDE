@@ -1,0 +1,9 @@
+# @package method
+num_search_rounds: 2
+num_debugging_trials_per_sample: 5
+
+num_initial_seeds: 12
+
+name: 'funsearch'
+
+use_sample_solver_init: True

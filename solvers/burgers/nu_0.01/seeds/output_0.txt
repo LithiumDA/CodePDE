@@ -1,0 +1,89 @@
+Loaded data with shape: (100, 201, 1024)
+##### Running the solver on the given dataset #####
+Using device: cuda
+Internal time step: 7.490140565847856e-05
+Completed 5/201 time steps
+Completed 10/201 time steps
+Completed 15/201 time steps
+Completed 20/201 time steps
+Completed 25/201 time steps
+Completed 30/201 time steps
+Completed 35/201 time steps
+Completed 40/201 time steps
+Completed 45/201 time steps
+Completed 50/201 time steps
+Completed 55/201 time steps
+Completed 60/201 time steps
+Completed 65/201 time steps
+Completed 70/201 time steps
+Completed 75/201 time steps
+Completed 80/201 time steps
+Completed 85/201 time steps
+Completed 90/201 time steps
+Completed 95/201 time steps
+Completed 100/201 time steps
+Completed 105/201 time steps
+Completed 110/201 time steps
+Completed 115/201 time steps
+Completed 120/201 time steps
+Completed 125/201 time steps
+Completed 130/201 time steps
+Completed 135/201 time steps
+Completed 140/201 time steps
+Completed 145/201 time steps
+Completed 150/201 time steps
+Completed 155/201 time steps
+Completed 160/201 time steps
+Completed 165/201 time steps
+Completed 170/201 time steps
+Completed 175/201 time steps
+Completed 180/201 time steps
+Completed 185/201 time steps
+Completed 190/201 time steps
+Completed 195/201 time steps
+Completed 200/201 time steps
+Completed 201/201 time steps
+##### Finished #####
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+Using device: cuda
+Internal time step: 0.0009014647922537412
+Completed 5/22 time steps
+Completed 10/22 time steps
+Completed 15/22 time steps
+Completed 20/22 time steps
+Completed 22/22 time steps
+**** Finished ****
+**** Spatio resolution 512 ****
+Using device: cuda
+Internal time step: 0.00029960562263391425
+Completed 5/22 time steps
+Completed 10/22 time steps
+Completed 15/22 time steps
+Completed 20/22 time steps
+Completed 22/22 time steps
+**** Finished ****
+**** Spatio resolution 1024 ****
+Using device: cuda
+Internal time step: 7.490140565847856e-05
+Completed 5/22 time steps
+Completed 10/22 time steps
+Completed 15/22 time steps
+Completed 20/22 time steps
+Completed 22/22 time steps
+**** Finished ****
+**** Spatio resolution 2048 ****
+Using device: cuda
+Internal time step: 1.872535141461964e-05
+Completed 5/22 time steps
+Completed 10/22 time steps
+Completed 15/22 time steps
+Completed 20/22 time steps
+Completed 22/22 time steps
+**** Finished ****
+Error measured at spatio resolution 256 is 2.550e-05
+Rate of convergence measured at spatio resolution 256 is 1.940
+Error measured at spatio resolution 512 is 6.647e-06
+Rate of convergence measured at spatio resolution 512 is 1.546
+Result summary
+nRMSE: 2.588e-04	| Time: 28.63s	| Average convergence rate: 1.743	|

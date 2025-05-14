@@ -1,0 +1,6 @@
+# @package model
+family_name: qwen
+name: qwq-plus
+
+api_key: <API_KEY>
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1

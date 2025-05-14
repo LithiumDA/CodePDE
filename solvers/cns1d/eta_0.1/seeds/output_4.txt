@@ -1,0 +1,169 @@
+Loaded data with shape: (100, 101, 1024), (100, 101, 1024), (100, 101, 1024), (101,)
+##### Running the solver on the given dataset #####
+JAX is using GPU
+Time step 1/100: Using 10000 sub-steps with dt=0.000001
+Time step 2/100: Using 10000 sub-steps with dt=0.000001
+Time step 3/100: Using 10000 sub-steps with dt=0.000001
+Time step 4/100: Using 10000 sub-steps with dt=0.000001
+Time step 5/100: Using 10000 sub-steps with dt=0.000001
+Time step 6/100: Using 10001 sub-steps with dt=0.000001
+Time step 7/100: Using 10001 sub-steps with dt=0.000001
+Time step 8/100: Using 10000 sub-steps with dt=0.000001
+Time step 9/100: Using 10000 sub-steps with dt=0.000001
+Time step 10/100: Using 10000 sub-steps with dt=0.000001
+Time step 11/100: Using 10001 sub-steps with dt=0.000001
+Time step 12/100: Using 10000 sub-steps with dt=0.000001
+Time step 13/100: Using 10000 sub-steps with dt=0.000001
+Time step 14/100: Using 10001 sub-steps with dt=0.000001
+Time step 15/100: Using 10000 sub-steps with dt=0.000001
+Time step 16/100: Using 10001 sub-steps with dt=0.000001
+Time step 17/100: Using 10001 sub-steps with dt=0.000001
+Time step 18/100: Using 10000 sub-steps with dt=0.000001
+Time step 19/100: Using 10001 sub-steps with dt=0.000001
+Time step 20/100: Using 10000 sub-steps with dt=0.000001
+Time step 21/100: Using 10001 sub-steps with dt=0.000001
+Time step 22/100: Using 10001 sub-steps with dt=0.000001
+Time step 23/100: Using 10000 sub-steps with dt=0.000001
+Time step 24/100: Using 10001 sub-steps with dt=0.000001
+Time step 25/100: Using 10001 sub-steps with dt=0.000001
+Time step 26/100: Using 10000 sub-steps with dt=0.000001
+Time step 27/100: Using 10000 sub-steps with dt=0.000001
+Time step 28/100: Using 10001 sub-steps with dt=0.000001
+Time step 29/100: Using 10000 sub-steps with dt=0.000001
+Time step 30/100: Using 10000 sub-steps with dt=0.000001
+Time step 31/100: Using 10001 sub-steps with dt=0.000001
+Time step 32/100: Using 10000 sub-steps with dt=0.000001
+Time step 33/100: Using 10000 sub-steps with dt=0.000001
+Time step 34/100: Using 10001 sub-steps with dt=0.000001
+Time step 35/100: Using 10000 sub-steps with dt=0.000001
+Time step 36/100: Using 10000 sub-steps with dt=0.000001
+Time step 37/100: Using 10001 sub-steps with dt=0.000001
+Time step 38/100: Using 10000 sub-steps with dt=0.000001
+Time step 39/100: Using 10000 sub-steps with dt=0.000001
+Time step 40/100: Using 10000 sub-steps with dt=0.000001
+Time step 41/100: Using 10001 sub-steps with dt=0.000001
+Time step 42/100: Using 10000 sub-steps with dt=0.000001
+Time step 43/100: Using 10000 sub-steps with dt=0.000001
+Time step 44/100: Using 10001 sub-steps with dt=0.000001
+Time step 45/100: Using 10000 sub-steps with dt=0.000001
+Time step 46/100: Using 10000 sub-steps with dt=0.000001
+Time step 47/100: Using 10001 sub-steps with dt=0.000001
+Time step 48/100: Using 10000 sub-steps with dt=0.000001
+Time step 49/100: Using 10000 sub-steps with dt=0.000001
+Time step 50/100: Using 10001 sub-steps with dt=0.000001
+Time step 51/100: Using 10000 sub-steps with dt=0.000001
+Time step 52/100: Using 10000 sub-steps with dt=0.000001
+Time step 53/100: Using 10000 sub-steps with dt=0.000001
+Time step 54/100: Using 10000 sub-steps with dt=0.000001
+Time step 55/100: Using 10001 sub-steps with dt=0.000001
+Time step 56/100: Using 10000 sub-steps with dt=0.000001
+Time step 57/100: Using 10000 sub-steps with dt=0.000001
+Time step 58/100: Using 10000 sub-steps with dt=0.000001
+Time step 59/100: Using 10000 sub-steps with dt=0.000001
+Time step 60/100: Using 10000 sub-steps with dt=0.000001
+Time step 61/100: Using 10001 sub-steps with dt=0.000001
+Time step 62/100: Using 10000 sub-steps with dt=0.000001
+Time step 63/100: Using 10000 sub-steps with dt=0.000001
+Time step 64/100: Using 10000 sub-steps with dt=0.000001
+Time step 65/100: Using 10000 sub-steps with dt=0.000001
+Time step 66/100: Using 10000 sub-steps with dt=0.000001
+Time step 67/100: Using 10000 sub-steps with dt=0.000001
+Time step 68/100: Using 10001 sub-steps with dt=0.000001
+Time step 69/100: Using 10000 sub-steps with dt=0.000001
+Time step 70/100: Using 10000 sub-steps with dt=0.000001
+Time step 71/100: Using 10000 sub-steps with dt=0.000001
+Time step 72/100: Using 10000 sub-steps with dt=0.000001
+Time step 73/100: Using 10000 sub-steps with dt=0.000001
+Time step 74/100: Using 10001 sub-steps with dt=0.000001
+Time step 75/100: Using 10000 sub-steps with dt=0.000001
+Time step 76/100: Using 10000 sub-steps with dt=0.000001
+Time step 77/100: Using 10000 sub-steps with dt=0.000001
+Time step 78/100: Using 10000 sub-steps with dt=0.000001
+Time step 79/100: Using 10000 sub-steps with dt=0.000001
+Time step 80/100: Using 10000 sub-steps with dt=0.000001
+Time step 81/100: Using 10001 sub-steps with dt=0.000001
+Time step 82/100: Using 10000 sub-steps with dt=0.000001
+Time step 83/100: Using 10000 sub-steps with dt=0.000001
+Time step 84/100: Using 10000 sub-steps with dt=0.000001
+Time step 85/100: Using 10000 sub-steps with dt=0.000001
+Time step 86/100: Using 10000 sub-steps with dt=0.000001
+Time step 87/100: Using 10001 sub-steps with dt=0.000001
+Time step 88/100: Using 10000 sub-steps with dt=0.000001
+Time step 89/100: Using 10000 sub-steps with dt=0.000001
+Time step 90/100: Using 10000 sub-steps with dt=0.000001
+Time step 91/100: Using 10000 sub-steps with dt=0.000001
+Time step 92/100: Using 10000 sub-steps with dt=0.000001
+Time step 93/100: Using 10001 sub-steps with dt=0.000001
+Time step 94/100: Using 10000 sub-steps with dt=0.000001
+Time step 95/100: Using 10000 sub-steps with dt=0.000001
+Time step 96/100: Using 10000 sub-steps with dt=0.000001
+Time step 97/100: Using 10000 sub-steps with dt=0.000001
+Time step 98/100: Using 10000 sub-steps with dt=0.000001
+Time step 99/100: Using 10000 sub-steps with dt=0.000001
+Time step 100/100: Using 10001 sub-steps with dt=0.000001
+##### Finished #####
+nRMSE: 0.129
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+JAX is using GPU
+Time step 1/11: Using 10000 sub-steps with dt=0.000001
+Time step 2/11: Using 10000 sub-steps with dt=0.000001
+Time step 3/11: Using 10000 sub-steps with dt=0.000001
+Time step 4/11: Using 10000 sub-steps with dt=0.000001
+Time step 5/11: Using 10001 sub-steps with dt=0.000001
+Time step 6/11: Using 10000 sub-steps with dt=0.000001
+Time step 7/11: Using 10001 sub-steps with dt=0.000001
+Time step 8/11: Using 10000 sub-steps with dt=0.000001
+Time step 9/11: Using 10001 sub-steps with dt=0.000001
+Time step 10/11: Using 10000 sub-steps with dt=0.000001
+Time step 11/11: Using 10000 sub-steps with dt=0.000001
+**** Finished ****
+**** Spatio resolution 512 ****
+JAX is using GPU
+Time step 1/11: Using 10000 sub-steps with dt=0.000001
+Time step 2/11: Using 10000 sub-steps with dt=0.000001
+Time step 3/11: Using 10000 sub-steps with dt=0.000001
+Time step 4/11: Using 10000 sub-steps with dt=0.000001
+Time step 5/11: Using 10001 sub-steps with dt=0.000001
+Time step 6/11: Using 10000 sub-steps with dt=0.000001
+Time step 7/11: Using 10001 sub-steps with dt=0.000001
+Time step 8/11: Using 10000 sub-steps with dt=0.000001
+Time step 9/11: Using 10001 sub-steps with dt=0.000001
+Time step 10/11: Using 10000 sub-steps with dt=0.000001
+Time step 11/11: Using 10000 sub-steps with dt=0.000001
+**** Finished ****
+**** Spatio resolution 1024 ****
+JAX is using GPU
+Time step 1/11: Using 10000 sub-steps with dt=0.000001
+Time step 2/11: Using 10000 sub-steps with dt=0.000001
+Time step 3/11: Using 10000 sub-steps with dt=0.000001
+Time step 4/11: Using 10000 sub-steps with dt=0.000001
+Time step 5/11: Using 10001 sub-steps with dt=0.000001
+Time step 6/11: Using 10000 sub-steps with dt=0.000001
+Time step 7/11: Using 10001 sub-steps with dt=0.000001
+Time step 8/11: Using 10000 sub-steps with dt=0.000001
+Time step 9/11: Using 10001 sub-steps with dt=0.000001
+Time step 10/11: Using 10000 sub-steps with dt=0.000001
+Time step 11/11: Using 10000 sub-steps with dt=0.000001
+**** Finished ****
+**** Spatio resolution 2048 ****
+JAX is using GPU
+Time step 1/11: Using 10000 sub-steps with dt=0.000001
+Time step 2/11: Using 10000 sub-steps with dt=0.000001
+Time step 3/11: Using 10000 sub-steps with dt=0.000001
+Time step 4/11: Using 10000 sub-steps with dt=0.000001
+Time step 5/11: Using 10001 sub-steps with dt=0.000001
+Time step 6/11: Using 10000 sub-steps with dt=0.000001
+Time step 7/11: Using 10001 sub-steps with dt=0.000001
+Time step 8/11: Using 10000 sub-steps with dt=0.000001
+Time step 9/11: Using 10001 sub-steps with dt=0.000001
+Time step 10/11: Using 10000 sub-steps with dt=0.000001
+Time step 11/11: Using 10000 sub-steps with dt=0.000001
+**** Finished ****
+(8, 12, 256, 3)
+(8, 12, 512, 3)
+(8, 12, 1024, 3)
+Rate of convergence measured at spatio resolution 256 is nan
+Rate of convergence measured at spatio resolution 512 is nan
+Result summary
+nRMSE: 1.286e-01	| Time: 142.68s	| Average convergence rate: nan	|

@@ -1,0 +1,6 @@
+# @package model
+family_name: claude
+name: claude-3-5-haiku-20241022
+api_key: <API_KEY>
+
+thinking: False

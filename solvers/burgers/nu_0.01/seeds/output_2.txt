@@ -1,0 +1,88 @@
+Loaded data with shape: (100, 201, 1024)
+##### Running the solver on the given dataset #####
+Using device: cuda
+Internal timestep: 0.000075
+Completed time step 5/200, t = 0.0500
+Completed time step 10/200, t = 0.1000
+Completed time step 15/200, t = 0.1500
+Completed time step 20/200, t = 0.2000
+Completed time step 25/200, t = 0.2500
+Completed time step 30/200, t = 0.3000
+Completed time step 35/200, t = 0.3500
+Completed time step 40/200, t = 0.4000
+Completed time step 45/200, t = 0.4500
+Completed time step 50/200, t = 0.5000
+Completed time step 55/200, t = 0.5500
+Completed time step 60/200, t = 0.6000
+Completed time step 65/200, t = 0.6500
+Completed time step 70/200, t = 0.7000
+Completed time step 75/200, t = 0.7500
+Completed time step 80/200, t = 0.8000
+Completed time step 85/200, t = 0.8500
+Completed time step 90/200, t = 0.9000
+Completed time step 95/200, t = 0.9500
+Completed time step 100/200, t = 1.0000
+Completed time step 105/200, t = 1.0500
+Completed time step 110/200, t = 1.1000
+Completed time step 115/200, t = 1.1500
+Completed time step 120/200, t = 1.2000
+Completed time step 125/200, t = 1.2500
+Completed time step 130/200, t = 1.3000
+Completed time step 135/200, t = 1.3500
+Completed time step 140/200, t = 1.4000
+Completed time step 145/200, t = 1.4500
+Completed time step 150/200, t = 1.5000
+Completed time step 155/200, t = 1.5500
+Completed time step 160/200, t = 1.6000
+Completed time step 165/200, t = 1.6500
+Completed time step 170/200, t = 1.7000
+Completed time step 175/200, t = 1.7500
+Completed time step 180/200, t = 1.8000
+Completed time step 185/200, t = 1.8500
+Completed time step 190/200, t = 1.9000
+Completed time step 195/200, t = 1.9500
+Completed time step 200/200, t = 2.0000
+##### Finished #####
+##### Running convergence test for the solver #####
+**** Spatio resolution 256 ****
+Using device: cuda
+Internal timestep: 0.000901
+Completed time step 5/21, t = 0.0500
+Completed time step 10/21, t = 0.1000
+Completed time step 15/21, t = 0.1500
+Completed time step 20/21, t = 0.2000
+Completed time step 21/21, t = 0.2100
+**** Finished ****
+**** Spatio resolution 512 ****
+Using device: cuda
+Internal timestep: 0.000300
+Completed time step 5/21, t = 0.0500
+Completed time step 10/21, t = 0.1000
+Completed time step 15/21, t = 0.1500
+Completed time step 20/21, t = 0.2000
+Completed time step 21/21, t = 0.2100
+**** Finished ****
+**** Spatio resolution 1024 ****
+Using device: cuda
+Internal timestep: 0.000075
+Completed time step 5/21, t = 0.0500
+Completed time step 10/21, t = 0.1000
+Completed time step 15/21, t = 0.1500
+Completed time step 20/21, t = 0.2000
+Completed time step 21/21, t = 0.2100
+**** Finished ****
+**** Spatio resolution 2048 ****
+Using device: cuda
+Internal timestep: 0.000019
+Completed time step 5/21, t = 0.0500
+Completed time step 10/21, t = 0.1000
+Completed time step 15/21, t = 0.1500
+Completed time step 20/21, t = 0.2000
+Completed time step 21/21, t = 0.2100
+**** Finished ****
+Error measured at spatio resolution 256 is 2.298e-05
+Rate of convergence measured at spatio resolution 256 is 2.128
+Error measured at spatio resolution 512 is 5.259e-06
+Rate of convergence measured at spatio resolution 512 is 1.562
+Result summary
+nRMSE: 2.595e-04	| Time: 22.51s	| Average convergence rate: 1.845	|

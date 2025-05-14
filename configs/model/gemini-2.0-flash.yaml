@@ -1,0 +1,4 @@
+# @package model
+family_name: gemini
+name: gemini-2.0-flash
+api_key: <API_KEY>
