@@ -1,0 +1,48 @@
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:10: RuntimeWarning: invalid value encountered in divide
+  v = mom / rho
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:15: RuntimeWarning: invalid value encountered in sqrt
+  c = np.sqrt(gamma * p / rho)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:91: RuntimeWarning: divide by zero encountered in divide
+  nu = mu_tot / rho  # kinematic viscosity
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:23: RuntimeWarning: invalid value encountered in divide
+  v = mom / rho
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:11: RuntimeWarning: overflow encountered in square
+  kinetic = 0.5 * rho * v ** 2
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:25: RuntimeWarning: overflow encountered in multiply
+  F_mom = mom * v + p
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:26: RuntimeWarning: overflow encountered in multiply
+  F_E = (E + p) * v
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:126: RuntimeWarning: invalid value encountered in subtract
+  dv_dx = (roll_plus(v_center) - roll_minus(v_center)) / (2.0 * dx)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:135: RuntimeWarning: invalid value encountered in multiply
+  v_sigma = v_center * sigma
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:136: RuntimeWarning: invalid value encountered in subtract
+  dv_sigma_dx = (roll_plus(v_sigma) - roll_minus(v_sigma)) / (2.0 * dx)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:140: RuntimeWarning: invalid value encountered in add
+  mom_new = mom_new + dt * S_mom
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:10: RuntimeWarning: overflow encountered in divide
+  v = mom / rho
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:11: RuntimeWarning: overflow encountered in multiply
+  kinetic = 0.5 * rho * v ** 2
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:12: RuntimeWarning: invalid value encountered in subtract
+  p = (gamma - 1.0) * (E - kinetic)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:23: RuntimeWarning: overflow encountered in divide
+  v = mom / rho
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:114: RuntimeWarning: invalid value encountered in add
+  U_half = 0.5 * (np.stack([rho_r, mom_r, E_r], axis=0) +
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:116: RuntimeWarning: invalid value encountered in subtract
+  - dt / (2.0 * dx) * (F_r - F_l)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:114: RuntimeWarning: invalid value encountered in subtract
+  U_half = 0.5 * (np.stack([rho_r, mom_r, E_r], axis=0) +
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:124: RuntimeWarning: invalid value encountered in divide
+  v_center = mom_new / rho_new
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:127: RuntimeWarning: invalid value encountered in subtract
+  d2v_dx2 = (roll_plus(v_center) - 2.0 * v_center +
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:127: RuntimeWarning: invalid value encountered in add
+  d2v_dx2 = (roll_plus(v_center) - 2.0 * v_center +
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:141: RuntimeWarning: invalid value encountered in add
+  E_new = E_new + dt * S_E
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:136: RuntimeWarning: overflow encountered in divide
+  dv_sigma_dx = (roll_plus(v_sigma) - roll_minus(v_sigma)) / (2.0 * dx)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:135: RuntimeWarning: overflow encountered in multiply
+  v_sigma = v_center * sigma

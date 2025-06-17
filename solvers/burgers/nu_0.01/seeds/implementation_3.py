@@ -22,101 +22,107 @@ def solver(u0_batch, t_coordinate, nu):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
     
-    # Convert numpy arrays to PyTorch tensors and move to device
+    # Convert numpy arrays to PyTorch tensors
     batch_size, N = u0_batch.shape
-    u0_tensor = torch.tensor(u0_batch, dtype=torch.float32).to(device)
+    u0_tensor = torch.tensor(u0_batch, dtype=torch.float32, device=device)
     
-    # Set up spatial grid (assuming uniform grid on [0,1])
-    dx = 1.0 / N
-    x = torch.linspace(0, 1.0 - dx, N, device=device)
+    # Initialize the solution array with the initial condition
+    T = len(t_coordinate) - 1
+    solutions_tensor = torch.zeros((batch_size, T+1, N), dtype=torch.float32, device=device)
+    solutions_tensor[:, 0, :] = u0_tensor
     
-    # Prepare wavenumbers for spectral differentiation
-    k = torch.fft.fftfreq(N, d=dx) * 2 * np.pi
+    # Compute the wave numbers for spectral differentiation
+    k = torch.fft.fftfreq(N, d=1.0/N) * 2 * np.pi  # Wave numbers
     k = k.to(device)
     
-    # Initialize solutions array
-    solutions = torch.zeros((batch_size, len(t_coordinate), N), dtype=torch.float32, device=device)
-    solutions[:, 0, :] = u0_tensor
-    
-    # Current solution at time t
+    # Initialize current solution
     u_current = u0_tensor.clone()
     
-    # Adaptive time stepping
-    # For ν=0.01, we can determine a good internal time step
-    # CFL condition: dt < dx^2 / (2*nu) for diffusion term stability
-    # For advection term: dt < dx / max(abs(u))
+    # Determine a suitable internal time step for stability
+    # For Burgers' with ν=0.01, we need smaller steps than the provided ones
+    dx = 1.0 / N
+    # CFL-like condition for stability: dt ≤ dx²/(2*ν) for diffusion part
+    # and dt ≤ dx/max(|u|) for advection part
+    max_u_magnitude = torch.max(torch.abs(u0_tensor)).item()
+    dt_diff = 0.5 * dx**2 / nu  # Diffusion stability
+    dt_adv = 0.5 * dx / max(max_u_magnitude, 1e-6)  # Advection stability
+    dt_internal = min(dt_diff, dt_adv) * 0.5  # Safety factor
     
-    # Estimate max velocity for initial condition
-    max_u = torch.max(torch.abs(u_current)).item()
+    print(f"Internal timestep: {dt_internal:.6f}")
     
-    # Calculate internal time step based on stability criteria
-    # Using a safety factor of 0.5
-    dt_diff = 0.5 * dx**2 / (2 * nu)
-    dt_adv = 0.5 * dx / max(max_u, 1e-10)  # Avoid division by zero
-    dt_internal = min(dt_diff, dt_adv)
-    
-    # Make sure internal time step is small enough
-    dt_internal = min(dt_internal, 0.001)  # Cap at 0.001 for stability
-    
-    print(f"Using internal time step: {dt_internal}")
-    
-    # Define RK4 step function
-    def rk4_step(u, dt):
-        """Fourth-order Runge-Kutta step."""
-        k1 = dt * burgers_rhs(u)
-        k2 = dt * burgers_rhs(u + 0.5 * k1)
-        k3 = dt * burgers_rhs(u + 0.5 * k2)
-        k4 = dt * burgers_rhs(u + k3)
-        return u + (k1 + 2*k2 + 2*k3 + k4) / 6
-    
-    # Define the right-hand side of Burgers' equation using spectral method
-    def burgers_rhs(u):
-        """Compute right-hand side of Burgers' equation using spectral method."""
-        # Transform to Fourier space
-        u_hat = torch.fft.fft(u, dim=1)
-        
-        # Compute derivatives in Fourier space
-        u_x_hat = 1j * k * u_hat
-        u_xx_hat = -k**2 * u_hat
-        
-        # Transform back to physical space
-        u_x = torch.fft.ifft(u_x_hat, dim=1).real
-        u_xx = torch.fft.ifft(u_xx_hat, dim=1).real
-        
-        # Compute right-hand side: -u*u_x + nu*u_xx
-        return -u * u_x + nu * u_xx
-    
-    # Iterate through required output time points
+    # Solve for each time point in t_coordinate
     current_t = 0.0
-    for i in range(1, len(t_coordinate)):
+    for i in range(1, T+1):
         target_t = t_coordinate[i]
         
         # Integrate until we reach the target time
         while current_t < target_t:
             # Adjust the last step to exactly hit the target time
-            step_dt = min(dt_internal, target_t - current_t)
+            step_size = min(dt_internal, target_t - current_t)
             
-            # Apply RK4 step
-            u_current = rk4_step(u_current, step_dt)
-            current_t += step_dt
+            # Use 4th-order Runge-Kutta method for time stepping
+            u_current = rk4_step(u_current, step_size, k, nu, device)
             
-            # Periodically check if we need to adjust time step based on solution
-            if i % 10 == 0:
-                max_u = torch.max(torch.abs(u_current)).item()
-                dt_adv = 0.5 * dx / max(max_u, 1e-10)
-                new_dt = min(dt_diff, dt_adv, 0.001)
-                
-                # Only update if significantly different
-                if abs(new_dt - dt_internal) / dt_internal > 0.2:
-                    dt_internal = new_dt
-                    print(f"Adjusted internal time step to: {dt_internal}")
+            current_t += step_size
         
-        # Store the solution at this time point
-        solutions[:, i, :] = u_current
+        # Store the solution at the target time
+        solutions_tensor[:, i, :] = u_current
         
-        # Print progress
-        if i % 5 == 0 or i == len(t_coordinate) - 1:
-            print(f"Completed time step {i}/{len(t_coordinate)-1}, t={target_t:.4f}")
+        if i % 5 == 0 or i == T:
+            print(f"Completed time step {i}/{T}, t = {current_t:.4f}")
     
     # Convert back to numpy array
-    return solutions.cpu().numpy()
+    solutions = solutions_tensor.cpu().numpy()
+    return solutions
+
+def rk4_step(u, dt, k, nu, device):
+    """Perform one step of 4th-order Runge-Kutta time integration.
+    
+    Args:
+        u (torch.Tensor): Current solution [batch_size, N]
+        dt (float): Time step
+        k (torch.Tensor): Wave numbers for spectral differentiation
+        nu (float): Viscosity coefficient
+        device: PyTorch device
+        
+    Returns:
+        torch.Tensor: Solution after one time step
+    """
+    k1 = burgers_rhs(u, k, nu, device)
+    k2 = burgers_rhs(u + 0.5 * dt * k1, k, nu, device)
+    k3 = burgers_rhs(u + 0.5 * dt * k2, k, nu, device)
+    k4 = burgers_rhs(u + dt * k3, k, nu, device)
+    
+    return u + (dt / 6.0) * (k1 + 2*k2 + 2*k3 + k4)
+
+def burgers_rhs(u, k, nu, device):
+    """Compute the right-hand side of Burgers' equation using spectral method.
+    
+    Args:
+        u (torch.Tensor): Current solution [batch_size, N]
+        k (torch.Tensor): Wave numbers for spectral differentiation
+        nu (float): Viscosity coefficient
+        device: PyTorch device
+        
+    Returns:
+        torch.Tensor: Right-hand side of the equation
+    """
+    batch_size, N = u.shape
+    
+    # Compute the nonlinear term using spectral differentiation
+    u_hat = torch.fft.fft(u, dim=1)
+    
+    # Compute the spatial derivative using spectral method
+    ux_hat = 1j * k * u_hat  # du/dx in Fourier space
+    ux = torch.fft.ifft(ux_hat, dim=1).real
+    
+    # Compute the second derivative for diffusion term
+    uxx_hat = -k**2 * u_hat  # d²u/dx² in Fourier space
+    uxx = torch.fft.ifft(uxx_hat, dim=1).real
+    
+    # Compute the right-hand side: -u*du/dx + ν*d²u/dx²
+    # For Burgers' equation: du/dt + d(u²/2)/dx = ν*d²u/dx²
+    # Which can be rewritten as: du/dt = -u*du/dx + ν*d²u/dx²
+    rhs = -u * ux + nu * uxx
+    
+    return rhs

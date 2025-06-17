@@ -1,48 +1,83 @@
 
-import jax
-import jax.numpy as jnp
-from jax import vmap
+import numpy as np
+
+def _fractional_periodic_shift(u, shift):
+    """
+    Periodically shifts the last axis of an array by a (possibly non-integer)
+    number of grid points using linear interpolation.
+
+    Parameters
+    ----------
+    u : np.ndarray
+        Input array of shape (..., N).
+    shift : float
+        Positive shift (to the right) measured in grid points.
+    Returns
+    -------
+    shifted : np.ndarray
+        Array of the same shape as `u`, shifted periodically.
+    """
+    N = u.shape[-1]
+    # Bring the shift back to the canonical interval [0, N)
+    shift = shift % N
+
+    # Integer and fractional parts of the shift
+    k = int(np.floor(shift))
+    f = shift - k          # 0 <= f < 1
+
+    if f < 1.0e-12:        # pure integer shift – avoid extra work
+        return np.roll(u, k, axis=-1)
+
+    # Values needed for linear interpolation
+    u_k   = np.roll(u,  k,     axis=-1)   # u[j - k]
+    u_k1  = np.roll(u,  k + 1, axis=-1)   # u[j - k - 1]
+
+    return (1.0 - f) * u_k + f * u_k1
+
 
 def solver(u0_batch, t_coordinate, beta):
-    """Solves the Advection equation for all times in t_coordinate using the method of characteristics with linear interpolation."""
-    u0_batch = jnp.asarray(u0_batch)
+    """Solves the 1-D periodic advection equation u_t + beta * u_x = 0.
+
+    The method is *exact*: the initial profile is merely shifted by
+    beta * t for each requested time instant.
+
+    Parameters
+    ----------
+    u0_batch : np.ndarray
+        Initial data with shape [batch_size, N]
+    t_coordinate : np.ndarray
+        Time stamps (T+1,) beginning with 0.
+    beta : float
+        Constant advection speed.
+
+    Returns
+    -------
+    solutions : np.ndarray
+        Array of shape [batch_size, T+1, N] containing u(t_i, x_j).
+    """
+    # --------------------------- sanity checks ---------------------------
+    if t_coordinate.ndim != 1:
+        raise ValueError("t_coordinate must be one-dimensional")
+    if abs(t_coordinate[0]) > 1e-12:
+        raise ValueError("t_coordinate[0] must be 0.0")
+
     batch_size, N = u0_batch.shape
-    T_plus_1 = len(t_coordinate)
-    solutions = jnp.zeros((batch_size, T_plus_1, N))
-    solutions = solutions.at[:, 0, :].set(u0_batch)
-    
-    # Compute shifts for all time steps except the first
-    times = t_coordinate[1:]
-    s_shifts = beta * times * N  # s_shift = beta * t * N
-    
-    # Define the function to compute the shifted array for a single time step
-    def compute_shift(u0, s_shift):
-        j = jnp.arange(N)
-        shifted_j_float = (j - s_shift) % N
-        int_part = jnp.floor(shifted_j_float).astype(jnp.int32)
-        next_index = (int_part + 1) % N
-        frac = shifted_j_float - int_part
-        indices = jnp.stack([int_part, next_index], axis=-1)  # shape (N, 2)
-        weights = jnp.stack([(1 - frac), frac], axis=-1)  # shape (N, 2)
-        
-        # Expand weights to have batch dimension
-        weights = weights[None, :, :]  # shape (1, N, 2)
-        
-        # Select values and interpolate
-        selected = u0[..., indices]  # shape (batch_size, N, 2)
-        weighted = selected * weights  # shape (batch_size, N, 2)
-        shifted = weighted.sum(axis=-1)  # shape (batch_size, N)
-        return shifted
-    
-    # Vectorize over time steps
-    compute_shift_vmap = vmap(compute_shift, in_axes=(None, 0))
-    shifted_arrays = compute_shift_vmap(u0_batch, s_shifts)
-    
-    # Reshape to (batch_size, T, N)
-    shifted_arrays = shifted_arrays.swapaxes(0, 1)
-    
-    # Assign to the solutions array
-    solutions = solutions.at[:, 1:, :].set(shifted_arrays)
-    
-    # Convert to NumPy array using jax.device_get()
-    return jax.device_get(solutions)
+    T = len(t_coordinate) - 1          # number of future time frames
+
+    # Spatial step Δx assuming domain length L = 1
+    dx = 1.0 / N
+
+    # ---------- allocate result tensor and copy initial condition -------
+    solutions = np.empty((batch_size, T + 1, N), dtype=u0_batch.dtype)
+    solutions[:, 0, :] = u0_batch
+
+    # ----------------------- march through required times ---------------
+    for i, t in enumerate(t_coordinate[1:], start=1):
+        shift_flow = beta * t / dx     # shift in *grid points*
+        if i == 1:                     # tiny diagnostic once per run
+            print(f"[solver] beta={beta:.4g}, t={t:.4g}, "
+                  f"shift={shift_flow:.4g} grid points")
+        solutions[:, i, :] = _fractional_periodic_shift(u0_batch,
+                                                        shift_flow)
+
+    return solutions

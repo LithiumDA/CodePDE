@@ -1,6 +1,6 @@
 round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
-3,0.08631,8.7,1.672,5,o3-mini,/usr0/home/username/work_space/llm_pde/cns1d/eta_0.1/repeated_sample/o3-mini/merged
-2,0.09033,746.85,0.138,3,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/cns1d/eta_0.1/repeated_sample/claude-3-7-sonnet-20250219/merged
-21,0.09959,608.05,,4,deepseek-chat,/usr0/home/username/work_space/llm_pde/cns1d/eta_0.1/repeated_sample/deepseek-chat/merged
-19,0.1213,2168.96,,5,deepseek-chat,/usr0/home/username/work_space/llm_pde/cns1d/eta_0.1/repeated_sample/deepseek-chat/merged
-30,0.1286,142.68,,3,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/cns1d/eta_0.1/repeated_sample/claude-3-7-sonnet-20250219/merged
+24,0.0241,1101.7,,3,deepseek-chat,/usr0/home/shandal/work_space/llm_pde/archived_logs/cns1d/eta_0.1/repeated_sample/deepseek-chat/merged
+24,0.02797,20.87,,5,o3,/usr0/home/shandal/work_space/llm_pde/archived_logs/cns1d/eta_0.1/repeated_sample/o3/merged
+8,0.03812,0.34,,3,o3,/usr0/home/shandal/work_space/llm_pde/archived_logs/cns1d/eta_0.1/repeated_sample/o3/merged
+9,0.03941,246.12,,1,o3,/usr0/home/shandal/work_space/llm_pde/archived_logs/cns1d/eta_0.1/repeated_sample/o3/merged
+17,0.04255,181.78,,3,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/cns1d/eta_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-04-10-19-08-54

@@ -18,142 +18,105 @@ def solver(u0_batch, t_coordinate, nu):
             solutions[:, 0, :] contains the initial conditions (u0_batch),
             solutions[:, i, :] contains the solutions at time t_coordinate[i].
     """
-    # Use PyTorch device (GPU if available)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print("Using device:", device)
-
-    # Convert input initial conditions to a torch tensor on the proper device
-    u = torch.tensor(u0_batch, dtype=torch.float32, device=device)
+    # Check if GPU is available
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f"Using device: {device}")
     
-    batch_size, N = u.shape
-    # Spatial domain details:
-    # Assume x in [0,1) with N equidistant points; grid spacing:
+    # Convert numpy arrays to PyTorch tensors and move to device
+    batch_size, N = u0_batch.shape
+    u0_tensor = torch.tensor(u0_batch, dtype=torch.float32).to(device)
+    
+    # Set up spatial grid (assuming uniform grid on [0,1])
     dx = 1.0 / N
-
-    # Create Fourier frequencies for spectral differentiation.
-    # Domain length is 1; compute frequencies scaled by 2*pi.
-    k = 2 * np.pi * torch.fft.fftfreq(N, d=dx).to(device)
-    # Reshape k to (1, N) for broadcasting over batches.
-    k = k.view(1, N)
-
-    # Function to compute spatial derivatives using FFT.
-    def spectral_derivative(u_tensor, order=1):
-        """Computes the spectral derivative of the given order.
-        
-        Args:
-            u_tensor (torch.Tensor): shape [batch_size, N].
-            order (int): Derivative order (1 or 2).
-        
-        Returns:
-            torch.Tensor: derivative with shape [batch_size, N].
-        """
-        # Apply FFT along spatial direction.
-        u_hat = torch.fft.fft(u_tensor)
-        if order == 1:
-            # First derivative: multiply by i*k.
-            factor = (1j * k)
-        elif order == 2:
-            # Second derivative: multiply by -k^2.
-            factor = -(k ** 2)
-        else:
-            raise ValueError("Only first and second derivatives are supported!")
-        # Multiply in Fourier space.
-        u_hat_deriv = factor * u_hat
-        # Inverse FFT back to physical space.
-        u_deriv = torch.real(torch.fft.ifft(u_hat_deriv))
-        return u_deriv
-
-    # Function for computing the right-hand side of Burgers' equation.
-    def burgers_rhs(u_tensor):
-        """Computes the time derivative (RHS) of the Burgers' equation.
-        
-        u_t = - d_dx (0.5 * u^2) + nu * u_xx.
-        
-        Args:
-            u_tensor (torch.Tensor): shape [batch_size, N].
-        
-        Returns:
-            torch.Tensor: time derivative, shape [batch_size, N].
-        """
-        # Compute nonlinear convective flux and its derivative.
-        flux = 0.5 * u_tensor ** 2
-        dflux_dx = spectral_derivative(flux, order=1)
-        # Compute diffusive term (second spatial derivative).
-        u_xx = spectral_derivative(u_tensor, order=2)
-        # Combine terms.
-        return -dflux_dx + nu * u_xx
-
-    # RK4 integrator for one time step.
-    def rk4_step(u_tensor, dt):
-        """Performs one RK4 step for the given time step dt.
-        
-        Args:
-            u_tensor (torch.Tensor): current solution [batch_size, N].
-            dt (float): time step size.
-        
-        Returns:
-            torch.Tensor: solution after dt.
-        """
-        k1 = burgers_rhs(u_tensor)
-        k2 = burgers_rhs(u_tensor + 0.5 * dt * k1)
-        k3 = burgers_rhs(u_tensor + 0.5 * dt * k2)
-        k4 = burgers_rhs(u_tensor + dt * k3)
-        return u_tensor + dt * (k1 + 2 * k2 + 2 * k3 + k4) / 6.0
-
-    # Prepare solution storage: [batch_size, T+1, N]
-    T_total = len(t_coordinate) - 1  # number of intervals
-    solutions = torch.empty((batch_size, T_total + 1, N), dtype=torch.float32, device=device)
-    solutions[:, 0, :] = u
-
-    # Safety constant for CFL condition.
-    CFL = 0.1
-    # Set a target dt in case CFL condition permits larger steps.
-    dt_internal_target = 1e-4
-
-    current_time = t_coordinate[0]
-    print("Initial time: {}. Starting simulation...".format(current_time))
+    x = torch.linspace(0, 1.0 - dx, N, device=device)
     
-    # Loop over each output time interval.
-    for t_idx in range(T_total):
-        t_start = t_coordinate[t_idx]
-        t_end = t_coordinate[t_idx + 1]
-        dt_out = t_end - t_start
-
-        # Compute maximum velocity for CFL condition across the batch.
-        u_max_val = u.abs().max().item()
-        # Compute CFL-driven dt; add a tiny number to avoid division by zero.
-        dt_cfl = CFL * dx / (u_max_val + 1e-6)
-        # Use the minimum of our target dt_internal and the CFL condition.
-        dt_internal = min(dt_internal_target, dt_cfl)
+    # Prepare wavenumbers for spectral differentiation
+    k = torch.fft.fftfreq(N, d=dx) * 2 * np.pi
+    k = k.to(device)
+    
+    # Initialize solutions array
+    solutions = torch.zeros((batch_size, len(t_coordinate), N), dtype=torch.float32, device=device)
+    solutions[:, 0, :] = u0_tensor
+    
+    # Current solution at time t
+    u_current = u0_tensor.clone()
+    
+    # Adaptive time stepping
+    # For ν=0.01, we can determine a good internal time step
+    # CFL condition: dt < dx^2 / (2*nu) for diffusion term stability
+    # For advection term: dt < dx / max(abs(u))
+    
+    # Estimate max velocity for initial condition
+    max_u = torch.max(torch.abs(u_current)).item()
+    
+    # Calculate internal time step based on stability criteria
+    # Using a safety factor of 0.5
+    dt_diff = 0.5 * dx**2 / (2 * nu)
+    dt_adv = 0.5 * dx / max(max_u, 1e-10)  # Avoid division by zero
+    dt_internal = min(dt_diff, dt_adv)
+    
+    # Make sure internal time step is small enough
+    dt_internal = min(dt_internal, 0.001)  # Cap at 0.001 for stability
+    
+    print(f"Using internal time step: {dt_internal}")
+    
+    # Define RK4 step function
+    def rk4_step(u, dt):
+        """Fourth-order Runge-Kutta step."""
+        k1 = dt * burgers_rhs(u)
+        k2 = dt * burgers_rhs(u + 0.5 * k1)
+        k3 = dt * burgers_rhs(u + 0.5 * k2)
+        k4 = dt * burgers_rhs(u + k3)
+        return u + (k1 + 2*k2 + 2*k3 + k4) / 6
+    
+    # Define the right-hand side of Burgers' equation using spectral method
+    def burgers_rhs(u):
+        """Compute right-hand side of Burgers' equation using spectral method."""
+        # Transform to Fourier space
+        u_hat = torch.fft.fft(u, dim=1)
         
-        # Determine number of internal substeps to cover the output interval.
-        n_substeps = max(int(np.ceil(dt_out / dt_internal)), 1)
-        dt_internal = dt_out / n_substeps  # adjust dt_internal exactly
+        # Compute derivatives in Fourier space
+        u_x_hat = 1j * k * u_hat
+        u_xx_hat = -k**2 * u_hat
         
-        print("Evolving from t = {:.4f} to t = {:.4f} with {} internal steps (dt_internal = {:.6e}), u_max = {:.6e}".format(
-            t_start, t_end, n_substeps, dt_internal, u_max_val))
+        # Transform back to physical space
+        u_x = torch.fft.ifft(u_x_hat, dim=1).real
+        u_xx = torch.fft.ifft(u_xx_hat, dim=1).real
         
-        # Perform internal RK4 steps.
-        for i in range(n_substeps):
-            u = rk4_step(u, dt_internal)
-            # Check for NaNs during computation to break early if needed.
-            if torch.isnan(u).any():
-                print("NaN detected during integration; aborting further steps.")
-                break
+        # Compute right-hand side: -u*u_x + nu*u_xx
+        return -u * u_x + nu * u_xx
+    
+    # Iterate through required output time points
+    current_t = 0.0
+    for i in range(1, len(t_coordinate)):
+        target_t = t_coordinate[i]
         
-        current_time = t_end
-        solutions[:, t_idx + 1, :] = u
+        # Integrate until we reach the target time
+        while current_t < target_t:
+            # Adjust the last step to exactly hit the target time
+            step_dt = min(dt_internal, target_t - current_t)
+            
+            # Apply RK4 step
+            u_current = rk4_step(u_current, step_dt)
+            current_t += step_dt
+            
+            # Periodically check if we need to adjust time step based on solution
+            if i % 10 == 0:
+                max_u = torch.max(torch.abs(u_current)).item()
+                dt_adv = 0.5 * dx / max(max_u, 1e-10)
+                new_dt = min(dt_diff, dt_adv, 0.001)
+                
+                # Only update if significantly different
+                if abs(new_dt - dt_internal) / dt_internal > 0.2:
+                    dt_internal = new_dt
+                    print(f"Adjusted internal time step to: {dt_internal}")
         
-        # Output diagnostics.
-        u_min = u.min().item()
-        u_max = u.max().item()
-        print("At t = {:.4f}, u.min() = {:.6e}, u.max() = {:.6e}".format(current_time, u_min, u_max))
-        # Early termination if NaNs occur.
-        if np.isnan(u_min) or np.isnan(u_max):
-            print("NaN values detected in solution. Terminating simulation early.")
-            break
-
-    # Convert result to numpy array and return.
-    solutions_np = solutions.cpu().detach().numpy()
-    print("Simulation completed.")
-    return solutions_np
+        # Store the solution at this time point
+        solutions[:, i, :] = u_current
+        
+        # Print progress
+        if i % 5 == 0 or i == len(t_coordinate) - 1:
+            print(f"Completed time step {i}/{len(t_coordinate)-1}, t={target_t:.4f}")
+    
+    # Convert back to numpy array
+    return solutions.cpu().numpy()

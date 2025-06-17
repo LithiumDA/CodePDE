@@ -93,7 +93,7 @@ if __name__ == "__main__":
                         default=100,
                         help="The number of samples to test on.")
     parser.add_argument("--dataset-path-for-eval", type=str,
-                        default='/usr1/username/data/CodePDE/Darcy/piececonst_r421_N1024_smooth1_sample100.hdf5',
+                        default='/usr1/data/shandal/data/CodePDE/Darcy/piececonst_r421_N1024_smooth1_sample100.hdf5',
                         help="The path to load the dataset.")
 
     args = parser.parse_args()

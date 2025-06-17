@@ -1,6 +1,6 @@
 round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
-26,0.0002588,28.63,1.743,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
-6,0.0002594,606.67,1.826,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
-12,0.0002595,22.51,1.845,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
-13,0.0002595,23.59,1.828,1,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
-2,0.0002757,65.44,,2,o3-mini,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/o3-mini/merged
+7,0.0001231,30.17,1.905,1,gemini-2.5-pro-preview-03-25,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/gemini-2.5-pro-preview-03-25/merged
+26,0.0002588,28.63,1.743,1,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
+6,0.0002594,606.67,1.826,1,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
+12,0.0002595,22.51,1.845,1,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged
+13,0.0002595,23.59,1.828,1,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_0.01/repeated_sample/claude-3-7-sonnet-20250219/merged

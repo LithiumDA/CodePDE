@@ -1,20 +1,161 @@
-Loaded data with shape: (100, 101, 1024), (100, 101, 1024), (100, 101, 1024), (101,)
+Loaded data with shape: (50, 101, 1024), (50, 101, 1024), (50, 101, 1024), (101,)
 ##### Running the solver on the given dataset #####
+[solver] recorded frame 1/100 at t = 1.0000e-02
+[solver] recorded frame 2/100 at t = 2.0000e-02
+[solver] recorded frame 3/100 at t = 3.0000e-02
+[solver] recorded frame 4/100 at t = 4.0000e-02
+[solver] recorded frame 5/100 at t = 5.0000e-02
+[solver] recorded frame 6/100 at t = 6.0000e-02
+[solver] recorded frame 7/100 at t = 7.0000e-02
+[solver] recorded frame 8/100 at t = 8.0000e-02
+[solver] recorded frame 9/100 at t = 9.0000e-02
+[solver] recorded frame 10/100 at t = 1.0000e-01
+[solver] recorded frame 11/100 at t = 1.1000e-01
+[solver] recorded frame 12/100 at t = 1.2000e-01
+[solver] recorded frame 13/100 at t = 1.3000e-01
+[solver] recorded frame 14/100 at t = 1.4000e-01
+[solver] recorded frame 15/100 at t = 1.5000e-01
+[solver] recorded frame 16/100 at t = 1.6000e-01
+[solver] recorded frame 17/100 at t = 1.7000e-01
+[solver] recorded frame 18/100 at t = 1.8000e-01
+[solver] recorded frame 19/100 at t = 1.9000e-01
+[solver] recorded frame 20/100 at t = 2.0000e-01
+[solver] recorded frame 21/100 at t = 2.1000e-01
+[solver] recorded frame 22/100 at t = 2.2000e-01
+[solver] recorded frame 23/100 at t = 2.3000e-01
+[solver] recorded frame 24/100 at t = 2.4000e-01
+[solver] recorded frame 25/100 at t = 2.5000e-01
+[solver] recorded frame 26/100 at t = 2.6000e-01
+[solver] recorded frame 27/100 at t = 2.7000e-01
+[solver] recorded frame 28/100 at t = 2.8000e-01
+[solver] recorded frame 29/100 at t = 2.9000e-01
+[solver] recorded frame 30/100 at t = 3.0000e-01
+[solver] recorded frame 31/100 at t = 3.1000e-01
+[solver] recorded frame 32/100 at t = 3.2000e-01
+[solver] recorded frame 33/100 at t = 3.3000e-01
+[solver] recorded frame 34/100 at t = 3.4000e-01
+[solver] recorded frame 35/100 at t = 3.5000e-01
+[solver] recorded frame 36/100 at t = 3.6000e-01
+[solver] recorded frame 37/100 at t = 3.7000e-01
+[solver] recorded frame 38/100 at t = 3.8000e-01
+[solver] recorded frame 39/100 at t = 3.9000e-01
+[solver] recorded frame 40/100 at t = 4.0000e-01
+[solver] recorded frame 41/100 at t = 4.1000e-01
+[solver] recorded frame 42/100 at t = 4.2000e-01
+[solver] recorded frame 43/100 at t = 4.3000e-01
+[solver] recorded frame 44/100 at t = 4.4000e-01
+[solver] recorded frame 45/100 at t = 4.5000e-01
+[solver] recorded frame 46/100 at t = 4.6000e-01
+[solver] recorded frame 47/100 at t = 4.7000e-01
+[solver] recorded frame 48/100 at t = 4.8000e-01
+[solver] recorded frame 49/100 at t = 4.9000e-01
+[solver] recorded frame 50/100 at t = 5.0000e-01
+[solver] recorded frame 51/100 at t = 5.1000e-01
+[solver] recorded frame 52/100 at t = 5.2000e-01
+[solver] recorded frame 53/100 at t = 5.3000e-01
+[solver] recorded frame 54/100 at t = 5.4000e-01
+[solver] recorded frame 55/100 at t = 5.5000e-01
+[solver] recorded frame 56/100 at t = 5.6000e-01
+[solver] recorded frame 57/100 at t = 5.7000e-01
+[solver] recorded frame 58/100 at t = 5.8000e-01
+[solver] recorded frame 59/100 at t = 5.9000e-01
+[solver] recorded frame 60/100 at t = 6.0000e-01
+[solver] recorded frame 61/100 at t = 6.1000e-01
+[solver] recorded frame 62/100 at t = 6.2000e-01
+[solver] recorded frame 63/100 at t = 6.3000e-01
+[solver] recorded frame 64/100 at t = 6.4000e-01
+[solver] recorded frame 65/100 at t = 6.5000e-01
+[solver] recorded frame 66/100 at t = 6.6000e-01
+[solver] recorded frame 67/100 at t = 6.7000e-01
+[solver] recorded frame 68/100 at t = 6.8000e-01
+[solver] recorded frame 69/100 at t = 6.9000e-01
+[solver] recorded frame 70/100 at t = 7.0000e-01
+[solver] recorded frame 71/100 at t = 7.1000e-01
+[solver] recorded frame 72/100 at t = 7.2000e-01
+[solver] recorded frame 73/100 at t = 7.3000e-01
+[solver] recorded frame 74/100 at t = 7.4000e-01
+[solver] recorded frame 75/100 at t = 7.5000e-01
+[solver] recorded frame 76/100 at t = 7.6000e-01
+[solver] recorded frame 77/100 at t = 7.7000e-01
+[solver] recorded frame 78/100 at t = 7.8000e-01
+[solver] recorded frame 79/100 at t = 7.9000e-01
+[solver] recorded frame 80/100 at t = 8.0000e-01
+[solver] recorded frame 81/100 at t = 8.1000e-01
+[solver] recorded frame 82/100 at t = 8.2000e-01
+[solver] recorded frame 83/100 at t = 8.3000e-01
+[solver] recorded frame 84/100 at t = 8.4000e-01
+[solver] recorded frame 85/100 at t = 8.5000e-01
+[solver] recorded frame 86/100 at t = 8.6000e-01
+[solver] recorded frame 87/100 at t = 8.7000e-01
+[solver] recorded frame 88/100 at t = 8.8000e-01
+[solver] recorded frame 89/100 at t = 8.9000e-01
+[solver] recorded frame 90/100 at t = 9.0000e-01
+[solver] recorded frame 91/100 at t = 9.1000e-01
+[solver] recorded frame 92/100 at t = 9.2000e-01
+[solver] recorded frame 93/100 at t = 9.3000e-01
+[solver] recorded frame 94/100 at t = 9.4000e-01
+[solver] recorded frame 95/100 at t = 9.5000e-01
+[solver] recorded frame 96/100 at t = 9.6000e-01
+[solver] recorded frame 97/100 at t = 9.7000e-01
+[solver] recorded frame 98/100 at t = 9.8000e-01
+[solver] recorded frame 99/100 at t = 9.9000e-01
+[solver] recorded frame 100/100 at t = 1.0000e+00
 ##### Finished #####
-nRMSE: 0.121
+nRMSE: 0.039
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
+[solver] recorded frame 1/11 at t = 1.0000e-02
+[solver] recorded frame 2/11 at t = 2.0000e-02
+[solver] recorded frame 3/11 at t = 3.0000e-02
+[solver] recorded frame 4/11 at t = 4.0000e-02
+[solver] recorded frame 5/11 at t = 5.0000e-02
+[solver] recorded frame 6/11 at t = 6.0000e-02
+[solver] recorded frame 7/11 at t = 7.0000e-02
+[solver] recorded frame 8/11 at t = 8.0000e-02
+[solver] recorded frame 9/11 at t = 9.0000e-02
+[solver] recorded frame 10/11 at t = 1.0000e-01
+[solver] recorded frame 11/11 at t = 1.1000e-01
 **** Finished ****
 **** Spatio resolution 512 ****
+[solver] recorded frame 1/11 at t = 1.0000e-02
+[solver] recorded frame 2/11 at t = 2.0000e-02
+[solver] recorded frame 3/11 at t = 3.0000e-02
+[solver] recorded frame 4/11 at t = 4.0000e-02
+[solver] recorded frame 5/11 at t = 5.0000e-02
+[solver] recorded frame 6/11 at t = 6.0000e-02
+[solver] recorded frame 7/11 at t = 7.0000e-02
+[solver] recorded frame 8/11 at t = 8.0000e-02
+[solver] recorded frame 9/11 at t = 9.0000e-02
+[solver] recorded frame 10/11 at t = 1.0000e-01
+[solver] recorded frame 11/11 at t = 1.1000e-01
 **** Finished ****
 **** Spatio resolution 1024 ****
+[solver] recorded frame 1/11 at t = 1.0000e-02
+[solver] recorded frame 2/11 at t = 2.0000e-02
+[solver] recorded frame 3/11 at t = 3.0000e-02
+[solver] recorded frame 4/11 at t = 4.0000e-02
+[solver] recorded frame 5/11 at t = 5.0000e-02
+[solver] recorded frame 6/11 at t = 6.0000e-02
+[solver] recorded frame 7/11 at t = 7.0000e-02
+[solver] recorded frame 8/11 at t = 8.0000e-02
+[solver] recorded frame 9/11 at t = 9.0000e-02
+[solver] recorded frame 10/11 at t = 1.0000e-01
+[solver] recorded frame 11/11 at t = 1.1000e-01
 **** Finished ****
 **** Spatio resolution 2048 ****
+[solver] recorded frame 1/11 at t = 1.0000e-02
+[solver] recorded frame 2/11 at t = 2.0000e-02
+[solver] recorded frame 3/11 at t = 3.0000e-02
+[solver] recorded frame 4/11 at t = 4.0000e-02
+[solver] recorded frame 5/11 at t = 5.0000e-02
+[solver] recorded frame 6/11 at t = 6.0000e-02
+[solver] recorded frame 7/11 at t = 7.0000e-02
+[solver] recorded frame 8/11 at t = 8.0000e-02
+[solver] recorded frame 9/11 at t = 9.0000e-02
+[solver] recorded frame 10/11 at t = 1.0000e-01
+[solver] recorded frame 11/11 at t = 1.1000e-01
 **** Finished ****
-(8, 12, 256, 3)
-(8, 12, 512, 3)
-(8, 12, 1024, 3)
 Rate of convergence measured at spatio resolution 256 is nan
 Rate of convergence measured at spatio resolution 512 is nan
 Result summary
-nRMSE: 1.213e-01	| Time: 2168.96s	| Average convergence rate: nan	|
+nRMSE: 3.941e-02	| Time: 246.12s	| Average convergence rate: nan	|

@@ -1,89 +1,323 @@
-Loaded data with shape: (100, 201, 1024)
+Using GPU for computation.
+Loaded data with shape: (50, 201, 1024)
 ##### Running the solver on the given dataset #####
-Using device: cuda
-Internal time step: 7.490140565847856e-05
-Completed 5/201 time steps
-Completed 10/201 time steps
-Completed 15/201 time steps
-Completed 20/201 time steps
-Completed 25/201 time steps
-Completed 30/201 time steps
-Completed 35/201 time steps
-Completed 40/201 time steps
-Completed 45/201 time steps
-Completed 50/201 time steps
-Completed 55/201 time steps
-Completed 60/201 time steps
-Completed 65/201 time steps
-Completed 70/201 time steps
-Completed 75/201 time steps
-Completed 80/201 time steps
-Completed 85/201 time steps
-Completed 90/201 time steps
-Completed 95/201 time steps
-Completed 100/201 time steps
-Completed 105/201 time steps
-Completed 110/201 time steps
-Completed 115/201 time steps
-Completed 120/201 time steps
-Completed 125/201 time steps
-Completed 130/201 time steps
-Completed 135/201 time steps
-Completed 140/201 time steps
-Completed 145/201 time steps
-Completed 150/201 time steps
-Completed 155/201 time steps
-Completed 160/201 time steps
-Completed 165/201 time steps
-Completed 170/201 time steps
-Completed 175/201 time steps
-Completed 180/201 time steps
-Completed 185/201 time steps
-Completed 190/201 time steps
-Completed 195/201 time steps
-Completed 200/201 time steps
-Completed 201/201 time steps
+Using internal time step dt = 3.745070e-05
+Based on dx=0.0010, nu=0.0032, max|u0|=2.6256
+Stability limits (approx): dt_diff=7.4901e-05, dt_cfl=3.7193e-04
+Integrating from t=0.0000 to t=0.0100
+Integrating from t=0.0100 to t=0.0200
+Integrating from t=0.0200 to t=0.0300
+Integrating from t=0.0300 to t=0.0400
+Integrating from t=0.0400 to t=0.0500
+Integrating from t=0.0500 to t=0.0600
+Integrating from t=0.0600 to t=0.0700
+Integrating from t=0.0700 to t=0.0800
+Integrating from t=0.0800 to t=0.0900
+Integrating from t=0.0900 to t=0.1000
+Integrating from t=0.1000 to t=0.1100
+Integrating from t=0.1100 to t=0.1200
+Integrating from t=0.1200 to t=0.1300
+Integrating from t=0.1300 to t=0.1400
+Integrating from t=0.1400 to t=0.1500
+Integrating from t=0.1500 to t=0.1600
+Integrating from t=0.1600 to t=0.1700
+Integrating from t=0.1700 to t=0.1800
+Integrating from t=0.1800 to t=0.1900
+Integrating from t=0.1900 to t=0.2000
+Integrating from t=0.2000 to t=0.2100
+Integrating from t=0.2100 to t=0.2200
+Integrating from t=0.2200 to t=0.2300
+Integrating from t=0.2300 to t=0.2400
+Integrating from t=0.2400 to t=0.2500
+Integrating from t=0.2500 to t=0.2600
+Integrating from t=0.2600 to t=0.2700
+Integrating from t=0.2700 to t=0.2800
+Integrating from t=0.2800 to t=0.2900
+Integrating from t=0.2900 to t=0.3000
+Integrating from t=0.3000 to t=0.3100
+Integrating from t=0.3100 to t=0.3200
+Integrating from t=0.3200 to t=0.3300
+Integrating from t=0.3300 to t=0.3400
+Integrating from t=0.3400 to t=0.3500
+Integrating from t=0.3500 to t=0.3600
+Integrating from t=0.3600 to t=0.3700
+Integrating from t=0.3700 to t=0.3800
+Integrating from t=0.3800 to t=0.3900
+Integrating from t=0.3900 to t=0.4000
+Integrating from t=0.4000 to t=0.4100
+Integrating from t=0.4100 to t=0.4200
+Integrating from t=0.4200 to t=0.4300
+Integrating from t=0.4300 to t=0.4400
+Integrating from t=0.4400 to t=0.4500
+Integrating from t=0.4500 to t=0.4600
+Integrating from t=0.4600 to t=0.4700
+Integrating from t=0.4700 to t=0.4800
+Integrating from t=0.4800 to t=0.4900
+Integrating from t=0.4900 to t=0.5000
+Integrating from t=0.5000 to t=0.5100
+Integrating from t=0.5100 to t=0.5200
+Integrating from t=0.5200 to t=0.5300
+Integrating from t=0.5300 to t=0.5400
+Integrating from t=0.5400 to t=0.5500
+Integrating from t=0.5500 to t=0.5600
+Integrating from t=0.5600 to t=0.5700
+Integrating from t=0.5700 to t=0.5800
+Integrating from t=0.5800 to t=0.5900
+Integrating from t=0.5900 to t=0.6000
+Integrating from t=0.6000 to t=0.6100
+Integrating from t=0.6100 to t=0.6200
+Integrating from t=0.6200 to t=0.6300
+Integrating from t=0.6300 to t=0.6400
+Integrating from t=0.6400 to t=0.6500
+Integrating from t=0.6500 to t=0.6600
+Integrating from t=0.6600 to t=0.6700
+Integrating from t=0.6700 to t=0.6800
+Integrating from t=0.6800 to t=0.6900
+Integrating from t=0.6900 to t=0.7000
+Integrating from t=0.7000 to t=0.7100
+Integrating from t=0.7100 to t=0.7200
+Integrating from t=0.7200 to t=0.7300
+Integrating from t=0.7300 to t=0.7400
+Integrating from t=0.7400 to t=0.7500
+Integrating from t=0.7500 to t=0.7600
+Integrating from t=0.7600 to t=0.7700
+Integrating from t=0.7700 to t=0.7800
+Integrating from t=0.7800 to t=0.7900
+Integrating from t=0.7900 to t=0.8000
+Integrating from t=0.8000 to t=0.8100
+Integrating from t=0.8100 to t=0.8200
+Integrating from t=0.8200 to t=0.8300
+Integrating from t=0.8300 to t=0.8400
+Integrating from t=0.8400 to t=0.8500
+Integrating from t=0.8500 to t=0.8600
+Integrating from t=0.8600 to t=0.8700
+Integrating from t=0.8700 to t=0.8800
+Integrating from t=0.8800 to t=0.8900
+Integrating from t=0.8900 to t=0.9000
+Integrating from t=0.9000 to t=0.9100
+Integrating from t=0.9100 to t=0.9200
+Integrating from t=0.9200 to t=0.9300
+Integrating from t=0.9300 to t=0.9400
+Integrating from t=0.9400 to t=0.9500
+Integrating from t=0.9500 to t=0.9600
+Integrating from t=0.9600 to t=0.9700
+Integrating from t=0.9700 to t=0.9800
+Integrating from t=0.9800 to t=0.9900
+Integrating from t=0.9900 to t=1.0000
+Integrating from t=1.0000 to t=1.0100
+Integrating from t=1.0100 to t=1.0200
+Integrating from t=1.0200 to t=1.0300
+Integrating from t=1.0300 to t=1.0400
+Integrating from t=1.0400 to t=1.0500
+Integrating from t=1.0500 to t=1.0600
+Integrating from t=1.0600 to t=1.0700
+Integrating from t=1.0700 to t=1.0800
+Integrating from t=1.0800 to t=1.0900
+Integrating from t=1.0900 to t=1.1000
+Integrating from t=1.1000 to t=1.1100
+Integrating from t=1.1100 to t=1.1200
+Integrating from t=1.1200 to t=1.1300
+Integrating from t=1.1300 to t=1.1400
+Integrating from t=1.1400 to t=1.1500
+Integrating from t=1.1500 to t=1.1600
+Integrating from t=1.1600 to t=1.1700
+Integrating from t=1.1700 to t=1.1800
+Integrating from t=1.1800 to t=1.1900
+Integrating from t=1.1900 to t=1.2000
+Integrating from t=1.2000 to t=1.2100
+Integrating from t=1.2100 to t=1.2200
+Integrating from t=1.2200 to t=1.2300
+Integrating from t=1.2300 to t=1.2400
+Integrating from t=1.2400 to t=1.2500
+Integrating from t=1.2500 to t=1.2600
+Integrating from t=1.2600 to t=1.2700
+Integrating from t=1.2700 to t=1.2800
+Integrating from t=1.2800 to t=1.2900
+Integrating from t=1.2900 to t=1.3000
+Integrating from t=1.3000 to t=1.3100
+Integrating from t=1.3100 to t=1.3200
+Integrating from t=1.3200 to t=1.3300
+Integrating from t=1.3300 to t=1.3400
+Integrating from t=1.3400 to t=1.3500
+Integrating from t=1.3500 to t=1.3600
+Integrating from t=1.3600 to t=1.3700
+Integrating from t=1.3700 to t=1.3800
+Integrating from t=1.3800 to t=1.3900
+Integrating from t=1.3900 to t=1.4000
+Integrating from t=1.4000 to t=1.4100
+Integrating from t=1.4100 to t=1.4200
+Integrating from t=1.4200 to t=1.4300
+Integrating from t=1.4300 to t=1.4400
+Integrating from t=1.4400 to t=1.4500
+Integrating from t=1.4500 to t=1.4600
+Integrating from t=1.4600 to t=1.4700
+Integrating from t=1.4700 to t=1.4800
+Integrating from t=1.4800 to t=1.4900
+Integrating from t=1.4900 to t=1.5000
+Integrating from t=1.5000 to t=1.5100
+Integrating from t=1.5100 to t=1.5200
+Integrating from t=1.5200 to t=1.5300
+Integrating from t=1.5300 to t=1.5400
+Integrating from t=1.5400 to t=1.5500
+Integrating from t=1.5500 to t=1.5600
+Integrating from t=1.5600 to t=1.5700
+Integrating from t=1.5700 to t=1.5800
+Integrating from t=1.5800 to t=1.5900
+Integrating from t=1.5900 to t=1.6000
+Integrating from t=1.6000 to t=1.6100
+Integrating from t=1.6100 to t=1.6200
+Integrating from t=1.6200 to t=1.6300
+Integrating from t=1.6300 to t=1.6400
+Integrating from t=1.6400 to t=1.6500
+Integrating from t=1.6500 to t=1.6600
+Integrating from t=1.6600 to t=1.6700
+Integrating from t=1.6700 to t=1.6800
+Integrating from t=1.6800 to t=1.6900
+Integrating from t=1.6900 to t=1.7000
+Integrating from t=1.7000 to t=1.7100
+Integrating from t=1.7100 to t=1.7200
+Integrating from t=1.7200 to t=1.7300
+Integrating from t=1.7300 to t=1.7400
+Integrating from t=1.7400 to t=1.7500
+Integrating from t=1.7500 to t=1.7600
+Integrating from t=1.7600 to t=1.7700
+Integrating from t=1.7700 to t=1.7800
+Integrating from t=1.7800 to t=1.7900
+Integrating from t=1.7900 to t=1.8000
+Integrating from t=1.8000 to t=1.8100
+Integrating from t=1.8100 to t=1.8200
+Integrating from t=1.8200 to t=1.8300
+Integrating from t=1.8300 to t=1.8400
+Integrating from t=1.8400 to t=1.8500
+Integrating from t=1.8500 to t=1.8600
+Integrating from t=1.8600 to t=1.8700
+Integrating from t=1.8700 to t=1.8800
+Integrating from t=1.8800 to t=1.8900
+Integrating from t=1.8900 to t=1.9000
+Integrating from t=1.9000 to t=1.9100
+Integrating from t=1.9100 to t=1.9200
+Integrating from t=1.9200 to t=1.9300
+Integrating from t=1.9300 to t=1.9400
+Integrating from t=1.9400 to t=1.9500
+Integrating from t=1.9500 to t=1.9600
+Integrating from t=1.9600 to t=1.9700
+Integrating from t=1.9700 to t=1.9800
+Integrating from t=1.9800 to t=1.9900
+Integrating from t=1.9900 to t=2.0000
+Solver finished.
 ##### Finished #####
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
-Using device: cuda
-Internal time step: 0.0009014647922537412
-Completed 5/22 time steps
-Completed 10/22 time steps
-Completed 15/22 time steps
-Completed 20/22 time steps
-Completed 22/22 time steps
+Using internal time step dt = 5.992112e-04
+Based on dx=0.0039, nu=0.0032, max|u0|=1.0833
+Stability limits (approx): dt_diff=1.1984e-03, dt_cfl=3.6059e-03
+Integrating from t=0.0000 to t=0.0100
+Integrating from t=0.0100 to t=0.0200
+Integrating from t=0.0200 to t=0.0300
+Integrating from t=0.0300 to t=0.0400
+Integrating from t=0.0400 to t=0.0500
+Integrating from t=0.0500 to t=0.0600
+Integrating from t=0.0600 to t=0.0700
+Integrating from t=0.0700 to t=0.0800
+Integrating from t=0.0800 to t=0.0900
+Integrating from t=0.0900 to t=0.1000
+Integrating from t=0.1000 to t=0.1100
+Integrating from t=0.1100 to t=0.1200
+Integrating from t=0.1200 to t=0.1300
+Integrating from t=0.1300 to t=0.1400
+Integrating from t=0.1400 to t=0.1500
+Integrating from t=0.1500 to t=0.1600
+Integrating from t=0.1600 to t=0.1700
+Integrating from t=0.1700 to t=0.1800
+Integrating from t=0.1800 to t=0.1900
+Integrating from t=0.1900 to t=0.2000
+Integrating from t=0.2000 to t=0.2100
+Solver finished.
 **** Finished ****
 **** Spatio resolution 512 ****
-Using device: cuda
-Internal time step: 0.00029960562263391425
-Completed 5/22 time steps
-Completed 10/22 time steps
-Completed 15/22 time steps
-Completed 20/22 time steps
-Completed 22/22 time steps
+Using internal time step dt = 1.498028e-04
+Based on dx=0.0020, nu=0.0032, max|u0|=1.0834
+Stability limits (approx): dt_diff=2.9961e-04, dt_cfl=1.8028e-03
+Integrating from t=0.0000 to t=0.0100
+Integrating from t=0.0100 to t=0.0200
+Integrating from t=0.0200 to t=0.0300
+Integrating from t=0.0300 to t=0.0400
+Integrating from t=0.0400 to t=0.0500
+Integrating from t=0.0500 to t=0.0600
+Integrating from t=0.0600 to t=0.0700
+Integrating from t=0.0700 to t=0.0800
+Integrating from t=0.0800 to t=0.0900
+Integrating from t=0.0900 to t=0.1000
+Integrating from t=0.1000 to t=0.1100
+Integrating from t=0.1100 to t=0.1200
+Integrating from t=0.1200 to t=0.1300
+Integrating from t=0.1300 to t=0.1400
+Integrating from t=0.1400 to t=0.1500
+Integrating from t=0.1500 to t=0.1600
+Integrating from t=0.1600 to t=0.1700
+Integrating from t=0.1700 to t=0.1800
+Integrating from t=0.1800 to t=0.1900
+Integrating from t=0.1900 to t=0.2000
+Integrating from t=0.2000 to t=0.2100
+Solver finished.
 **** Finished ****
 **** Spatio resolution 1024 ****
-Using device: cuda
-Internal time step: 7.490140565847856e-05
-Completed 5/22 time steps
-Completed 10/22 time steps
-Completed 15/22 time steps
-Completed 20/22 time steps
-Completed 22/22 time steps
+Using internal time step dt = 3.745070e-05
+Based on dx=0.0010, nu=0.0032, max|u0|=1.0834
+Stability limits (approx): dt_diff=7.4901e-05, dt_cfl=9.0141e-04
+Integrating from t=0.0000 to t=0.0100
+Integrating from t=0.0100 to t=0.0200
+Integrating from t=0.0200 to t=0.0300
+Integrating from t=0.0300 to t=0.0400
+Integrating from t=0.0400 to t=0.0500
+Integrating from t=0.0500 to t=0.0600
+Integrating from t=0.0600 to t=0.0700
+Integrating from t=0.0700 to t=0.0800
+Integrating from t=0.0800 to t=0.0900
+Integrating from t=0.0900 to t=0.1000
+Integrating from t=0.1000 to t=0.1100
+Integrating from t=0.1100 to t=0.1200
+Integrating from t=0.1200 to t=0.1300
+Integrating from t=0.1300 to t=0.1400
+Integrating from t=0.1400 to t=0.1500
+Integrating from t=0.1500 to t=0.1600
+Integrating from t=0.1600 to t=0.1700
+Integrating from t=0.1700 to t=0.1800
+Integrating from t=0.1800 to t=0.1900
+Integrating from t=0.1900 to t=0.2000
+Integrating from t=0.2000 to t=0.2100
+Solver finished.
 **** Finished ****
 **** Spatio resolution 2048 ****
-Using device: cuda
-Internal time step: 1.872535141461964e-05
-Completed 5/22 time steps
-Completed 10/22 time steps
-Completed 15/22 time steps
-Completed 20/22 time steps
-Completed 22/22 time steps
+Using internal time step dt = 9.362676e-06
+Based on dx=0.0005, nu=0.0032, max|u0|=1.0834
+Stability limits (approx): dt_diff=1.8725e-05, dt_cfl=4.5071e-04
+Integrating from t=0.0000 to t=0.0100
+Integrating from t=0.0100 to t=0.0200
+Integrating from t=0.0200 to t=0.0300
+Integrating from t=0.0300 to t=0.0400
+Integrating from t=0.0400 to t=0.0500
+Integrating from t=0.0500 to t=0.0600
+Integrating from t=0.0600 to t=0.0700
+Integrating from t=0.0700 to t=0.0800
+Integrating from t=0.0800 to t=0.0900
+Integrating from t=0.0900 to t=0.1000
+Integrating from t=0.1000 to t=0.1100
+Integrating from t=0.1100 to t=0.1200
+Integrating from t=0.1200 to t=0.1300
+Integrating from t=0.1300 to t=0.1400
+Integrating from t=0.1400 to t=0.1500
+Integrating from t=0.1500 to t=0.1600
+Integrating from t=0.1600 to t=0.1700
+Integrating from t=0.1700 to t=0.1800
+Integrating from t=0.1800 to t=0.1900
+Integrating from t=0.1900 to t=0.2000
+Integrating from t=0.2000 to t=0.2100
+Solver finished.
 **** Finished ****
-Error measured at spatio resolution 256 is 2.550e-05
-Rate of convergence measured at spatio resolution 256 is 1.940
-Error measured at spatio resolution 512 is 6.647e-06
-Rate of convergence measured at spatio resolution 512 is 1.546
+Error measured at spatio resolution 256 is 9.517e-06
+Rate of convergence measured at spatio resolution 256 is 1.982
+Error measured at spatio resolution 512 is 2.408e-06
+Rate of convergence measured at spatio resolution 512 is 1.828
 Result summary
-nRMSE: 2.588e-04	| Time: 28.63s	| Average convergence rate: 1.743	|
+nRMSE: 1.231e-04	| Time: 30.17s	| Average convergence rate: 1.905	|

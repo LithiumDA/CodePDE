@@ -71,7 +71,7 @@ def funsearch(cfg):
         
         seed_info = result_sheet[result_sheet['round'] == i].to_numpy().tolist()[0]
         seed_info = [str(x) for x in seed_info]
-        if seed_info[1] == 'failed' or seed_info[3] == 'nan':
+        if seed_info[1] == 'failed':
             complete_seed = False
 
         if not complete_seed:

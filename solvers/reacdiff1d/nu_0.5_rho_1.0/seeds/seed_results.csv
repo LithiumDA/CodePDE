@@ -1,6 +1,6 @@
 round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
-8,0.01992,500.31,0.116,3,gpt-4o-2024-08-06,/usr0/home/username/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample/gpt-4o-2024-08-06/2025-03-19-11-06-07
-2,0.05191,796.18,0.854,3,claude-3-7-sonnet-20250219,/usr0/home/username/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/claude-3-7-sonnet-20250219/merged
-21,0.0619,2.12,0.113,2,gpt-4o-2024-08-06,/usr0/home/username/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/gpt-4o-2024-08-06/merged
-31,0.09572,59.91,1.43,4,qwen-max,/usr0/home/username/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/qwen-max/merged
-30,0.0993,62.35,1.951,4,qwen-max,/usr0/home/username/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/qwen-max/merged
+8,0.01992,500.31,0.116,3,gpt-4o-2024-08-06,/usr0/home/shandal/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample/gpt-4o-2024-08-06/2025-03-19-11-06-07
+2,0.05191,796.18,0.854,3,claude-3-7-sonnet-20250219,/usr0/home/shandal/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/claude-3-7-sonnet-20250219/merged
+21,0.0619,2.12,0.113,2,gpt-4o-2024-08-06,/usr0/home/shandal/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/gpt-4o-2024-08-06/merged
+31,0.09572,59.91,1.43,4,qwen-max,/usr0/home/shandal/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/qwen-max/merged
+30,0.0993,62.35,1.951,4,qwen-max,/usr0/home/shandal/work_space/llm_pde/archived_logs/reacdiff1d/nu_0.5_rho_1.0/repeated_sample_32more/qwen-max/merged

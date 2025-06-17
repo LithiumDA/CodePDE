@@ -1,2 +1,2 @@
-/usr0/home/username/work_space/llm_pde/tmp_test/burgers/nu_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-03-19-02-09-20/solver.py:36: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+/usr0/home/shandal/work_space/llm_pde/tmp_test/burgers/nu_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-03-19-02-09-20/solver.py:36: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
   k = torch.tensor(k, dtype=torch.float32, device=device)

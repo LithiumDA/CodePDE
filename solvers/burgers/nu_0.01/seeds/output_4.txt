@@ -1,525 +1,88 @@
 Loaded data with shape: (100, 201, 1024)
 ##### Running the solver on the given dataset #####
 Using device: cuda
-Initial time: 0.0. Starting simulation...
-Evolving from t = 0.0000 to t = 0.0100 with 258 internal steps (dt_internal = 3.875969e-05), u_max = 2.509891e+00
-At t = 0.0100, u.min() = -2.496833e+00, u.max() = 2.309029e+00
-Evolving from t = 0.0100 to t = 0.0200 with 256 internal steps (dt_internal = 3.906250e-05), u_max = 2.496833e+00
-At t = 0.0200, u.min() = -2.483894e+00, u.max() = 2.227680e+00
-Evolving from t = 0.0200 to t = 0.0300 with 255 internal steps (dt_internal = 3.921569e-05), u_max = 2.483894e+00
-At t = 0.0300, u.min() = -2.470992e+00, u.max() = 2.199734e+00
-Evolving from t = 0.0300 to t = 0.0400 with 254 internal steps (dt_internal = 3.937008e-05), u_max = 2.470992e+00
-At t = 0.0400, u.min() = -2.457833e+00, u.max() = 2.170871e+00
-Evolving from t = 0.0400 to t = 0.0500 with 252 internal steps (dt_internal = 3.968253e-05), u_max = 2.457833e+00
-At t = 0.0500, u.min() = -2.444093e+00, u.max() = 2.140156e+00
-Evolving from t = 0.0500 to t = 0.0600 with 251 internal steps (dt_internal = 3.984064e-05), u_max = 2.444093e+00
-At t = 0.0600, u.min() = -2.428496e+00, u.max() = 2.108117e+00
-Evolving from t = 0.0600 to t = 0.0700 with 249 internal steps (dt_internal = 4.016065e-05), u_max = 2.428496e+00
-At t = 0.0700, u.min() = -2.404853e+00, u.max() = 2.075451e+00
-Evolving from t = 0.0700 to t = 0.0800 with 247 internal steps (dt_internal = 4.048582e-05), u_max = 2.404853e+00
-At t = 0.0800, u.min() = -2.363699e+00, u.max() = 2.043308e+00
-Evolving from t = 0.0800 to t = 0.0900 with 243 internal steps (dt_internal = 4.115226e-05), u_max = 2.363699e+00
-At t = 0.0900, u.min() = -2.308888e+00, u.max() = 2.012831e+00
-Evolving from t = 0.0900 to t = 0.1000 with 237 internal steps (dt_internal = 4.219409e-05), u_max = 2.308888e+00
-At t = 0.1000, u.min() = -2.248709e+00, u.max() = 1.984271e+00
-Evolving from t = 0.1000 to t = 0.1100 with 231 internal steps (dt_internal = 4.329007e-05), u_max = 2.248709e+00
-At t = 0.1100, u.min() = -2.188770e+00, u.max() = 1.957892e+00
-Evolving from t = 0.1100 to t = 0.1200 with 225 internal steps (dt_internal = 4.444443e-05), u_max = 2.188770e+00
-At t = 0.1200, u.min() = -2.131058e+00, u.max() = 1.933711e+00
-Evolving from t = 0.1200 to t = 0.1300 with 219 internal steps (dt_internal = 4.566209e-05), u_max = 2.131058e+00
-At t = 0.1300, u.min() = -2.077119e+00, u.max() = 1.911622e+00
-Evolving from t = 0.1300 to t = 0.1400 with 213 internal steps (dt_internal = 4.694838e-05), u_max = 2.077119e+00
-At t = 0.1400, u.min() = -2.027015e+00, u.max() = 1.891470e+00
-Evolving from t = 0.1400 to t = 0.1500 with 208 internal steps (dt_internal = 4.807688e-05), u_max = 2.027015e+00
-At t = 0.1500, u.min() = -1.980664e+00, u.max() = 1.873082e+00
-Evolving from t = 0.1500 to t = 0.1600 with 203 internal steps (dt_internal = 4.926111e-05), u_max = 1.980664e+00
-At t = 0.1600, u.min() = -1.937880e+00, u.max() = 1.856286e+00
-Evolving from t = 0.1600 to t = 0.1700 with 199 internal steps (dt_internal = 5.025128e-05), u_max = 1.937880e+00
-At t = 0.1700, u.min() = -1.898397e+00, u.max() = 1.840922e+00
-Evolving from t = 0.1700 to t = 0.1800 with 195 internal steps (dt_internal = 5.128200e-05), u_max = 1.898397e+00
-At t = 0.1800, u.min() = -1.861930e+00, u.max() = 1.826842e+00
-Evolving from t = 0.1800 to t = 0.1900 with 191 internal steps (dt_internal = 5.235605e-05), u_max = 1.861930e+00
-At t = 0.1900, u.min() = -1.828197e+00, u.max() = 1.813913e+00
-Evolving from t = 0.1900 to t = 0.2000 with 188 internal steps (dt_internal = 5.319144e-05), u_max = 1.828197e+00
-At t = 0.2000, u.min() = -1.796933e+00, u.max() = 1.802036e+00
-Evolving from t = 0.2000 to t = 0.2100 with 185 internal steps (dt_internal = 5.405408e-05), u_max = 1.802036e+00
-At t = 0.2100, u.min() = -1.773043e+00, u.max() = 1.791080e+00
-Evolving from t = 0.2100 to t = 0.2200 with 184 internal steps (dt_internal = 5.434786e-05), u_max = 1.791080e+00
-At t = 0.2200, u.min() = -1.757248e+00, u.max() = 1.780952e+00
-Evolving from t = 0.2200 to t = 0.2300 with 183 internal steps (dt_internal = 5.464476e-05), u_max = 1.780952e+00
-At t = 0.2300, u.min() = -1.741448e+00, u.max() = 1.771571e+00
-Evolving from t = 0.2300 to t = 0.2400 with 182 internal steps (dt_internal = 5.494509e-05), u_max = 1.771571e+00
-At t = 0.2400, u.min() = -1.725825e+00, u.max() = 1.762864e+00
-Evolving from t = 0.2400 to t = 0.2500 with 181 internal steps (dt_internal = 5.524865e-05), u_max = 1.762864e+00
-At t = 0.2500, u.min() = -1.710511e+00, u.max() = 1.754768e+00
-Evolving from t = 0.2500 to t = 0.2600 with 180 internal steps (dt_internal = 5.555550e-05), u_max = 1.754768e+00
-At t = 0.2600, u.min() = -1.695541e+00, u.max() = 1.747226e+00
-Evolving from t = 0.2600 to t = 0.2700 with 179 internal steps (dt_internal = 5.586587e-05), u_max = 1.747226e+00
-At t = 0.2700, u.min() = -1.680969e+00, u.max() = 1.740187e+00
-Evolving from t = 0.2700 to t = 0.2800 with 179 internal steps (dt_internal = 5.586604e-05), u_max = 1.740187e+00
-At t = 0.2800, u.min() = -1.666828e+00, u.max() = 1.733608e+00
-Evolving from t = 0.2800 to t = 0.2900 with 178 internal steps (dt_internal = 5.617972e-05), u_max = 1.733608e+00
-At t = 0.2900, u.min() = -1.653135e+00, u.max() = 1.727457e+00
-Evolving from t = 0.2900 to t = 0.3000 with 177 internal steps (dt_internal = 5.649712e-05), u_max = 1.727457e+00
-At t = 0.3000, u.min() = -1.639895e+00, u.max() = 1.721693e+00
-Evolving from t = 0.3000 to t = 0.3100 with 177 internal steps (dt_internal = 5.649729e-05), u_max = 1.721693e+00
-At t = 0.3100, u.min() = -1.627109e+00, u.max() = 1.716282e+00
-Evolving from t = 0.3100 to t = 0.3200 with 176 internal steps (dt_internal = 5.681813e-05), u_max = 1.716282e+00
-At t = 0.3200, u.min() = -1.614771e+00, u.max() = 1.711193e+00
-Evolving from t = 0.3200 to t = 0.3300 with 176 internal steps (dt_internal = 5.681813e-05), u_max = 1.711193e+00
-At t = 0.3300, u.min() = -1.602870e+00, u.max() = 1.706403e+00
-Evolving from t = 0.3300 to t = 0.3400 with 175 internal steps (dt_internal = 5.714297e-05), u_max = 1.706403e+00
-At t = 0.3400, u.min() = -1.591397e+00, u.max() = 1.701886e+00
-Evolving from t = 0.3400 to t = 0.3500 with 175 internal steps (dt_internal = 5.714280e-05), u_max = 1.701886e+00
-At t = 0.3500, u.min() = -1.580350e+00, u.max() = 1.697624e+00
-Evolving from t = 0.3500 to t = 0.3600 with 174 internal steps (dt_internal = 5.747121e-05), u_max = 1.697624e+00
-At t = 0.3600, u.min() = -1.569700e+00, u.max() = 1.693595e+00
-Evolving from t = 0.3600 to t = 0.3700 with 174 internal steps (dt_internal = 5.747138e-05), u_max = 1.693595e+00
-At t = 0.3700, u.min() = -1.559432e+00, u.max() = 1.689799e+00
-Evolving from t = 0.3700 to t = 0.3800 with 174 internal steps (dt_internal = 5.747121e-05), u_max = 1.689799e+00
-At t = 0.3800, u.min() = -1.549531e+00, u.max() = 1.686210e+00
-Evolving from t = 0.3800 to t = 0.3900 with 173 internal steps (dt_internal = 5.780341e-05), u_max = 1.686210e+00
-At t = 0.3900, u.min() = -1.539981e+00, u.max() = 1.682808e+00
-Evolving from t = 0.3900 to t = 0.4000 with 173 internal steps (dt_internal = 5.780341e-05), u_max = 1.682808e+00
-At t = 0.4000, u.min() = -1.530767e+00, u.max() = 1.679579e+00
-Evolving from t = 0.4000 to t = 0.4100 with 172 internal steps (dt_internal = 5.813965e-05), u_max = 1.679579e+00
-At t = 0.4100, u.min() = -1.521875e+00, u.max() = 1.676515e+00
-Evolving from t = 0.4100 to t = 0.4200 with 172 internal steps (dt_internal = 5.813948e-05), u_max = 1.676515e+00
-At t = 0.4200, u.min() = -1.513291e+00, u.max() = 1.673621e+00
-Evolving from t = 0.4200 to t = 0.4300 with 172 internal steps (dt_internal = 5.813948e-05), u_max = 1.673621e+00
-At t = 0.4300, u.min() = -1.505000e+00, u.max() = 1.670869e+00
-Evolving from t = 0.4300 to t = 0.4400 with 172 internal steps (dt_internal = 5.813965e-05), u_max = 1.670869e+00
-At t = 0.4400, u.min() = -1.496990e+00, u.max() = 1.668250e+00
-Evolving from t = 0.4400 to t = 0.4500 with 171 internal steps (dt_internal = 5.847948e-05), u_max = 1.668250e+00
-At t = 0.4500, u.min() = -1.489249e+00, u.max() = 1.665758e+00
-Evolving from t = 0.4500 to t = 0.4600 with 171 internal steps (dt_internal = 5.847948e-05), u_max = 1.665758e+00
-At t = 0.4600, u.min() = -1.481765e+00, u.max() = 1.663400e+00
-Evolving from t = 0.4600 to t = 0.4700 with 171 internal steps (dt_internal = 5.847965e-05), u_max = 1.663400e+00
-At t = 0.4700, u.min() = -1.474526e+00, u.max() = 1.661151e+00
-Evolving from t = 0.4700 to t = 0.4800 with 171 internal steps (dt_internal = 5.847948e-05), u_max = 1.661151e+00
-At t = 0.4800, u.min() = -1.467521e+00, u.max() = 1.659004e+00
-Evolving from t = 0.4800 to t = 0.4900 with 170 internal steps (dt_internal = 5.882347e-05), u_max = 1.659004e+00
-At t = 0.4900, u.min() = -1.460740e+00, u.max() = 1.656968e+00
-Evolving from t = 0.4900 to t = 0.5000 with 170 internal steps (dt_internal = 5.882365e-05), u_max = 1.656968e+00
-At t = 0.5000, u.min() = -1.454175e+00, u.max() = 1.655028e+00
-Evolving from t = 0.5000 to t = 0.5100 with 170 internal steps (dt_internal = 5.882347e-05), u_max = 1.655028e+00
-At t = 0.5100, u.min() = -1.447814e+00, u.max() = 1.653173e+00
-Evolving from t = 0.5100 to t = 0.5200 with 170 internal steps (dt_internal = 5.882347e-05), u_max = 1.653173e+00
-At t = 0.5200, u.min() = -1.441649e+00, u.max() = 1.651411e+00
-Evolving from t = 0.5200 to t = 0.5300 with 170 internal steps (dt_internal = 5.882347e-05), u_max = 1.651411e+00
-At t = 0.5300, u.min() = -1.435673e+00, u.max() = 1.649730e+00
-Evolving from t = 0.5300 to t = 0.5400 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.649730e+00
-At t = 0.5400, u.min() = -1.429884e+00, u.max() = 1.648122e+00
-Evolving from t = 0.5400 to t = 0.5500 with 169 internal steps (dt_internal = 5.917189e-05), u_max = 1.648122e+00
-At t = 0.5500, u.min() = -1.424267e+00, u.max() = 1.646595e+00
-Evolving from t = 0.5500 to t = 0.5600 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.646595e+00
-At t = 0.5600, u.min() = -1.418815e+00, u.max() = 1.645135e+00
-Evolving from t = 0.5600 to t = 0.5700 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.645135e+00
-At t = 0.5700, u.min() = -1.413521e+00, u.max() = 1.643738e+00
-Evolving from t = 0.5700 to t = 0.5800 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.643738e+00
-At t = 0.5800, u.min() = -1.408378e+00, u.max() = 1.642411e+00
-Evolving from t = 0.5800 to t = 0.5900 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.642411e+00
-At t = 0.5900, u.min() = -1.403381e+00, u.max() = 1.641138e+00
-Evolving from t = 0.5900 to t = 0.6000 with 169 internal steps (dt_internal = 5.917154e-05), u_max = 1.641138e+00
-At t = 0.6000, u.min() = -1.398524e+00, u.max() = 1.639926e+00
-Evolving from t = 0.6000 to t = 0.6100 with 168 internal steps (dt_internal = 5.952411e-05), u_max = 1.639926e+00
-At t = 0.6100, u.min() = -1.393801e+00, u.max() = 1.638768e+00
-Evolving from t = 0.6100 to t = 0.6200 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.638768e+00
-At t = 0.6200, u.min() = -1.389207e+00, u.max() = 1.637658e+00
-Evolving from t = 0.6200 to t = 0.6300 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.637658e+00
-At t = 0.6300, u.min() = -1.384737e+00, u.max() = 1.636603e+00
-Evolving from t = 0.6300 to t = 0.6400 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.636603e+00
-At t = 0.6400, u.min() = -1.380386e+00, u.max() = 1.635590e+00
-Evolving from t = 0.6400 to t = 0.6500 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.635590e+00
-At t = 0.6500, u.min() = -1.377424e+00, u.max() = 1.634626e+00
-Evolving from t = 0.6500 to t = 0.6600 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.634626e+00
-At t = 0.6600, u.min() = -1.376425e+00, u.max() = 1.633702e+00
-Evolving from t = 0.6600 to t = 0.6700 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.633702e+00
-At t = 0.6700, u.min() = -1.375427e+00, u.max() = 1.632820e+00
-Evolving from t = 0.6700 to t = 0.6800 with 168 internal steps (dt_internal = 5.952411e-05), u_max = 1.632820e+00
-At t = 0.6800, u.min() = -1.374431e+00, u.max() = 1.631976e+00
-Evolving from t = 0.6800 to t = 0.6900 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.631976e+00
-At t = 0.6900, u.min() = -1.373444e+00, u.max() = 1.631169e+00
-Evolving from t = 0.6900 to t = 0.7000 with 168 internal steps (dt_internal = 5.952375e-05), u_max = 1.631169e+00
-At t = 0.7000, u.min() = -1.372458e+00, u.max() = 1.630399e+00
-Evolving from t = 0.7000 to t = 0.7100 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.630399e+00
-At t = 0.7100, u.min() = -1.371475e+00, u.max() = 1.629659e+00
-Evolving from t = 0.7100 to t = 0.7200 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.629659e+00
-At t = 0.7200, u.min() = -1.370494e+00, u.max() = 1.628955e+00
-Evolving from t = 0.7200 to t = 0.7300 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.628955e+00
-At t = 0.7300, u.min() = -1.369523e+00, u.max() = 1.628278e+00
-Evolving from t = 0.7300 to t = 0.7400 with 167 internal steps (dt_internal = 5.988054e-05), u_max = 1.628278e+00
-At t = 0.7400, u.min() = -1.368553e+00, u.max() = 1.627635e+00
-Evolving from t = 0.7400 to t = 0.7500 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.627635e+00
-At t = 0.7500, u.min() = -1.367586e+00, u.max() = 1.627016e+00
-Evolving from t = 0.7500 to t = 0.7600 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.627016e+00
-At t = 0.7600, u.min() = -1.366628e+00, u.max() = 1.626426e+00
-Evolving from t = 0.7600 to t = 0.7700 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.626426e+00
-At t = 0.7700, u.min() = -1.365674e+00, u.max() = 1.625859e+00
-Evolving from t = 0.7700 to t = 0.7800 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.625859e+00
-At t = 0.7800, u.min() = -1.364722e+00, u.max() = 1.625320e+00
-Evolving from t = 0.7800 to t = 0.7900 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.625320e+00
-At t = 0.7900, u.min() = -1.363780e+00, u.max() = 1.624801e+00
-Evolving from t = 0.7900 to t = 0.8000 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.624801e+00
-At t = 0.8000, u.min() = -1.362842e+00, u.max() = 1.624307e+00
-Evolving from t = 0.8000 to t = 0.8100 with 167 internal steps (dt_internal = 5.988054e-05), u_max = 1.624307e+00
-At t = 0.8100, u.min() = -1.361907e+00, u.max() = 1.623832e+00
-Evolving from t = 0.8100 to t = 0.8200 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.623832e+00
-At t = 0.8200, u.min() = -1.360983e+00, u.max() = 1.623380e+00
-Evolving from t = 0.8200 to t = 0.8300 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.623380e+00
-At t = 0.8300, u.min() = -1.360062e+00, u.max() = 1.622944e+00
-Evolving from t = 0.8300 to t = 0.8400 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.622944e+00
-At t = 0.8400, u.min() = -1.359145e+00, u.max() = 1.622529e+00
-Evolving from t = 0.8400 to t = 0.8500 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.622529e+00
-At t = 0.8500, u.min() = -1.358240e+00, u.max() = 1.622130e+00
-Evolving from t = 0.8500 to t = 0.8600 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.622130e+00
-At t = 0.8600, u.min() = -1.357337e+00, u.max() = 1.621750e+00
-Evolving from t = 0.8600 to t = 0.8700 with 167 internal steps (dt_internal = 5.988054e-05), u_max = 1.621750e+00
-At t = 0.8700, u.min() = -1.356441e+00, u.max() = 1.621384e+00
-Evolving from t = 0.8700 to t = 0.8800 with 167 internal steps (dt_internal = 5.988018e-05), u_max = 1.621384e+00
-At t = 0.8800, u.min() = -1.355554e+00, u.max() = 1.621036e+00
-Evolving from t = 0.8800 to t = 0.8900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.621036e+00
-At t = 0.8900, u.min() = -1.354669e+00, u.max() = 1.620701e+00
-Evolving from t = 0.8900 to t = 0.9000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.620701e+00
-At t = 0.9000, u.min() = -1.353796e+00, u.max() = 1.620381e+00
-Evolving from t = 0.9000 to t = 0.9100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.620381e+00
-At t = 0.9100, u.min() = -1.352926e+00, u.max() = 1.620074e+00
-Evolving from t = 0.9100 to t = 0.9200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.620074e+00
-At t = 0.9200, u.min() = -1.352063e+00, u.max() = 1.619780e+00
-Evolving from t = 0.9200 to t = 0.9300 with 166 internal steps (dt_internal = 6.024127e-05), u_max = 1.619780e+00
-At t = 0.9300, u.min() = -1.351209e+00, u.max() = 1.619499e+00
-Evolving from t = 0.9300 to t = 0.9400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.619499e+00
-At t = 0.9400, u.min() = -1.350358e+00, u.max() = 1.619229e+00
-Evolving from t = 0.9400 to t = 0.9500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.619229e+00
-At t = 0.9500, u.min() = -1.349519e+00, u.max() = 1.618971e+00
-Evolving from t = 0.9500 to t = 0.9600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.618971e+00
-At t = 0.9600, u.min() = -1.348683e+00, u.max() = 1.618723e+00
-Evolving from t = 0.9600 to t = 0.9700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.618723e+00
-At t = 0.9700, u.min() = -1.347856e+00, u.max() = 1.618487e+00
-Evolving from t = 0.9700 to t = 0.9800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.618487e+00
-At t = 0.9800, u.min() = -1.347035e+00, u.max() = 1.618259e+00
-Evolving from t = 0.9800 to t = 0.9900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.618259e+00
-At t = 0.9900, u.min() = -1.346220e+00, u.max() = 1.618042e+00
-Evolving from t = 0.9900 to t = 1.0000 with 166 internal steps (dt_internal = 6.024127e-05), u_max = 1.618042e+00
-At t = 1.0000, u.min() = -1.345415e+00, u.max() = 1.617833e+00
-Evolving from t = 1.0000 to t = 1.0100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.617833e+00
-At t = 1.0100, u.min() = -1.344611e+00, u.max() = 1.617633e+00
-Evolving from t = 1.0100 to t = 1.0200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.617633e+00
-At t = 1.0200, u.min() = -1.343821e+00, u.max() = 1.617442e+00
-Evolving from t = 1.0200 to t = 1.0300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.617442e+00
-At t = 1.0300, u.min() = -1.343033e+00, u.max() = 1.617257e+00
-Evolving from t = 1.0300 to t = 1.0400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.617257e+00
-At t = 1.0400, u.min() = -1.342255e+00, u.max() = 1.617082e+00
-Evolving from t = 1.0400 to t = 1.0500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.617082e+00
-At t = 1.0500, u.min() = -1.341482e+00, u.max() = 1.616913e+00
-Evolving from t = 1.0500 to t = 1.0600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616913e+00
-At t = 1.0600, u.min() = -1.340716e+00, u.max() = 1.616751e+00
-Evolving from t = 1.0600 to t = 1.0700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616751e+00
-At t = 1.0700, u.min() = -1.339957e+00, u.max() = 1.616596e+00
-Evolving from t = 1.0700 to t = 1.0800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616596e+00
-At t = 1.0800, u.min() = -1.339204e+00, u.max() = 1.616447e+00
-Evolving from t = 1.0800 to t = 1.0900 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.616447e+00
-At t = 1.0900, u.min() = -1.338460e+00, u.max() = 1.616304e+00
-Evolving from t = 1.0900 to t = 1.1000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616304e+00
-At t = 1.1000, u.min() = -1.337719e+00, u.max() = 1.616167e+00
-Evolving from t = 1.1000 to t = 1.1100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616167e+00
-At t = 1.1100, u.min() = -1.336989e+00, u.max() = 1.616036e+00
-Evolving from t = 1.1100 to t = 1.1200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.616036e+00
-At t = 1.1200, u.min() = -1.336262e+00, u.max() = 1.615910e+00
-Evolving from t = 1.1200 to t = 1.1300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615910e+00
-At t = 1.1300, u.min() = -1.335545e+00, u.max() = 1.615789e+00
-Evolving from t = 1.1300 to t = 1.1400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615789e+00
-At t = 1.1400, u.min() = -1.334831e+00, u.max() = 1.615673e+00
-Evolving from t = 1.1400 to t = 1.1500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615673e+00
-At t = 1.1500, u.min() = -1.334127e+00, u.max() = 1.615562e+00
-Evolving from t = 1.1500 to t = 1.1600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615562e+00
-At t = 1.1600, u.min() = -1.333427e+00, u.max() = 1.615455e+00
-Evolving from t = 1.1600 to t = 1.1700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615455e+00
-At t = 1.1700, u.min() = -1.332735e+00, u.max() = 1.615352e+00
-Evolving from t = 1.1700 to t = 1.1800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615352e+00
-At t = 1.1800, u.min() = -1.332049e+00, u.max() = 1.615254e+00
-Evolving from t = 1.1800 to t = 1.1900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615254e+00
-At t = 1.1900, u.min() = -1.331368e+00, u.max() = 1.615159e+00
-Evolving from t = 1.1900 to t = 1.2000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615159e+00
-At t = 1.2000, u.min() = -1.330695e+00, u.max() = 1.615068e+00
-Evolving from t = 1.2000 to t = 1.2100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.615068e+00
-At t = 1.2100, u.min() = -1.330027e+00, u.max() = 1.614981e+00
-Evolving from t = 1.2100 to t = 1.2200 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.614981e+00
-At t = 1.2200, u.min() = -1.329367e+00, u.max() = 1.614897e+00
-Evolving from t = 1.2200 to t = 1.2300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614897e+00
-At t = 1.2300, u.min() = -1.328710e+00, u.max() = 1.614817e+00
-Evolving from t = 1.2300 to t = 1.2400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614817e+00
-At t = 1.2400, u.min() = -1.328063e+00, u.max() = 1.614739e+00
-Evolving from t = 1.2400 to t = 1.2500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614739e+00
-At t = 1.2500, u.min() = -1.327418e+00, u.max() = 1.614665e+00
-Evolving from t = 1.2500 to t = 1.2600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614665e+00
-At t = 1.2600, u.min() = -1.326784e+00, u.max() = 1.614594e+00
-Evolving from t = 1.2600 to t = 1.2700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614594e+00
-At t = 1.2700, u.min() = -1.326151e+00, u.max() = 1.614525e+00
-Evolving from t = 1.2700 to t = 1.2800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614525e+00
-At t = 1.2800, u.min() = -1.325528e+00, u.max() = 1.614458e+00
-Evolving from t = 1.2800 to t = 1.2900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614458e+00
-At t = 1.2900, u.min() = -1.324907e+00, u.max() = 1.614395e+00
-Evolving from t = 1.2900 to t = 1.3000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614395e+00
-At t = 1.3000, u.min() = -1.324296e+00, u.max() = 1.614334e+00
-Evolving from t = 1.3000 to t = 1.3100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614334e+00
-At t = 1.3100, u.min() = -1.323687e+00, u.max() = 1.614275e+00
-Evolving from t = 1.3100 to t = 1.3200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614275e+00
-At t = 1.3200, u.min() = -1.323086e+00, u.max() = 1.614218e+00
-Evolving from t = 1.3200 to t = 1.3300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614218e+00
-At t = 1.3300, u.min() = -1.322489e+00, u.max() = 1.614164e+00
-Evolving from t = 1.3300 to t = 1.3400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614164e+00
-At t = 1.3400, u.min() = -1.321899e+00, u.max() = 1.614112e+00
-Evolving from t = 1.3400 to t = 1.3500 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.614112e+00
-At t = 1.3500, u.min() = -1.321314e+00, u.max() = 1.614061e+00
-Evolving from t = 1.3500 to t = 1.3600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614061e+00
-At t = 1.3600, u.min() = -1.320734e+00, u.max() = 1.614013e+00
-Evolving from t = 1.3600 to t = 1.3700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.614013e+00
-At t = 1.3700, u.min() = -1.320160e+00, u.max() = 1.613966e+00
-Evolving from t = 1.3700 to t = 1.3800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613966e+00
-At t = 1.3800, u.min() = -1.319591e+00, u.max() = 1.613921e+00
-Evolving from t = 1.3800 to t = 1.3900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613921e+00
-At t = 1.3900, u.min() = -1.319027e+00, u.max() = 1.613878e+00
-Evolving from t = 1.3900 to t = 1.4000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613878e+00
-At t = 1.4000, u.min() = -1.318468e+00, u.max() = 1.613836e+00
-Evolving from t = 1.4000 to t = 1.4100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613836e+00
-At t = 1.4100, u.min() = -1.317916e+00, u.max() = 1.613796e+00
-Evolving from t = 1.4100 to t = 1.4200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613796e+00
-At t = 1.4200, u.min() = -1.317367e+00, u.max() = 1.613757e+00
-Evolving from t = 1.4200 to t = 1.4300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613757e+00
-At t = 1.4300, u.min() = -1.316825e+00, u.max() = 1.613720e+00
-Evolving from t = 1.4300 to t = 1.4400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613720e+00
-At t = 1.4400, u.min() = -1.316285e+00, u.max() = 1.613684e+00
-Evolving from t = 1.4400 to t = 1.4500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613684e+00
-At t = 1.4500, u.min() = -1.315753e+00, u.max() = 1.613649e+00
-Evolving from t = 1.4500 to t = 1.4600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613649e+00
-At t = 1.4600, u.min() = -1.315224e+00, u.max() = 1.613615e+00
-Evolving from t = 1.4600 to t = 1.4700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613615e+00
-At t = 1.4700, u.min() = -1.314702e+00, u.max() = 1.613583e+00
-Evolving from t = 1.4700 to t = 1.4800 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.613583e+00
-At t = 1.4800, u.min() = -1.314182e+00, u.max() = 1.613552e+00
-Evolving from t = 1.4800 to t = 1.4900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613552e+00
-At t = 1.4900, u.min() = -1.313670e+00, u.max() = 1.613521e+00
-Evolving from t = 1.4900 to t = 1.5000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613521e+00
-At t = 1.5000, u.min() = -1.313159e+00, u.max() = 1.613492e+00
-Evolving from t = 1.5000 to t = 1.5100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613492e+00
-At t = 1.5100, u.min() = -1.312657e+00, u.max() = 1.613464e+00
-Evolving from t = 1.5100 to t = 1.5200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613464e+00
-At t = 1.5200, u.min() = -1.312155e+00, u.max() = 1.613436e+00
-Evolving from t = 1.5200 to t = 1.5300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613436e+00
-At t = 1.5300, u.min() = -1.311662e+00, u.max() = 1.613410e+00
-Evolving from t = 1.5300 to t = 1.5400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613410e+00
-At t = 1.5400, u.min() = -1.311170e+00, u.max() = 1.613385e+00
-Evolving from t = 1.5400 to t = 1.5500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613385e+00
-At t = 1.5500, u.min() = -1.310685e+00, u.max() = 1.613360e+00
-Evolving from t = 1.5500 to t = 1.5600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613360e+00
-At t = 1.5600, u.min() = -1.310202e+00, u.max() = 1.613336e+00
-Evolving from t = 1.5600 to t = 1.5700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613336e+00
-At t = 1.5700, u.min() = -1.309725e+00, u.max() = 1.613312e+00
-Evolving from t = 1.5700 to t = 1.5800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613312e+00
-At t = 1.5800, u.min() = -1.309252e+00, u.max() = 1.613290e+00
-Evolving from t = 1.5800 to t = 1.5900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613290e+00
-At t = 1.5900, u.min() = -1.308783e+00, u.max() = 1.613268e+00
-Evolving from t = 1.5900 to t = 1.6000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613268e+00
-At t = 1.6000, u.min() = -1.308319e+00, u.max() = 1.613247e+00
-Evolving from t = 1.6000 to t = 1.6100 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.613247e+00
-At t = 1.6100, u.min() = -1.307858e+00, u.max() = 1.613227e+00
-Evolving from t = 1.6100 to t = 1.6200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613227e+00
-At t = 1.6200, u.min() = -1.307402e+00, u.max() = 1.613207e+00
-Evolving from t = 1.6200 to t = 1.6300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613207e+00
-At t = 1.6300, u.min() = -1.306949e+00, u.max() = 1.613188e+00
-Evolving from t = 1.6300 to t = 1.6400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613188e+00
-At t = 1.6400, u.min() = -1.306502e+00, u.max() = 1.613169e+00
-Evolving from t = 1.6400 to t = 1.6500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613169e+00
-At t = 1.6500, u.min() = -1.306057e+00, u.max() = 1.613151e+00
-Evolving from t = 1.6500 to t = 1.6600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613151e+00
-At t = 1.6600, u.min() = -1.305617e+00, u.max() = 1.613133e+00
-Evolving from t = 1.6600 to t = 1.6700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613133e+00
-At t = 1.6700, u.min() = -1.305179e+00, u.max() = 1.613116e+00
-Evolving from t = 1.6700 to t = 1.6800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613116e+00
-At t = 1.6800, u.min() = -1.304748e+00, u.max() = 1.613099e+00
-Evolving from t = 1.6800 to t = 1.6900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613099e+00
-At t = 1.6900, u.min() = -1.304318e+00, u.max() = 1.613083e+00
-Evolving from t = 1.6900 to t = 1.7000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613083e+00
-At t = 1.7000, u.min() = -1.303894e+00, u.max() = 1.613067e+00
-Evolving from t = 1.7000 to t = 1.7100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613067e+00
-At t = 1.7100, u.min() = -1.303471e+00, u.max() = 1.613052e+00
-Evolving from t = 1.7100 to t = 1.7200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613052e+00
-At t = 1.7200, u.min() = -1.303055e+00, u.max() = 1.613037e+00
-Evolving from t = 1.7200 to t = 1.7300 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.613037e+00
-At t = 1.7300, u.min() = -1.302640e+00, u.max() = 1.613023e+00
-Evolving from t = 1.7300 to t = 1.7400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613023e+00
-At t = 1.7400, u.min() = -1.302231e+00, u.max() = 1.613008e+00
-Evolving from t = 1.7400 to t = 1.7500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.613008e+00
-At t = 1.7500, u.min() = -1.301824e+00, u.max() = 1.612994e+00
-Evolving from t = 1.7500 to t = 1.7600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612994e+00
-At t = 1.7600, u.min() = -1.301421e+00, u.max() = 1.612981e+00
-Evolving from t = 1.7600 to t = 1.7700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612981e+00
-At t = 1.7700, u.min() = -1.301021e+00, u.max() = 1.612967e+00
-Evolving from t = 1.7700 to t = 1.7800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612967e+00
-At t = 1.7800, u.min() = -1.300625e+00, u.max() = 1.612954e+00
-Evolving from t = 1.7800 to t = 1.7900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612954e+00
-At t = 1.7900, u.min() = -1.300232e+00, u.max() = 1.612942e+00
-Evolving from t = 1.7900 to t = 1.8000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612942e+00
-At t = 1.8000, u.min() = -1.299842e+00, u.max() = 1.612929e+00
-Evolving from t = 1.8000 to t = 1.8100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612929e+00
-At t = 1.8100, u.min() = -1.299457e+00, u.max() = 1.612917e+00
-Evolving from t = 1.8100 to t = 1.8200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612917e+00
-At t = 1.8200, u.min() = -1.299073e+00, u.max() = 1.612906e+00
-Evolving from t = 1.8200 to t = 1.8300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612906e+00
-At t = 1.8300, u.min() = -1.298694e+00, u.max() = 1.612894e+00
-Evolving from t = 1.8300 to t = 1.8400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612894e+00
-At t = 1.8400, u.min() = -1.298317e+00, u.max() = 1.612883e+00
-Evolving from t = 1.8400 to t = 1.8500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612883e+00
-At t = 1.8500, u.min() = -1.297945e+00, u.max() = 1.612872e+00
-Evolving from t = 1.8500 to t = 1.8600 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.612872e+00
-At t = 1.8600, u.min() = -1.297574e+00, u.max() = 1.612861e+00
-Evolving from t = 1.8600 to t = 1.8700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612861e+00
-At t = 1.8700, u.min() = -1.297208e+00, u.max() = 1.612851e+00
-Evolving from t = 1.8700 to t = 1.8800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612851e+00
-At t = 1.8800, u.min() = -1.296843e+00, u.max() = 1.612841e+00
-Evolving from t = 1.8800 to t = 1.8900 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612841e+00
-At t = 1.8900, u.min() = -1.296483e+00, u.max() = 1.612830e+00
-Evolving from t = 1.8900 to t = 1.9000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612830e+00
-At t = 1.9000, u.min() = -1.296124e+00, u.max() = 1.612820e+00
-Evolving from t = 1.9000 to t = 1.9100 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612820e+00
-At t = 1.9100, u.min() = -1.295771e+00, u.max() = 1.612811e+00
-Evolving from t = 1.9100 to t = 1.9200 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612811e+00
-At t = 1.9200, u.min() = -1.295418e+00, u.max() = 1.612801e+00
-Evolving from t = 1.9200 to t = 1.9300 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612801e+00
-At t = 1.9300, u.min() = -1.295070e+00, u.max() = 1.612791e+00
-Evolving from t = 1.9300 to t = 1.9400 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612791e+00
-At t = 1.9400, u.min() = -1.294724e+00, u.max() = 1.612782e+00
-Evolving from t = 1.9400 to t = 1.9500 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612782e+00
-At t = 1.9500, u.min() = -1.294381e+00, u.max() = 1.612773e+00
-Evolving from t = 1.9500 to t = 1.9600 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612773e+00
-At t = 1.9600, u.min() = -1.294040e+00, u.max() = 1.612764e+00
-Evolving from t = 1.9600 to t = 1.9700 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612764e+00
-At t = 1.9700, u.min() = -1.293703e+00, u.max() = 1.612755e+00
-Evolving from t = 1.9700 to t = 1.9800 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612755e+00
-At t = 1.9800, u.min() = -1.293368e+00, u.max() = 1.612746e+00
-Evolving from t = 1.9800 to t = 1.9900 with 166 internal steps (dt_internal = 6.024163e-05), u_max = 1.612746e+00
-At t = 1.9900, u.min() = -1.293036e+00, u.max() = 1.612738e+00
-Evolving from t = 1.9900 to t = 2.0000 with 166 internal steps (dt_internal = 6.024091e-05), u_max = 1.612738e+00
-At t = 2.0000, u.min() = -1.292707e+00, u.max() = 1.612729e+00
-Simulation completed.
+Using internal time step: 7.490140565847856e-05
+Completed time step 5/200, t=0.0500
+Completed time step 10/200, t=0.1000
+Completed time step 15/200, t=0.1500
+Completed time step 20/200, t=0.2000
+Completed time step 25/200, t=0.2500
+Completed time step 30/200, t=0.3000
+Completed time step 35/200, t=0.3500
+Completed time step 40/200, t=0.4000
+Completed time step 45/200, t=0.4500
+Completed time step 50/200, t=0.5000
+Completed time step 55/200, t=0.5500
+Completed time step 60/200, t=0.6000
+Completed time step 65/200, t=0.6500
+Completed time step 70/200, t=0.7000
+Completed time step 75/200, t=0.7500
+Completed time step 80/200, t=0.8000
+Completed time step 85/200, t=0.8500
+Completed time step 90/200, t=0.9000
+Completed time step 95/200, t=0.9500
+Completed time step 100/200, t=1.0000
+Completed time step 105/200, t=1.0500
+Completed time step 110/200, t=1.1000
+Completed time step 115/200, t=1.1500
+Completed time step 120/200, t=1.2000
+Completed time step 125/200, t=1.2500
+Completed time step 130/200, t=1.3000
+Completed time step 135/200, t=1.3500
+Completed time step 140/200, t=1.4000
+Completed time step 145/200, t=1.4500
+Completed time step 150/200, t=1.5000
+Completed time step 155/200, t=1.5500
+Completed time step 160/200, t=1.6000
+Completed time step 165/200, t=1.6500
+Completed time step 170/200, t=1.7000
+Completed time step 175/200, t=1.7500
+Completed time step 180/200, t=1.8000
+Completed time step 185/200, t=1.8500
+Completed time step 190/200, t=1.9000
+Completed time step 195/200, t=1.9500
+Completed time step 200/200, t=2.0000
 ##### Finished #####
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
 Using device: cuda
-Initial time: 0.0. Starting simulation...
-Evolving from t = 0.0000 to t = 0.0100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.083306e+00
-At t = 0.0100, u.min() = -1.081118e+00, u.max() = 9.996864e-01
-Evolving from t = 0.0100 to t = 0.0200 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.081118e+00
-At t = 0.0200, u.min() = -1.078882e+00, u.max() = 9.993621e-01
-Evolving from t = 0.0200 to t = 0.0300 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.078882e+00
-At t = 0.0300, u.min() = -1.076631e+00, u.max() = 9.990579e-01
-Evolving from t = 0.0300 to t = 0.0400 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.076631e+00
-At t = 0.0400, u.min() = -1.074590e+00, u.max() = 9.987406e-01
-Evolving from t = 0.0400 to t = 0.0500 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.074590e+00
-At t = 0.0500, u.min() = -1.072459e+00, u.max() = 9.984283e-01
-Evolving from t = 0.0500 to t = 0.0600 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.072459e+00
-At t = 0.0600, u.min() = -1.070347e+00, u.max() = 9.981174e-01
-Evolving from t = 0.0600 to t = 0.0700 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.070347e+00
-At t = 0.0700, u.min() = -1.068368e+00, u.max() = 9.977987e-01
-Evolving from t = 0.0700 to t = 0.0800 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.068368e+00
-At t = 0.0800, u.min() = -1.066256e+00, u.max() = 9.974933e-01
-Evolving from t = 0.0800 to t = 0.0900 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.066256e+00
-At t = 0.0900, u.min() = -1.064346e+00, u.max() = 9.971690e-01
-Evolving from t = 0.0900 to t = 0.1000 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.064346e+00
-At t = 0.1000, u.min() = -1.062336e+00, u.max() = 9.968686e-01
-Evolving from t = 0.1000 to t = 0.1100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.062336e+00
-At t = 0.1100, u.min() = -1.060412e+00, u.max() = 9.965398e-01
-Evolving from t = 0.1100 to t = 0.1200 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.060412e+00
-At t = 0.1200, u.min() = -1.058475e+00, u.max() = 9.962433e-01
-Evolving from t = 0.1200 to t = 0.1300 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.058475e+00
-At t = 0.1300, u.min() = -1.056570e+00, u.max() = 9.959126e-01
-Evolving from t = 0.1300 to t = 0.1400 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.056570e+00
-At t = 0.1400, u.min() = -1.054676e+00, u.max() = 9.956179e-01
-Evolving from t = 0.1400 to t = 0.1500 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.054676e+00
-At t = 0.1500, u.min() = -1.052813e+00, u.max() = 9.952895e-01
-Evolving from t = 0.1500 to t = 0.1600 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.052813e+00
-At t = 0.1600, u.min() = -1.050932e+00, u.max() = 9.949924e-01
-Evolving from t = 0.1600 to t = 0.1700 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.050932e+00
-At t = 0.1700, u.min() = -1.049130e+00, u.max() = 9.946651e-01
-Evolving from t = 0.1700 to t = 0.1800 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.049130e+00
-At t = 0.1800, u.min() = -1.047230e+00, u.max() = 9.943666e-01
-Evolving from t = 0.1800 to t = 0.1900 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.047230e+00
-At t = 0.1900, u.min() = -1.045503e+00, u.max() = 9.940395e-01
-Evolving from t = 0.1900 to t = 0.2000 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.045503e+00
-At t = 0.2000, u.min() = -1.043637e+00, u.max() = 9.937406e-01
-Evolving from t = 0.2000 to t = 0.2100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.043637e+00
-At t = 0.2100, u.min() = -1.041911e+00, u.max() = 9.934129e-01
-Simulation completed.
+Using internal time step: 0.001
+Completed time step 5/21, t=0.0500
+Completed time step 10/21, t=0.1000
+Completed time step 15/21, t=0.1500
+Completed time step 20/21, t=0.2000
+Completed time step 21/21, t=0.2100
 **** Finished ****
 **** Spatio resolution 512 ****
 Using device: cuda
-Initial time: 0.0. Starting simulation...
-Evolving from t = 0.0000 to t = 0.0100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.083366e+00
-At t = 0.0100, u.min() = -1.081104e+00, u.max() = 9.996837e-01
-Evolving from t = 0.0100 to t = 0.0200 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.081104e+00
-At t = 0.0200, u.min() = -1.078910e+00, u.max() = 9.993718e-01
-Evolving from t = 0.0200 to t = 0.0300 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.078910e+00
-At t = 0.0300, u.min() = -1.076715e+00, u.max() = 9.990594e-01
-Evolving from t = 0.0300 to t = 0.0400 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.076715e+00
-At t = 0.0400, u.min() = -1.074588e+00, u.max() = 9.987467e-01
-Evolving from t = 0.0400 to t = 0.0500 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.074588e+00
-At t = 0.0500, u.min() = -1.072491e+00, u.max() = 9.984337e-01
-Evolving from t = 0.0500 to t = 0.0600 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.072491e+00
-At t = 0.0600, u.min() = -1.070408e+00, u.max() = 9.981204e-01
-Evolving from t = 0.0600 to t = 0.0700 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.070408e+00
-At t = 0.0700, u.min() = -1.068344e+00, u.max() = 9.978070e-01
-Evolving from t = 0.0700 to t = 0.0800 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.068344e+00
-At t = 0.0800, u.min() = -1.066332e+00, u.max() = 9.974935e-01
-Evolving from t = 0.0800 to t = 0.0900 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.066332e+00
-At t = 0.0900, u.min() = -1.064348e+00, u.max() = 9.971800e-01
-Evolving from t = 0.0900 to t = 0.1000 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.064348e+00
-At t = 0.1000, u.min() = -1.062382e+00, u.max() = 9.968664e-01
-Evolving from t = 0.1000 to t = 0.1100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.062382e+00
-At t = 0.1100, u.min() = -1.060434e+00, u.max() = 9.965528e-01
-Evolving from t = 0.1100 to t = 0.1200 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.060434e+00
-At t = 0.1200, u.min() = -1.058506e+00, u.max() = 9.962394e-01
-Evolving from t = 0.1200 to t = 0.1300 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.058506e+00
-At t = 0.1300, u.min() = -1.056597e+00, u.max() = 9.959266e-01
-Evolving from t = 0.1300 to t = 0.1400 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.056597e+00
-At t = 0.1400, u.min() = -1.054707e+00, u.max() = 9.956145e-01
-Evolving from t = 0.1400 to t = 0.1500 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.054707e+00
-At t = 0.1500, u.min() = -1.052834e+00, u.max() = 9.953024e-01
-Evolving from t = 0.1500 to t = 0.1600 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.052834e+00
-At t = 0.1600, u.min() = -1.050976e+00, u.max() = 9.949898e-01
-Evolving from t = 0.1600 to t = 0.1700 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.050976e+00
-At t = 0.1700, u.min() = -1.049132e+00, u.max() = 9.946773e-01
-Evolving from t = 0.1700 to t = 0.1800 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.049132e+00
-At t = 0.1800, u.min() = -1.047298e+00, u.max() = 9.943646e-01
-Evolving from t = 0.1800 to t = 0.1900 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.047298e+00
-At t = 0.1900, u.min() = -1.045477e+00, u.max() = 9.940516e-01
-Evolving from t = 0.1900 to t = 0.2000 with 101 internal steps (dt_internal = 9.900990e-05), u_max = 1.045477e+00
-At t = 0.2000, u.min() = -1.043697e+00, u.max() = 9.937384e-01
-Evolving from t = 0.2000 to t = 0.2100 with 100 internal steps (dt_internal = 1.000000e-04), u_max = 1.043697e+00
-At t = 0.2100, u.min() = -1.041925e+00, u.max() = 9.934253e-01
-Simulation completed.
+Using internal time step: 0.00029960562263391425
+Completed time step 5/21, t=0.0500
+Completed time step 10/21, t=0.1000
+Completed time step 15/21, t=0.1500
+Completed time step 20/21, t=0.2000
+Completed time step 21/21, t=0.2100
 **** Finished ****
 **** Spatio resolution 1024 ****
 Using device: cuda
-Initial time: 0.0. Starting simulation...
-Evolving from t = 0.0000 to t = 0.0100 with 111 internal steps (dt_internal = 9.009009e-05), u_max = 1.083371e+00
-NaN detected during integration; aborting further steps.
-At t = 0.0100, u.min() = nan, u.max() = nan
-NaN values detected in solution. Terminating simulation early.
-Simulation completed.
+Using internal time step: 7.490140565847856e-05
+Completed time step 5/21, t=0.0500
+Completed time step 10/21, t=0.1000
+Completed time step 15/21, t=0.1500
+Completed time step 20/21, t=0.2000
+Completed time step 21/21, t=0.2100
 **** Finished ****
 **** Spatio resolution 2048 ****
 Using device: cuda
-Initial time: 0.0. Starting simulation...
-Evolving from t = 0.0000 to t = 0.0100 with 222 internal steps (dt_internal = 4.504505e-05), u_max = 1.083371e+00
-NaN detected during integration; aborting further steps.
-At t = 0.0100, u.min() = nan, u.max() = nan
-NaN values detected in solution. Terminating simulation early.
-Simulation completed.
+Using internal time step: 1.872535141461964e-05
+Completed time step 5/21, t=0.0500
+Completed time step 10/21, t=0.1000
+Completed time step 15/21, t=0.1500
+Completed time step 20/21, t=0.2000
+Completed time step 21/21, t=0.2100
 **** Finished ****
-Error measured at spatio resolution 256 is nan
-Rate of convergence measured at spatio resolution 256 is nan
-Error measured at spatio resolution 512 is nan
-Rate of convergence measured at spatio resolution 512 is nan
+Error measured at spatio resolution 256 is 2.241e-05
+Rate of convergence measured at spatio resolution 256 is 2.093
+Error measured at spatio resolution 512 is 5.252e-06
+Rate of convergence measured at spatio resolution 512 is 1.563
 Result summary
-nRMSE: 2.757e-04	| Time: 65.44s	| Average convergence rate: nan	|
+nRMSE: 2.595e-04	| Time: 23.59s	| Average convergence rate: 1.828	|

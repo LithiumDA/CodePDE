@@ -1,183 +1,146 @@
 
-import numpy as np
 import torch
-import math
+import numpy as np
 
 def solver(Vx0, density0, pressure0, t_coordinate, eta, zeta):
-    """Solves the 1D compressible Navier-Stokes equations for all times in t_coordinate using an IMEX approach.
+    """Solves the 1D compressible Navier-Stokes equations with improved stability."""
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    Vx0 = torch.as_tensor(Vx0, dtype=torch.float32, device=device)
+    density0 = torch.as_tensor(density0, dtype=torch.float32, device=device)
+    pressure0 = torch.as_tensor(pressure0, dtype=torch.float32, device=device)
+    t_coordinate = torch.as_tensor(t_coordinate, dtype=torch.float32, device=device)
     
-    The convective terms are updated explicitly using a Lax–Friedrichs flux, while the viscous term in the momentum 
-    equation is updated implicitly via an FFT solve, allowing us to use a larger time–step.
+    batch_size, N = Vx0.shape
+    T = len(t_coordinate) - 1
     
-    Args:
-        Vx0 (np.ndarray): Initial velocity of shape [batch_size, N] 
-            where N is the number of uniformly spaced spatial points.
-        density0 (np.ndarray): Initial density [batch_size, N].
-        pressure0 (np.ndarray): Initial pressure [batch_size, N].
-        t_coordinate (np.ndarray): Time coordinates of shape [T+1]. It begins with t_0=0 
-            and includes the subsequent time steps.
-        eta (float): The shear viscosity coefficient.
-        zeta (float): The bulk viscosity coefficient.
+    # Initialize output arrays
+    Vx_pred = torch.zeros((batch_size, T+1, N), device=device)
+    density_pred = torch.zeros((batch_size, T+1, N), device=device)
+    pressure_pred = torch.zeros((batch_size, T+1, N), device=device)
+    
+    # Store initial conditions
+    Vx_pred[:, 0] = Vx0
+    density_pred[:, 0] = density0
+    pressure_pred[:, 0] = pressure0
+    
+    # Constants
+    GAMMA = 5/3
+    dx = 2.0 / (N - 1)
+    HYPERBOLIC_SAFETY = 0.4  # Less restrictive for wave propagation
+    VISCOUS_SAFETY = 0.4      # Less restrictive for viscosity
+    MIN_DT = 1e-6             # Minimum time step to prevent getting stuck
+    
+    # Combined viscosity coefficients
+    viscosity_coeff = eta
+    bulk_viscosity_coeff = zeta + (4/3)*eta
+
+    def periodic_pad(x):
+        """Apply periodic padding to tensor."""
+        return torch.cat([x[:, -2:-1], x, x[:, 1:2]], dim=1)
+
+    def compute_rhs(Vx, density, pressure):
+        """Compute right-hand side of the PDE system with safeguards."""
+        # Apply periodic boundary conditions
+        Vx_pad = periodic_pad(Vx)
+        density_pad = periodic_pad(density)
+        pressure_pad = periodic_pad(pressure)
         
-    Returns:
-        Vx_pred (np.ndarray): Velocity solutions with shape [batch_size, len(t_coordinate), N].
-        density_pred (np.ndarray): Density solutions with shape [batch_size, len(t_coordinate), N].
-        pressure_pred (np.ndarray): Pressure solutions with shape [batch_size, len(t_coordinate), N].
-    """
-    # Select torch device.
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
-    # Convert initial conditions to torch tensors.
-    density = torch.tensor(density0, dtype=torch.float32, device=device)  # shape [B, N]
-    velocity = torch.tensor(Vx0, dtype=torch.float32, device=device)
-    pressure = torch.tensor(pressure0, dtype=torch.float32, device=device)
-    
-    # Physical parameters.
-    gamma = 5.0/3.0  # adiabatic index
-    mu_eff = eta + zeta + eta/3.0  # effective viscosity for momentum diffusion
-    
-    # Spatial grid.
-    batch_size, N = density.shape
-    L = 1.0         # spatial domain size (assumed [0, 1])
-    dx = L / N      # grid spacing
-    
-    # Set up Fourier frequencies for the implicit viscous solve.
-    # k = 2*pi*n / L, where n = 0, 1, ..., N/2, -N/2+1, ... -1.
-    freqs = torch.fft.fftfreq(N, d=dx).to(device)  # shape [N]
-    k = 2 * math.pi * freqs  # wave numbers (real tensor)
-    # Reshape k for broadcasting: shape [1, N]
-    k = k.view(1, N)
-    
-    # Time coordinates.
-    t_coordinate = np.array(t_coordinate, dtype=np.float32)
-    T_out = len(t_coordinate)
-    
-    # Prepare storage for output (each tensor shape: [batch_size, T_out, N]).
-    density_history = torch.empty((batch_size, T_out, N), dtype=torch.float32, device=device)
-    velocity_history = torch.empty((batch_size, T_out, N), dtype=torch.float32, device=device)
-    pressure_history = torch.empty((batch_size, T_out, N), dtype=torch.float32, device=device)
-    
-    # Compute initial total energy: E = p/(gamma-1) + 0.5 * density * velocity**2
-    energy = pressure/(gamma - 1.0) + 0.5 * density * velocity**2
-    # Compute initial momentum.
-    momentum = density * velocity
-    
-    # Save initial state.
-    density_history[:, 0, :] = density
-    velocity_history[:, 0, :] = velocity
-    pressure_history[:, 0, :] = pressure
-    
-    # Set CFL parameters (choose based on advective constraints only).
-    CFL = 0.8  # now we allow a higher CFL because diffusion is treated implicitly.
-    
-    # Helper functions for periodic boundary shifts.
-    def shift_right(f):
-        return torch.roll(f, shifts=-1, dims=-1)
-    
-    def shift_left(f):
-        return torch.roll(f, shifts=1, dims=-1)
-    
-    # Initialize simulation time.
-    t_sim = 0.0
-    
-    # Main time-loop over external output times.
-    for out_idx in range(1, T_out):
-        t_target = t_coordinate[out_idx]
-        print(f"Starting external time step to t = {t_target:.4f} ...")
+        # Compute spatial derivatives
+        dv_dx = (Vx_pad[:, 2:] - Vx_pad[:, :-2]) / (2*dx)
+        d2v_dx2 = (Vx_pad[:, 2:] - 2*Vx + Vx_pad[:, :-2]) / (dx**2)
         
-        # Advance simulation until t_sim reaches the current external target time.
-        while t_sim < t_target:
-            # Recompute primitive variables.
-            density = torch.clamp(density, min=1e-6)
-            velocity = momentum / density
-            kinetic = 0.5 * density * velocity**2
-            pressure = (gamma - 1.0) * (energy - kinetic)
-            pressure = torch.clamp(pressure, min=1e-6)
-            
-            # Compute sound speed.
-            sound_speed = torch.sqrt(gamma * pressure / density)
-            max_speed = torch.max(torch.abs(velocity) + sound_speed).item()
-            
-            # Determine dt based solely on the advective CFL.
-            dt_advective = CFL * dx / (max_speed + 1e-6)
-            dt = min(dt_advective, t_target - t_sim)
-            
-            if dt <= 0 or not np.isfinite(dt):
-                print("Encountered non-finite or zero dt, aborting integration step.")
-                break
-            
-            # --- Explicit update using Lax-Friedrichs for convective (hyperbolic) part ---
-            # Pack conserved variables: U = [density, momentum, energy]
-            U = torch.stack([density, momentum, energy], dim=0)  # shape [3, B, N]
-            
-            # Compute fluxes F for each conserved variable.
-            # Mass flux: F₁ = momentum.
-            F1 = momentum
-            # Momentum flux: F₂ = (momentum^2/density) + pressure.
-            F2 = (momentum**2 / density) + pressure
-            # Energy flux:   F₃ = (energy + pressure) * velocity.
-            F3 = (energy + pressure) * velocity
-            F = torch.stack([F1, F2, F3], dim=0)
-            
-            # Use periodic shifts for Lax-Friedrichs update.
-            U_right = torch.roll(U, shifts=-1, dims=-1)
-            U_left  = torch.roll(U, shifts=1, dims=-1)
-            F_right = torch.roll(F, shifts=-1, dims=-1)
-            F_left  = torch.roll(F, shifts=1, dims=-1)
-            
-            # Lax-Friedrichs update.
-            U_explicit = 0.5*(U_right + U_left) - (dt/(2*dx))*(F_right - F_left)
-            
-            # Unpack updated conserved variables from explicit (convective) update.
-            density_new = U_explicit[0]
-            momentum_explicit = U_explicit[1]
-            energy = U_explicit[2]  # for energy, diffusion is not present
-            
-            # --- Implicit update for the viscous term in momentum ---
-            # Compute explicit estimate for velocity.
-            density_new = torch.clamp(density_new, min=1e-6)
-            v_explicit = momentum_explicit / density_new
-            
-            # Solve the diffusion equation in Fourier space:
-            # We want to find v_new such that:
-            #   v_new - dt * mu_eff * Δv_new = v_explicit.
-            # In Fourier space for each mode, this becomes:
-            #   v̂_new = v̂_explicit / (1 + dt * mu_eff * k^2)
-            v_fft = torch.fft.fft(v_explicit, dim=-1)
-            # Denominator: shape [1, N] broadcasted over batch.
-            denom = 1 + dt * mu_eff * (k**2)
-            v_new_fft = v_fft / denom
-            # Inverse FFT to get the updated velocity.
-            v_new = torch.real(torch.fft.ifft(v_new_fft, dim=-1))
-            
-            # Update momentum using the implicitly updated velocity.
-            momentum = density_new * v_new
-            
-            # Update density.
-            density = density_new
-            
-            # Ensure energy remains consistent.
-            velocity = momentum / density
-            kinetic = 0.5 * density * velocity**2
-            energy = torch.maximum(energy, kinetic + 1e-6)
-            pressure = (gamma - 1.0) * (energy - kinetic)
-            pressure = torch.clamp(pressure, min=1e-6)
-            
-            # Increment simulation time.
-            t_sim += dt
-            if not np.isfinite(t_sim):
-                print("Simulation time became non-finite.")
-                break
+        # Continuity equation
+        rho_v = density * Vx
+        rho_v_pad = periodic_pad(rho_v)
+        drho_v_dx = (rho_v_pad[:, 2:] - rho_v_pad[:, :-2]) / (2*dx)
+        drho_dt = -drho_v_dx
         
-        # Record the state at the current external time.
-        density_history[:, out_idx, :] = density
-        velocity_history[:, out_idx, :] = momentum / density  # recover velocity from momentum and density
-        pressure_history[:, out_idx, :] = pressure
-        print(f"Recorded state at t = {t_target:.4f} (simulated time {t_sim:.4f}).")
+        # Momentum equation
+        pressure_grad = (pressure_pad[:, 2:] - pressure_pad[:, :-2]) / (2*dx)
+        dv_dt = (-Vx * dv_dx - 
+                pressure_grad / torch.clamp(density, min=1e-6) +
+                (viscosity_coeff + bulk_viscosity_coeff) * d2v_dx2)
+        
+        # Energy equation
+        epsilon = pressure / (GAMMA - 1)
+        total_energy = epsilon + 0.5 * density * Vx**2
+        energy_flux = (total_energy + pressure) * Vx - Vx * bulk_viscosity_coeff * dv_dx
+        
+        energy_flux_pad = periodic_pad(energy_flux)
+        denergy_flux_dx = (energy_flux_pad[:, 2:] - energy_flux_pad[:, :-2]) / (2*dx)
+        dE_dt = -denergy_flux_dx
+        
+        # Pressure change from energy
+        kinetic_energy_change = Vx * density * dv_dt + 0.5 * Vx**2 * drho_dt
+        dp_dt = (GAMMA - 1) * (dE_dt - kinetic_energy_change)
+        
+        return drho_dt, dv_dt, dp_dt
+
+    def rk4_step(Vx, density, pressure, dt):
+        """Optimized RK4 step for small time steps."""
+        # Stage 1
+        k1_rho, k1_v, k1_p = compute_rhs(Vx, density, pressure)
+        
+        # Stage 2
+        temp_Vx = Vx + 0.5*dt*k1_v
+        temp_rho = torch.clamp(density + 0.5*dt*k1_rho, min=1e-6)
+        temp_p = torch.clamp(pressure + 0.5*dt*k1_p, min=1e-6)
+        k2_rho, k2_v, k2_p = compute_rhs(temp_Vx, temp_rho, temp_p)
+        
+        # Stage 3
+        temp_Vx = Vx + 0.5*dt*k2_v
+        temp_rho = torch.clamp(density + 0.5*dt*k2_rho, min=1e-6)
+        temp_p = torch.clamp(pressure + 0.5*dt*k2_p, min=1e-6)
+        k3_rho, k3_v, k3_p = compute_rhs(temp_Vx, temp_rho, temp_p)
+        
+        # Stage 4
+        temp_Vx = Vx + dt*k3_v
+        temp_rho = torch.clamp(density + dt*k3_rho, min=1e-6)
+        temp_p = torch.clamp(pressure + dt*k3_p, min=1e-6)
+        k4_rho, k4_v, k4_p = compute_rhs(temp_Vx, temp_rho, temp_p)
+        
+        # Combine stages
+        Vx_new = Vx + (dt/6) * (k1_v + 2*k2_v + 2*k3_v + k4_v)
+        density_new = torch.clamp(density + (dt/6) * (k1_rho + 2*k2_rho + 2*k3_rho + k4_rho), min=1e-6)
+        pressure_new = torch.clamp(pressure + (dt/6) * (k1_p + 2*k2_p + 2*k3_p + k4_p), min=1e-6)
+        
+        return Vx_new, density_new, pressure_new
     
-    # Convert results to numpy arrays.
-    Vx_pred = velocity_history.cpu().numpy()
-    density_pred = density_history.cpu().numpy()
-    pressure_pred = pressure_history.cpu().numpy()
+    # Main time stepping loop
+    current_time = 0.0
+    current_Vx = Vx0.clone()
+    current_density = density0.clone()
+    current_pressure = pressure0.clone()
     
-    return Vx_pred, density_pred, pressure_pred
+    for i in range(1, T+1):
+        target_time = t_coordinate[i].item()
+        last_progress = current_time
+        
+        while current_time < target_time:
+            # Enhanced CFL condition with separate safety factors
+            sound_speed = torch.sqrt(GAMMA * current_pressure / torch.clamp(current_density, min=1e-6))
+            max_wave_speed = torch.max(torch.abs(current_Vx) + sound_speed)
+            
+            # Hyperbolic time step restriction
+            hyperbolic_dt = HYPERBOLIC_SAFETY * dx / (max_wave_speed + 1e-6)
+            
+            # Viscous time step restriction (less restrictive)
+            viscous_dt = VISCOUS_SAFETY * (dx**2) / (2 * (viscosity_coeff + bulk_viscosity_coeff) + 1e-6)
+            
+            dt = min(hyperbolic_dt, viscous_dt, target_time - current_time)
+            dt = max(dt, MIN_DT)  # Enforce minimum time step
+            
+            current_Vx, current_density, current_pressure = rk4_step(
+                current_Vx, current_density, current_pressure, dt)
+            current_time += dt
+            
+            # Progress monitoring
+            if current_time - last_progress > 0.01:  # Print every 1% progress
+                print(f"Progress: time={current_time:.4f}, max Vx={torch.max(torch.abs(current_Vx)):.4f}, dt={dt:.2e}")
+                last_progress = current_time
+        
+        Vx_pred[:, i] = current_Vx
+        density_pred[:, i] = current_density
+        pressure_pred[:, i] = current_pressure
+    
+    return Vx_pred.cpu().numpy(), density_pred.cpu().numpy(), pressure_pred.cpu().numpy()

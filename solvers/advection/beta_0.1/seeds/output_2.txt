@@ -1,23 +1,98 @@
-Loaded data with shape: (100, 201, 1024)
+GPU found, using CUDA.
+Loaded data with shape: (50, 201, 1024)
 ##### Running the solver on the given dataset #####
-dx = 0.0009765625, dt_max = 0.009765625
+Starting solver...
+Initial condition stored. Shape: torch.Size([50, 1024])
+Starting time stepping for 200 intervals...
+Computed step 20/200, Time = 0.2000
+Computed step 40/200, Time = 0.4000
+Computed step 60/200, Time = 0.6000
+Computed step 80/200, Time = 0.8000
+Computed step 100/200, Time = 1.0000
+Computed step 120/200, Time = 1.2000
+Computed step 140/200, Time = 1.4000
+Computed step 160/200, Time = 1.6000
+Computed step 180/200, Time = 1.8000
+Computed step 200/200, Time = 2.0000
+Simulation finished.
+Returning solutions array with shape: (50, 201, 1024)
 ##### Finished #####
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
-dx = 0.00390625, dt_max = 0.0390625
+Starting solver...
+Initial condition stored. Shape: torch.Size([5, 256])
+Starting time stepping for 21 intervals...
+Computed step 2/21, Time = 0.0200
+Computed step 4/21, Time = 0.0400
+Computed step 6/21, Time = 0.0600
+Computed step 8/21, Time = 0.0800
+Computed step 10/21, Time = 0.1000
+Computed step 12/21, Time = 0.1200
+Computed step 14/21, Time = 0.1400
+Computed step 16/21, Time = 0.1600
+Computed step 18/21, Time = 0.1800
+Computed step 20/21, Time = 0.2000
+Computed step 21/21, Time = 0.2100
+Simulation finished.
+Returning solutions array with shape: (5, 22, 256)
 **** Finished ****
 **** Spatio resolution 512 ****
-dx = 0.001953125, dt_max = 0.01953125
+Starting solver...
+Initial condition stored. Shape: torch.Size([5, 512])
+Starting time stepping for 21 intervals...
+Computed step 2/21, Time = 0.0200
+Computed step 4/21, Time = 0.0400
+Computed step 6/21, Time = 0.0600
+Computed step 8/21, Time = 0.0800
+Computed step 10/21, Time = 0.1000
+Computed step 12/21, Time = 0.1200
+Computed step 14/21, Time = 0.1400
+Computed step 16/21, Time = 0.1600
+Computed step 18/21, Time = 0.1800
+Computed step 20/21, Time = 0.2000
+Computed step 21/21, Time = 0.2100
+Simulation finished.
+Returning solutions array with shape: (5, 22, 512)
 **** Finished ****
 **** Spatio resolution 1024 ****
-dx = 0.0009765625, dt_max = 0.009765625
+Starting solver...
+Initial condition stored. Shape: torch.Size([5, 1024])
+Starting time stepping for 21 intervals...
+Computed step 2/21, Time = 0.0200
+Computed step 4/21, Time = 0.0400
+Computed step 6/21, Time = 0.0600
+Computed step 8/21, Time = 0.0800
+Computed step 10/21, Time = 0.1000
+Computed step 12/21, Time = 0.1200
+Computed step 14/21, Time = 0.1400
+Computed step 16/21, Time = 0.1600
+Computed step 18/21, Time = 0.1800
+Computed step 20/21, Time = 0.2000
+Computed step 21/21, Time = 0.2100
+Simulation finished.
+Returning solutions array with shape: (5, 22, 1024)
 **** Finished ****
 **** Spatio resolution 2048 ****
-dx = 0.00048828125, dt_max = 0.0048828125
+Starting solver...
+Initial condition stored. Shape: torch.Size([5, 2048])
+Starting time stepping for 21 intervals...
+Computed step 2/21, Time = 0.0200
+Computed step 4/21, Time = 0.0400
+Computed step 6/21, Time = 0.0600
+Computed step 8/21, Time = 0.0800
+Computed step 10/21, Time = 0.1000
+Computed step 12/21, Time = 0.1200
+Computed step 14/21, Time = 0.1400
+Computed step 16/21, Time = 0.1600
+Computed step 18/21, Time = 0.1800
+Computed step 20/21, Time = 0.2000
+Computed step 21/21, Time = 0.2100
+Simulation finished.
+Returning solutions array with shape: (5, 22, 2048)
 **** Finished ****
-Error measured at spatio resolution 256 is 1.421e-03
-Rate of convergence measured at spatio resolution 256 is 0.649
-Error measured at spatio resolution 512 is 9.061e-04
-Rate of convergence measured at spatio resolution 512 is 4.280
+Error measured at spatio resolution 256 is 6.813e-04
+Rate of convergence measured at spatio resolution 256 is 0.761
+Error measured at spatio resolution 512 is 4.020e-04
+Rate of convergence measured at spatio resolution 512 is 0.909
 Result summary
-nRMSE: 1.136e-03	| Time: 0.19s	| Average convergence rate: 2.465	|
+nRMSE: 1.008e-03	| Time: 0.40s	| Average convergence rate: 0.835	|

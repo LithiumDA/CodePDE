@@ -2,7 +2,7 @@
 defaults:
   - _self_
   - pde: burgers
-  - model: gpt-4o
+  - model: gpt-4.1
   - method: repeated_sample
 
 log_path: ../working_logs
@@ -14,7 +14,7 @@ assigned_gpu: 1
 
 working_folder: ${log_path}/${pde.name}/${pde.pde_setting_name}${folder_name_suffix}/${method.name}/${model.name}/${now:%Y-%m-%d-%H-%M-%S}/
 
-root_dataset_folder: <path_to_dataset_folder>
+root_dataset_folder: ../dataset/CodePDE  # Replace with your dataset path. Absolute path is recommended.
 
 hydra:
   run:

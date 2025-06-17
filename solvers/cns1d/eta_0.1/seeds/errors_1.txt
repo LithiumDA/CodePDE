@@ -1,0 +1,10 @@
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-32/solver.py:12: RuntimeWarning: invalid value encountered in divide
+  v   = mom / rho
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-32/solver.py:130: RuntimeWarning: invalid value encountered in sqrt
+  c_now = np.sqrt(_GAMMA * p_now / rho)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-32/solver.py:34: RuntimeWarning: invalid value encountered in sqrt
+  cL = np.sqrt(_GAMMA * pL / rho)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-32/solver.py:41: RuntimeWarning: invalid value encountered in sqrt
+  cR = np.sqrt(_GAMMA * pR / rhoR)
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-32/solver.py:19: RuntimeWarning: invalid value encountered in divide
+  v = mom / rho

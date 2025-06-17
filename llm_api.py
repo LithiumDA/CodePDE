@@ -11,7 +11,7 @@ def get_client(messages, cfg):
     elif 'claude' in cfg.model.family_name:
         client = Anthropic(api_key=cfg.model.api_key)
     elif 'deepseek' in cfg.model.family_name:
-        client = OpenAI(api_key=cfg.model.api_key, base_url=cfg.model.base_url, timeout=cfg.model.timeout)
+        client = OpenAI(api_key=cfg.model.api_key, base_url=cfg.model.base_url)
     elif 'gemini' in cfg.model.family_name:
         client = genai.Client(api_key=cfg.model.api_key)
     elif cfg.model.family_name == 'qwen':
@@ -24,8 +24,12 @@ def get_client(messages, cfg):
 def generate_response(messages, cfg):
     client = get_client(messages, cfg)
     model_name = cfg.model.name
-    if 'o1' in model_name or 'o3' in model_name:
-        # Need to follow the restrictions of o1 arguments
+    if 'o1' in model_name or 'o3' in model_name or 'o4' in model_name:
+        # Need to follow the restrictions
+        if 'o1' in model_name and len(messages)>0 and messages[0]['role'] == 'system':
+            system_prompt = messages[0]['content']
+            messages = messages[1:]
+            messages[0]['content'] = system_prompt + messages[0]['content']
         # TODO: add these to the hydra config
         num_tokens = 16384
         temperature = 1.0

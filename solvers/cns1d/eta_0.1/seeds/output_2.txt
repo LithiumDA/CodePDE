@@ -1,20 +1,161 @@
-Loaded data with shape: (100, 101, 1024), (100, 101, 1024), (100, 101, 1024), (101,)
+Loaded data with shape: (50, 101, 1024), (50, 101, 1024), (50, 101, 1024), (101,)
 ##### Running the solver on the given dataset #####
+[frame] k=  1  physical t = 0.010   coarse steps = 6
+[frame] k=  2  physical t = 0.020   coarse steps = 5
+[frame] k=  3  physical t = 0.030   coarse steps = 5
+[frame] k=  4  physical t = 0.040   coarse steps = 5
+[frame] k=  5  physical t = 0.050   coarse steps = 5
+[frame] k=  6  physical t = 0.060   coarse steps = 5
+[frame] k=  7  physical t = 0.070   coarse steps = 5
+[frame] k=  8  physical t = 0.080   coarse steps = 5
+[frame] k=  9  physical t = 0.090   coarse steps = 5
+[frame] k= 10  physical t = 0.100   coarse steps = 5
+[frame] k= 11  physical t = 0.110   coarse steps = 5
+[frame] k= 12  physical t = 0.120   coarse steps = 5
+[frame] k= 13  physical t = 0.130   coarse steps = 5
+[frame] k= 14  physical t = 0.140   coarse steps = 5
+[frame] k= 15  physical t = 0.150   coarse steps = 5
+[frame] k= 16  physical t = 0.160   coarse steps = 5
+[frame] k= 17  physical t = 0.170   coarse steps = 5
+[frame] k= 18  physical t = 0.180   coarse steps = 5
+[frame] k= 19  physical t = 0.190   coarse steps = 5
+[frame] k= 20  physical t = 0.200   coarse steps = 5
+[frame] k= 21  physical t = 0.210   coarse steps = 5
+[frame] k= 22  physical t = 0.220   coarse steps = 5
+[frame] k= 23  physical t = 0.230   coarse steps = 5
+[frame] k= 24  physical t = 0.240   coarse steps = 5
+[frame] k= 25  physical t = 0.250   coarse steps = 5
+[frame] k= 26  physical t = 0.260   coarse steps = 5
+[frame] k= 27  physical t = 0.270   coarse steps = 5
+[frame] k= 28  physical t = 0.280   coarse steps = 5
+[frame] k= 29  physical t = 0.290   coarse steps = 5
+[frame] k= 30  physical t = 0.300   coarse steps = 5
+[frame] k= 31  physical t = 0.310   coarse steps = 5
+[frame] k= 32  physical t = 0.320   coarse steps = 5
+[frame] k= 33  physical t = 0.330   coarse steps = 5
+[frame] k= 34  physical t = 0.340   coarse steps = 5
+[frame] k= 35  physical t = 0.350   coarse steps = 5
+[frame] k= 36  physical t = 0.360   coarse steps = 5
+[frame] k= 37  physical t = 0.370   coarse steps = 5
+[frame] k= 38  physical t = 0.380   coarse steps = 5
+[frame] k= 39  physical t = 0.390   coarse steps = 5
+[frame] k= 40  physical t = 0.400   coarse steps = 5
+[frame] k= 41  physical t = 0.410   coarse steps = 5
+[frame] k= 42  physical t = 0.420   coarse steps = 5
+[frame] k= 43  physical t = 0.430   coarse steps = 5
+[frame] k= 44  physical t = 0.440   coarse steps = 5
+[frame] k= 45  physical t = 0.450   coarse steps = 5
+[frame] k= 46  physical t = 0.460   coarse steps = 5
+[frame] k= 47  physical t = 0.470   coarse steps = 5
+[frame] k= 48  physical t = 0.480   coarse steps = 5
+[frame] k= 49  physical t = 0.490   coarse steps = 5
+[frame] k= 50  physical t = 0.500   coarse steps = 5
+[frame] k= 51  physical t = 0.510   coarse steps = 5
+[frame] k= 52  physical t = 0.520   coarse steps = 5
+[frame] k= 53  physical t = 0.530   coarse steps = 5
+[frame] k= 54  physical t = 0.540   coarse steps = 5
+[frame] k= 55  physical t = 0.550   coarse steps = 5
+[frame] k= 56  physical t = 0.560   coarse steps = 5
+[frame] k= 57  physical t = 0.570   coarse steps = 5
+[frame] k= 58  physical t = 0.580   coarse steps = 5
+[frame] k= 59  physical t = 0.590   coarse steps = 5
+[frame] k= 60  physical t = 0.600   coarse steps = 5
+[frame] k= 61  physical t = 0.610   coarse steps = 5
+[frame] k= 62  physical t = 0.620   coarse steps = 5
+[frame] k= 63  physical t = 0.630   coarse steps = 5
+[frame] k= 64  physical t = 0.640   coarse steps = 5
+[frame] k= 65  physical t = 0.650   coarse steps = 5
+[frame] k= 66  physical t = 0.660   coarse steps = 5
+[frame] k= 67  physical t = 0.670   coarse steps = 5
+[frame] k= 68  physical t = 0.680   coarse steps = 5
+[frame] k= 69  physical t = 0.690   coarse steps = 5
+[frame] k= 70  physical t = 0.700   coarse steps = 5
+[frame] k= 71  physical t = 0.710   coarse steps = 5
+[frame] k= 72  physical t = 0.720   coarse steps = 5
+[frame] k= 73  physical t = 0.730   coarse steps = 5
+[frame] k= 74  physical t = 0.740   coarse steps = 5
+[frame] k= 75  physical t = 0.750   coarse steps = 5
+[frame] k= 76  physical t = 0.760   coarse steps = 5
+[frame] k= 77  physical t = 0.770   coarse steps = 5
+[frame] k= 78  physical t = 0.780   coarse steps = 5
+[frame] k= 79  physical t = 0.790   coarse steps = 5
+[frame] k= 80  physical t = 0.800   coarse steps = 5
+[frame] k= 81  physical t = 0.810   coarse steps = 5
+[frame] k= 82  physical t = 0.820   coarse steps = 5
+[frame] k= 83  physical t = 0.830   coarse steps = 5
+[frame] k= 84  physical t = 0.840   coarse steps = 5
+[frame] k= 85  physical t = 0.850   coarse steps = 5
+[frame] k= 86  physical t = 0.860   coarse steps = 5
+[frame] k= 87  physical t = 0.870   coarse steps = 5
+[frame] k= 88  physical t = 0.880   coarse steps = 5
+[frame] k= 89  physical t = 0.890   coarse steps = 5
+[frame] k= 90  physical t = 0.900   coarse steps = 5
+[frame] k= 91  physical t = 0.910   coarse steps = 5
+[frame] k= 92  physical t = 0.920   coarse steps = 5
+[frame] k= 93  physical t = 0.930   coarse steps = 5
+[frame] k= 94  physical t = 0.940   coarse steps = 5
+[frame] k= 95  physical t = 0.950   coarse steps = 5
+[frame] k= 96  physical t = 0.960   coarse steps = 5
+[frame] k= 97  physical t = 0.970   coarse steps = 5
+[frame] k= 98  physical t = 0.980   coarse steps = 5
+[frame] k= 99  physical t = 0.990   coarse steps = 5
+[frame] k=100  physical t = 1.000   coarse steps = 5
 ##### Finished #####
-nRMSE: 0.100
+nRMSE: 0.038
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
+[frame] k=  1  physical t = 0.010   coarse steps = 1
+[frame] k=  2  physical t = 0.020   coarse steps = 0
+[frame] k=  3  physical t = 0.030   coarse steps = 0
+[frame] k=  4  physical t = 0.040   coarse steps = 0
+[frame] k=  5  physical t = 0.050   coarse steps = 0
+[frame] k=  6  physical t = 0.060   coarse steps = 0
+[frame] k=  7  physical t = 0.070   coarse steps = 0
+[frame] k=  8  physical t = 0.080   coarse steps = 0
+[frame] k=  9  physical t = 0.090   coarse steps = 0
+[frame] k= 10  physical t = 0.100   coarse steps = 0
+[frame] k= 11  physical t = 0.110   coarse steps = 0
 **** Finished ****
 **** Spatio resolution 512 ****
+[frame] k=  1  physical t = 0.010   coarse steps = 1
+[frame] k=  2  physical t = 0.020   coarse steps = 0
+[frame] k=  3  physical t = 0.030   coarse steps = 0
+[frame] k=  4  physical t = 0.040   coarse steps = 0
+[frame] k=  5  physical t = 0.050   coarse steps = 0
+[frame] k=  6  physical t = 0.060   coarse steps = 0
+[frame] k=  7  physical t = 0.070   coarse steps = 0
+[frame] k=  8  physical t = 0.080   coarse steps = 0
+[frame] k=  9  physical t = 0.090   coarse steps = 0
+[frame] k= 10  physical t = 0.100   coarse steps = 0
+[frame] k= 11  physical t = 0.110   coarse steps = 0
 **** Finished ****
 **** Spatio resolution 1024 ****
+[frame] k=  1  physical t = 0.010   coarse steps = 1
+[frame] k=  2  physical t = 0.020   coarse steps = 0
+[frame] k=  3  physical t = 0.030   coarse steps = 0
+[frame] k=  4  physical t = 0.040   coarse steps = 0
+[frame] k=  5  physical t = 0.050   coarse steps = 0
+[frame] k=  6  physical t = 0.060   coarse steps = 0
+[frame] k=  7  physical t = 0.070   coarse steps = 0
+[frame] k=  8  physical t = 0.080   coarse steps = 0
+[frame] k=  9  physical t = 0.090   coarse steps = 0
+[frame] k= 10  physical t = 0.100   coarse steps = 0
+[frame] k= 11  physical t = 0.110   coarse steps = 0
 **** Finished ****
 **** Spatio resolution 2048 ****
+[frame] k=  1  physical t = 0.010   coarse steps = 1
+[frame] k=  2  physical t = 0.020   coarse steps = 0
+[frame] k=  3  physical t = 0.030   coarse steps = 0
+[frame] k=  4  physical t = 0.040   coarse steps = 0
+[frame] k=  5  physical t = 0.050   coarse steps = 0
+[frame] k=  6  physical t = 0.060   coarse steps = 0
+[frame] k=  7  physical t = 0.070   coarse steps = 0
+[frame] k=  8  physical t = 0.080   coarse steps = 0
+[frame] k=  9  physical t = 0.090   coarse steps = 0
+[frame] k= 10  physical t = 0.100   coarse steps = 0
+[frame] k= 11  physical t = 0.110   coarse steps = 0
 **** Finished ****
-(8, 12, 256, 3)
-(8, 12, 512, 3)
-(8, 12, 1024, 3)
 Rate of convergence measured at spatio resolution 256 is nan
 Rate of convergence measured at spatio resolution 512 is nan
 Result summary
-nRMSE: 9.959e-02	| Time: 608.05s	| Average convergence rate: nan	|
+nRMSE: 3.812e-02	| Time: 0.34s	| Average convergence rate: nan	|

@@ -1,0 +1,4 @@
+/usr0/home/shandal/work_space/llm_pde/llm_as_pde_agent/../working_logs/cns1d/eta_0.1/repeated_sample/claude-3-7-sonnet-20250219/2025-04-10-19-08-54//evaluator.py:141: RuntimeWarning: overflow encountered in square
+  np.sqrt(np.sum((stacked_coarse-stacked_fine_interp)**2, axis=(1,2,3)))
+/usr0/home/shandal/miniconda3/envs/llm/lib/python3.10/site-packages/numpy/core/fromnumeric.py:88: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)

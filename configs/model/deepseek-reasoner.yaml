@@ -3,5 +3,3 @@ family_name: deepseek
 name: deepseek-reasoner
 api_key: <API_KEY>
 base_url: https://api.deepseek.com
-
-timeout: 600

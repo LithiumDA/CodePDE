@@ -1,9 +1,0 @@
-# @package pde
-name: ins2d
-sample_id: 0 # choices: range(101)
-
-pde_setting_name: 'sample_id_${pde.sample_id}'
-
-# To be appended to `root_dataset_folder` to get the full path
-dataset_folder_for_eval: 2D/NS_incom/ns_incom_inhom_2d_512-${pde.sample_id}.h5
-timeout: 3600

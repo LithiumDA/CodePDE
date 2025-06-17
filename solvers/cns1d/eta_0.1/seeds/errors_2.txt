@@ -1,0 +1,2 @@
+/usr0/home/shandal/work_space/llm_pde/working_logs/cns1d/eta_0.1/repeated_sample/o3/2025-04-25-09-25-36/solver.py:11: RuntimeWarning: invalid value encountered in divide
+  v   = m / rho

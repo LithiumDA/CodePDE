@@ -1,18 +1,23 @@
-Loaded data with shape: (100, 201, 1024)
+Loaded data with shape: (50, 201, 1024)
 ##### Running the solver on the given dataset #####
+[solver] beta=0.1, t=0.01, shift=1.024 grid points
 ##### Finished #####
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
+[solver] beta=0.1, t=0.01, shift=0.256 grid points
 **** Finished ****
 **** Spatio resolution 512 ****
+[solver] beta=0.1, t=0.01, shift=0.512 grid points
 **** Finished ****
 **** Spatio resolution 1024 ****
+[solver] beta=0.1, t=0.01, shift=1.024 grid points
 **** Finished ****
 **** Spatio resolution 2048 ****
+[solver] beta=0.1, t=0.01, shift=2.048 grid points
 **** Finished ****
 Error measured at spatio resolution 256 is 5.506e-04
 Rate of convergence measured at spatio resolution 256 is 1.111
 Error measured at spatio resolution 512 is 2.548e-04
 Rate of convergence measured at spatio resolution 512 is 6.027
 Result summary
-nRMSE: 1.027e-03	| Time: 1.93s	| Average convergence rate: 3.569	|
+nRMSE: 9.742e-04	| Time: 0.04s	| Average convergence rate: 3.569	|

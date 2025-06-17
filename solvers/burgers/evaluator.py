@@ -184,20 +184,12 @@ def time_min_max(t_coordinate):
 def x_coord_min_max(x_coordinate):
     return x_coordinate[0], x_coordinate[-1]
 
-def load_data(path, is_h5py=True):
-    if is_h5py:
-        with h5py.File(path, 'r') as f:
-            # Do NOT modify the data loading code
-            t_coordinate = np.array(f['t-coordinate'])
-            u = np.array(f['tensor'])
-            x_coordinate = np.array(f['x-coordinate'])
-    else:
-        path = "/mnt/home/username/projects/agents/PDEBench/pdebench/data_gen/data_gen_NLE/save/burgers"
-        # Load data from file
-        u = np.load(os.path.join(path, '1D_Burgers_Sols_Nu0.01.npy'))
-        t_coordinate_main = np.load(os.path.join(path, 't_coordinate.npy'))
-        t_coordinate = t_coordinate_main[:-1]
-        x_coordinate = np.load(os.path.join(path, 'x_coordinate.npy'))
+def load_data(path):
+    with h5py.File(path, 'r') as f:
+        # Do NOT modify the data loading code
+        t_coordinate = np.array(f['t-coordinate'])
+        u = np.array(f['tensor'])
+        x_coordinate = np.array(f['x-coordinate'])
 
     t_min, t_max = time_min_max(t_coordinate)
     x_min, x_max = time_min_max(x_coordinate)
@@ -231,7 +223,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    data_dict = load_data(args.dataset_path_for_eval, is_h5py=True)
+    data_dict = load_data(args.dataset_path_for_eval)
     u = data_dict['tensor']
     t_coordinate = data_dict['t_coordinate']
     x_coordinate = data_dict['x_coordinate']

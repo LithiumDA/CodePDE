@@ -214,7 +214,7 @@ if __name__ == "__main__":
                         default=0,
                         help="The id of the current run.")
     parser.add_argument("--beta", type=float,
-                        default=1.0,
+                        default=0.1,
                         choices=[0.1, 0.2, 0.4, 0.7, 1.0, 2.0, 4.0, 7.0],
                         help="Constant advection speed.")
     parser.add_argument("--dataset-path-for-eval", type=str,

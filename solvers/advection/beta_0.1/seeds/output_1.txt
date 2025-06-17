@@ -1,18 +1,23 @@
-Loaded data with shape: (100, 201, 1024)
+Loaded data with shape: (50, 201, 1024)
 ##### Running the solver on the given dataset #####
+[solver] batch=50, N=1024, times=200, beta=0.1, t_min=0, t_max=2
 ##### Finished #####
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
+[solver] batch=5, N=256, times=21, beta=0.1, t_min=0, t_max=0.21
 **** Finished ****
 **** Spatio resolution 512 ****
+[solver] batch=5, N=512, times=21, beta=0.1, t_min=0, t_max=0.21
 **** Finished ****
 **** Spatio resolution 1024 ****
+[solver] batch=5, N=1024, times=21, beta=0.1, t_min=0, t_max=0.21
 **** Finished ****
 **** Spatio resolution 2048 ****
+[solver] batch=5, N=2048, times=21, beta=0.1, t_min=0, t_max=0.21
 **** Finished ****
 Error measured at spatio resolution 256 is 6.783e-04
 Rate of convergence measured at spatio resolution 256 is 0.759
 Error measured at spatio resolution 512 is 4.009e-04
 Rate of convergence measured at spatio resolution 512 is 0.906
 Result summary
-nRMSE: 1.052e-03	| Time: 0.30s	| Average convergence rate: 0.832	|
+nRMSE: 1.008e-03	| Time: 0.12s	| Average convergence rate: 0.832	|

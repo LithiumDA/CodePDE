@@ -1,6 +1,6 @@
 round,nRMSE,elapsed_time,convergence_rate,num_trial,model,source
-7,0.001445,785.22,0.04,1,o3-mini,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/o3-mini/2025-03-19-02-09-25
-2,0.00207,45.44,0.119,2,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged
-25,0.002081,941.69,2.15,3,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged
-3,0.002091,691.92,-0.022,3,deepseek-chat,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/deepseek-chat/2025-03-19-17-39-02
-30,0.002297,15.91,0.204,3,qwq-plus,/usr0/home/username/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged
+7,0.001445,785.22,0.04,1,o3-mini,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/o3-mini/2025-03-19-02-09-25
+2,0.00207,45.44,0.119,2,qwq-plus,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged
+25,0.002081,941.69,2.15,3,qwq-plus,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged
+3,0.002091,691.92,-0.022,3,deepseek-chat,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/deepseek-chat/2025-03-19-17-39-02
+30,0.002297,15.91,0.204,3,qwq-plus,/usr0/home/shandal/work_space/llm_pde/archived_logs/burgers/nu_1.0/repeated_sample/qwq-plus/merged

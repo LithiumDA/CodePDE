@@ -1,169 +1,1144 @@
-Loaded data with shape: (100, 101, 1024), (100, 101, 1024), (100, 101, 1024), (101,)
+Loaded data with shape: (50, 101, 1024), (50, 101, 1024), (50, 101, 1024), (101,)
 ##### Running the solver on the given dataset #####
-JAX is using GPU
-Time step 1/100: Using 10000 sub-steps with dt=0.000001
-Time step 2/100: Using 10000 sub-steps with dt=0.000001
-Time step 3/100: Using 10000 sub-steps with dt=0.000001
-Time step 4/100: Using 10000 sub-steps with dt=0.000001
-Time step 5/100: Using 10000 sub-steps with dt=0.000001
-Time step 6/100: Using 10001 sub-steps with dt=0.000001
-Time step 7/100: Using 10001 sub-steps with dt=0.000001
-Time step 8/100: Using 10000 sub-steps with dt=0.000001
-Time step 9/100: Using 10000 sub-steps with dt=0.000001
-Time step 10/100: Using 10000 sub-steps with dt=0.000001
-Time step 11/100: Using 10001 sub-steps with dt=0.000001
-Time step 12/100: Using 10000 sub-steps with dt=0.000001
-Time step 13/100: Using 10000 sub-steps with dt=0.000001
-Time step 14/100: Using 10001 sub-steps with dt=0.000001
-Time step 15/100: Using 10000 sub-steps with dt=0.000001
-Time step 16/100: Using 10001 sub-steps with dt=0.000001
-Time step 17/100: Using 10001 sub-steps with dt=0.000001
-Time step 18/100: Using 10000 sub-steps with dt=0.000001
-Time step 19/100: Using 10001 sub-steps with dt=0.000001
-Time step 20/100: Using 10000 sub-steps with dt=0.000001
-Time step 21/100: Using 10001 sub-steps with dt=0.000001
-Time step 22/100: Using 10001 sub-steps with dt=0.000001
-Time step 23/100: Using 10000 sub-steps with dt=0.000001
-Time step 24/100: Using 10001 sub-steps with dt=0.000001
-Time step 25/100: Using 10001 sub-steps with dt=0.000001
-Time step 26/100: Using 10000 sub-steps with dt=0.000001
-Time step 27/100: Using 10000 sub-steps with dt=0.000001
-Time step 28/100: Using 10001 sub-steps with dt=0.000001
-Time step 29/100: Using 10000 sub-steps with dt=0.000001
-Time step 30/100: Using 10000 sub-steps with dt=0.000001
-Time step 31/100: Using 10001 sub-steps with dt=0.000001
-Time step 32/100: Using 10000 sub-steps with dt=0.000001
-Time step 33/100: Using 10000 sub-steps with dt=0.000001
-Time step 34/100: Using 10001 sub-steps with dt=0.000001
-Time step 35/100: Using 10000 sub-steps with dt=0.000001
-Time step 36/100: Using 10000 sub-steps with dt=0.000001
-Time step 37/100: Using 10001 sub-steps with dt=0.000001
-Time step 38/100: Using 10000 sub-steps with dt=0.000001
-Time step 39/100: Using 10000 sub-steps with dt=0.000001
-Time step 40/100: Using 10000 sub-steps with dt=0.000001
-Time step 41/100: Using 10001 sub-steps with dt=0.000001
-Time step 42/100: Using 10000 sub-steps with dt=0.000001
-Time step 43/100: Using 10000 sub-steps with dt=0.000001
-Time step 44/100: Using 10001 sub-steps with dt=0.000001
-Time step 45/100: Using 10000 sub-steps with dt=0.000001
-Time step 46/100: Using 10000 sub-steps with dt=0.000001
-Time step 47/100: Using 10001 sub-steps with dt=0.000001
-Time step 48/100: Using 10000 sub-steps with dt=0.000001
-Time step 49/100: Using 10000 sub-steps with dt=0.000001
-Time step 50/100: Using 10001 sub-steps with dt=0.000001
-Time step 51/100: Using 10000 sub-steps with dt=0.000001
-Time step 52/100: Using 10000 sub-steps with dt=0.000001
-Time step 53/100: Using 10000 sub-steps with dt=0.000001
-Time step 54/100: Using 10000 sub-steps with dt=0.000001
-Time step 55/100: Using 10001 sub-steps with dt=0.000001
-Time step 56/100: Using 10000 sub-steps with dt=0.000001
-Time step 57/100: Using 10000 sub-steps with dt=0.000001
-Time step 58/100: Using 10000 sub-steps with dt=0.000001
-Time step 59/100: Using 10000 sub-steps with dt=0.000001
-Time step 60/100: Using 10000 sub-steps with dt=0.000001
-Time step 61/100: Using 10001 sub-steps with dt=0.000001
-Time step 62/100: Using 10000 sub-steps with dt=0.000001
-Time step 63/100: Using 10000 sub-steps with dt=0.000001
-Time step 64/100: Using 10000 sub-steps with dt=0.000001
-Time step 65/100: Using 10000 sub-steps with dt=0.000001
-Time step 66/100: Using 10000 sub-steps with dt=0.000001
-Time step 67/100: Using 10000 sub-steps with dt=0.000001
-Time step 68/100: Using 10001 sub-steps with dt=0.000001
-Time step 69/100: Using 10000 sub-steps with dt=0.000001
-Time step 70/100: Using 10000 sub-steps with dt=0.000001
-Time step 71/100: Using 10000 sub-steps with dt=0.000001
-Time step 72/100: Using 10000 sub-steps with dt=0.000001
-Time step 73/100: Using 10000 sub-steps with dt=0.000001
-Time step 74/100: Using 10001 sub-steps with dt=0.000001
-Time step 75/100: Using 10000 sub-steps with dt=0.000001
-Time step 76/100: Using 10000 sub-steps with dt=0.000001
-Time step 77/100: Using 10000 sub-steps with dt=0.000001
-Time step 78/100: Using 10000 sub-steps with dt=0.000001
-Time step 79/100: Using 10000 sub-steps with dt=0.000001
-Time step 80/100: Using 10000 sub-steps with dt=0.000001
-Time step 81/100: Using 10001 sub-steps with dt=0.000001
-Time step 82/100: Using 10000 sub-steps with dt=0.000001
-Time step 83/100: Using 10000 sub-steps with dt=0.000001
-Time step 84/100: Using 10000 sub-steps with dt=0.000001
-Time step 85/100: Using 10000 sub-steps with dt=0.000001
-Time step 86/100: Using 10000 sub-steps with dt=0.000001
-Time step 87/100: Using 10001 sub-steps with dt=0.000001
-Time step 88/100: Using 10000 sub-steps with dt=0.000001
-Time step 89/100: Using 10000 sub-steps with dt=0.000001
-Time step 90/100: Using 10000 sub-steps with dt=0.000001
-Time step 91/100: Using 10000 sub-steps with dt=0.000001
-Time step 92/100: Using 10000 sub-steps with dt=0.000001
-Time step 93/100: Using 10001 sub-steps with dt=0.000001
-Time step 94/100: Using 10000 sub-steps with dt=0.000001
-Time step 95/100: Using 10000 sub-steps with dt=0.000001
-Time step 96/100: Using 10000 sub-steps with dt=0.000001
-Time step 97/100: Using 10000 sub-steps with dt=0.000001
-Time step 98/100: Using 10000 sub-steps with dt=0.000001
-Time step 99/100: Using 10000 sub-steps with dt=0.000001
-Time step 100/100: Using 10001 sub-steps with dt=0.000001
+Using device: cuda
+Time: 0.000000, dt: 0.000010, Target: 0.010000, Max vel: 2.2404, Min density: 1.0237e+00, Min pressure: 1.0163e+01
+Time: 0.001001, dt: 0.000010, Target: 0.010000, Max vel: 2.2521, Min density: 1.0404e+00, Min pressure: 1.0319e+01
+Time: 0.002003, dt: 0.000010, Target: 0.010000, Max vel: 2.2642, Min density: 1.0388e+00, Min pressure: 1.0476e+01
+Time: 0.003004, dt: 0.000010, Target: 0.010000, Max vel: 2.2768, Min density: 1.0386e+00, Min pressure: 1.0640e+01
+Time: 0.004005, dt: 0.000010, Target: 0.010000, Max vel: 2.2895, Min density: 1.0401e+00, Min pressure: 1.0809e+01
+Time: 0.005007, dt: 0.000010, Target: 0.010000, Max vel: 2.3023, Min density: 1.0433e+00, Min pressure: 1.0977e+01
+Time: 0.006008, dt: 0.000010, Target: 0.010000, Max vel: 2.3151, Min density: 1.0482e+00, Min pressure: 1.1098e+01
+Time: 0.007010, dt: 0.000010, Target: 0.010000, Max vel: 2.3276, Min density: 1.0550e+00, Min pressure: 1.1117e+01
+Time: 0.008001, dt: 0.000010, Target: 0.010000, Max vel: 2.3396, Min density: 1.0635e+00, Min pressure: 1.1135e+01
+Time: 0.009003, dt: 0.000010, Target: 0.010000, Max vel: 2.3511, Min density: 1.0737e+00, Min pressure: 1.1153e+01
+Time: 0.010010, dt: 0.000010, Target: 0.020000, Max vel: 2.3618, Min density: 1.0855e+00, Min pressure: 1.1172e+01
+Time: 0.011001, dt: 0.000010, Target: 0.020000, Max vel: 2.3715, Min density: 1.0983e+00, Min pressure: 1.1189e+01
+Time: 0.012003, dt: 0.000010, Target: 0.020000, Max vel: 2.3803, Min density: 1.1120e+00, Min pressure: 1.1207e+01
+Time: 0.013004, dt: 0.000010, Target: 0.020000, Max vel: 2.3880, Min density: 1.1261e+00, Min pressure: 1.1225e+01
+Time: 0.014005, dt: 0.000010, Target: 0.020000, Max vel: 2.3946, Min density: 1.1403e+00, Min pressure: 1.1242e+01
+Time: 0.015007, dt: 0.000010, Target: 0.020000, Max vel: 2.3999, Min density: 1.1544e+00, Min pressure: 1.1259e+01
+Time: 0.016008, dt: 0.000010, Target: 0.020000, Max vel: 2.4039, Min density: 1.1681e+00, Min pressure: 1.1275e+01
+Time: 0.017010, dt: 0.000010, Target: 0.020000, Max vel: 2.4067, Min density: 1.1811e+00, Min pressure: 1.1291e+01
+Time: 0.018001, dt: 0.000010, Target: 0.020000, Max vel: 2.4081, Min density: 1.1931e+00, Min pressure: 1.1307e+01
+Time: 0.019003, dt: 0.000010, Target: 0.020000, Max vel: 2.4084, Min density: 1.2044e+00, Min pressure: 1.1322e+01
+Time: 0.020010, dt: 0.000010, Target: 0.030000, Max vel: 2.4073, Min density: 1.2149e+00, Min pressure: 1.1337e+01
+Time: 0.021001, dt: 0.000010, Target: 0.030000, Max vel: 2.4052, Min density: 1.2242e+00, Min pressure: 1.1351e+01
+Time: 0.022003, dt: 0.000010, Target: 0.030000, Max vel: 2.4018, Min density: 1.2288e+00, Min pressure: 1.1364e+01
+Time: 0.023004, dt: 0.000010, Target: 0.030000, Max vel: 2.3975, Min density: 1.2228e+00, Min pressure: 1.1377e+01
+Time: 0.024005, dt: 0.000010, Target: 0.030000, Max vel: 2.3920, Min density: 1.2177e+00, Min pressure: 1.1389e+01
+Time: 0.025007, dt: 0.000010, Target: 0.030000, Max vel: 2.3857, Min density: 1.2135e+00, Min pressure: 1.1400e+01
+Time: 0.026008, dt: 0.000010, Target: 0.030000, Max vel: 2.3784, Min density: 1.2102e+00, Min pressure: 1.1411e+01
+Time: 0.027010, dt: 0.000010, Target: 0.030000, Max vel: 2.3703, Min density: 1.2078e+00, Min pressure: 1.1421e+01
+Time: 0.028001, dt: 0.000010, Target: 0.030000, Max vel: 2.3616, Min density: 1.2062e+00, Min pressure: 1.1430e+01
+Time: 0.029003, dt: 0.000010, Target: 0.030000, Max vel: 2.3521, Min density: 1.2055e+00, Min pressure: 1.1439e+01
+Time: 0.030010, dt: 0.000010, Target: 0.040000, Max vel: 2.3420, Min density: 1.2057e+00, Min pressure: 1.1446e+01
+Time: 0.031001, dt: 0.000010, Target: 0.040000, Max vel: 2.3315, Min density: 1.2067e+00, Min pressure: 1.1452e+01
+Time: 0.032003, dt: 0.000010, Target: 0.040000, Max vel: 2.3204, Min density: 1.2084e+00, Min pressure: 1.1457e+01
+Time: 0.033004, dt: 0.000010, Target: 0.040000, Max vel: 2.3089, Min density: 1.2109e+00, Min pressure: 1.1461e+01
+Time: 0.034005, dt: 0.000010, Target: 0.040000, Max vel: 2.2972, Min density: 1.2141e+00, Min pressure: 1.1462e+01
+Time: 0.035007, dt: 0.000010, Target: 0.040000, Max vel: 2.2850, Min density: 1.2179e+00, Min pressure: 1.1459e+01
+Time: 0.036008, dt: 0.000010, Target: 0.040000, Max vel: 2.2726, Min density: 1.2224e+00, Min pressure: 1.1436e+01
+Time: 0.037010, dt: 0.000010, Target: 0.040000, Max vel: 2.2600, Min density: 1.2275e+00, Min pressure: 1.1412e+01
+Time: 0.038001, dt: 0.000010, Target: 0.040000, Max vel: 2.2472, Min density: 1.2330e+00, Min pressure: 1.1387e+01
+Time: 0.039003, dt: 0.000010, Target: 0.040000, Max vel: 2.2341, Min density: 1.2390e+00, Min pressure: 1.1362e+01
+Time: 0.040010, dt: 0.000010, Target: 0.050000, Max vel: 2.2325, Min density: 1.2455e+00, Min pressure: 1.1338e+01
+Time: 0.041001, dt: 0.000010, Target: 0.050000, Max vel: 2.2303, Min density: 1.2522e+00, Min pressure: 1.1315e+01
+Time: 0.042003, dt: 0.000010, Target: 0.050000, Max vel: 2.2258, Min density: 1.2593e+00, Min pressure: 1.1292e+01
+Time: 0.043004, dt: 0.000010, Target: 0.050000, Max vel: 2.2191, Min density: 1.2666e+00, Min pressure: 1.1270e+01
+Time: 0.044005, dt: 0.000010, Target: 0.050000, Max vel: 2.2102, Min density: 1.2741e+00, Min pressure: 1.1249e+01
+Time: 0.045007, dt: 0.000010, Target: 0.050000, Max vel: 2.1992, Min density: 1.2817e+00, Min pressure: 1.1229e+01
+Time: 0.046008, dt: 0.000010, Target: 0.050000, Max vel: 2.1860, Min density: 1.2894e+00, Min pressure: 1.1210e+01
+Time: 0.047010, dt: 0.000010, Target: 0.050000, Max vel: 2.1708, Min density: 1.2971e+00, Min pressure: 1.1191e+01
+Time: 0.048001, dt: 0.000010, Target: 0.050000, Max vel: 2.1538, Min density: 1.3048e+00, Min pressure: 1.1174e+01
+Time: 0.049003, dt: 0.000010, Target: 0.050000, Max vel: 2.1348, Min density: 1.3124e+00, Min pressure: 1.1157e+01
+Time: 0.050010, dt: 0.000010, Target: 0.060000, Max vel: 2.1137, Min density: 1.3201e+00, Min pressure: 1.1140e+01
+Time: 0.051001, dt: 0.000010, Target: 0.060000, Max vel: 2.0913, Min density: 1.3274e+00, Min pressure: 1.1125e+01
+Time: 0.052003, dt: 0.000010, Target: 0.060000, Max vel: 2.0671, Min density: 1.3347e+00, Min pressure: 1.1111e+01
+Time: 0.053004, dt: 0.000010, Target: 0.060000, Max vel: 2.0413, Min density: 1.3418e+00, Min pressure: 1.1097e+01
+Time: 0.054005, dt: 0.000010, Target: 0.060000, Max vel: 2.0141, Min density: 1.3487e+00, Min pressure: 1.1084e+01
+Time: 0.055007, dt: 0.000010, Target: 0.060000, Max vel: 1.9855, Min density: 1.3544e+00, Min pressure: 1.1071e+01
+Time: 0.056008, dt: 0.000010, Target: 0.060000, Max vel: 1.9557, Min density: 1.3600e+00, Min pressure: 1.1059e+01
+Time: 0.057010, dt: 0.000010, Target: 0.060000, Max vel: 1.9273, Min density: 1.3652e+00, Min pressure: 1.1048e+01
+Time: 0.058001, dt: 0.000010, Target: 0.060000, Max vel: 1.9054, Min density: 1.3693e+00, Min pressure: 1.1038e+01
+Time: 0.059003, dt: 0.000010, Target: 0.060000, Max vel: 1.8828, Min density: 1.3694e+00, Min pressure: 1.1028e+01
+Time: 0.060010, dt: 0.000010, Target: 0.070000, Max vel: 1.8596, Min density: 1.3696e+00, Min pressure: 1.1019e+01
+Time: 0.061001, dt: 0.000010, Target: 0.070000, Max vel: 1.8362, Min density: 1.3697e+00, Min pressure: 1.1011e+01
+Time: 0.062003, dt: 0.000010, Target: 0.070000, Max vel: 1.8123, Min density: 1.3699e+00, Min pressure: 1.1003e+01
+Time: 0.063004, dt: 0.000010, Target: 0.070000, Max vel: 1.7879, Min density: 1.3701e+00, Min pressure: 1.0996e+01
+Time: 0.064005, dt: 0.000010, Target: 0.070000, Max vel: 1.7632, Min density: 1.3702e+00, Min pressure: 1.0989e+01
+Time: 0.065007, dt: 0.000010, Target: 0.070000, Max vel: 1.7382, Min density: 1.3704e+00, Min pressure: 1.0982e+01
+Time: 0.066008, dt: 0.000010, Target: 0.070000, Max vel: 1.7128, Min density: 1.3706e+00, Min pressure: 1.0977e+01
+Time: 0.067010, dt: 0.000010, Target: 0.070000, Max vel: 1.6872, Min density: 1.3708e+00, Min pressure: 1.0971e+01
+Time: 0.068001, dt: 0.000010, Target: 0.070000, Max vel: 1.6617, Min density: 1.3709e+00, Min pressure: 1.0967e+01
+Time: 0.069003, dt: 0.000010, Target: 0.070000, Max vel: 1.6446, Min density: 1.3711e+00, Min pressure: 1.0962e+01
+Time: 0.070000, dt: 0.000010, Target: 0.080000, Max vel: 1.6379, Min density: 1.3713e+00, Min pressure: 1.0959e+01
+Time: 0.071001, dt: 0.000010, Target: 0.080000, Max vel: 1.6311, Min density: 1.3715e+00, Min pressure: 1.0955e+01
+Time: 0.072003, dt: 0.000010, Target: 0.080000, Max vel: 1.6243, Min density: 1.3717e+00, Min pressure: 1.0952e+01
+Time: 0.073004, dt: 0.000010, Target: 0.080000, Max vel: 1.6175, Min density: 1.3719e+00, Min pressure: 1.0950e+01
+Time: 0.074005, dt: 0.000010, Target: 0.080000, Max vel: 1.6106, Min density: 1.3721e+00, Min pressure: 1.0948e+01
+Time: 0.075007, dt: 0.000010, Target: 0.080000, Max vel: 1.6037, Min density: 1.3723e+00, Min pressure: 1.0946e+01
+Time: 0.076008, dt: 0.000010, Target: 0.080000, Max vel: 1.5968, Min density: 1.3725e+00, Min pressure: 1.0945e+01
+Time: 0.077010, dt: 0.000010, Target: 0.080000, Max vel: 1.5899, Min density: 1.3726e+00, Min pressure: 1.0944e+01
+Time: 0.078001, dt: 0.000010, Target: 0.080000, Max vel: 1.5830, Min density: 1.3728e+00, Min pressure: 1.0943e+01
+Time: 0.079003, dt: 0.000010, Target: 0.080000, Max vel: 1.5761, Min density: 1.3730e+00, Min pressure: 1.0943e+01
+Time: 0.080010, dt: 0.000010, Target: 0.090000, Max vel: 1.5690, Min density: 1.3732e+00, Min pressure: 1.0943e+01
+Time: 0.081001, dt: 0.000010, Target: 0.090000, Max vel: 1.5621, Min density: 1.3734e+00, Min pressure: 1.0944e+01
+Time: 0.082003, dt: 0.000010, Target: 0.090000, Max vel: 1.5551, Min density: 1.3736e+00, Min pressure: 1.0944e+01
+Time: 0.083004, dt: 0.000010, Target: 0.090000, Max vel: 1.5481, Min density: 1.3738e+00, Min pressure: 1.0946e+01
+Time: 0.084005, dt: 0.000010, Target: 0.090000, Max vel: 1.5411, Min density: 1.3740e+00, Min pressure: 1.0947e+01
+Time: 0.085007, dt: 0.000010, Target: 0.090000, Max vel: 1.5341, Min density: 1.3742e+00, Min pressure: 1.0949e+01
+Time: 0.086008, dt: 0.000010, Target: 0.090000, Max vel: 1.5271, Min density: 1.3744e+00, Min pressure: 1.0951e+01
+Time: 0.087010, dt: 0.000010, Target: 0.090000, Max vel: 1.5200, Min density: 1.3746e+00, Min pressure: 1.0953e+01
+Time: 0.088001, dt: 0.000010, Target: 0.090000, Max vel: 1.5131, Min density: 1.3748e+00, Min pressure: 1.0956e+01
+Time: 0.089003, dt: 0.000010, Target: 0.090000, Max vel: 1.5060, Min density: 1.3750e+00, Min pressure: 1.0959e+01
+Time: 0.090010, dt: 0.000010, Target: 0.100000, Max vel: 1.4990, Min density: 1.3751e+00, Min pressure: 1.0962e+01
+Time: 0.091001, dt: 0.000010, Target: 0.100000, Max vel: 1.4920, Min density: 1.3753e+00, Min pressure: 1.0966e+01
+Time: 0.092003, dt: 0.000010, Target: 0.100000, Max vel: 1.4850, Min density: 1.3754e+00, Min pressure: 1.0970e+01
+Time: 0.093004, dt: 0.000010, Target: 0.100000, Max vel: 1.4780, Min density: 1.3755e+00, Min pressure: 1.0974e+01
+Time: 0.094005, dt: 0.000010, Target: 0.100000, Max vel: 1.4710, Min density: 1.3756e+00, Min pressure: 1.0978e+01
+Time: 0.095007, dt: 0.000010, Target: 0.100000, Max vel: 1.4640, Min density: 1.3757e+00, Min pressure: 1.0983e+01
+Time: 0.096008, dt: 0.000010, Target: 0.100000, Max vel: 1.4570, Min density: 1.3758e+00, Min pressure: 1.0988e+01
+Time: 0.097010, dt: 0.000010, Target: 0.100000, Max vel: 1.4500, Min density: 1.3758e+00, Min pressure: 1.0993e+01
+Time: 0.098001, dt: 0.000010, Target: 0.100000, Max vel: 1.4431, Min density: 1.3758e+00, Min pressure: 1.0998e+01
+Time: 0.099003, dt: 0.000010, Target: 0.100000, Max vel: 1.4362, Min density: 1.3757e+00, Min pressure: 1.1004e+01
+Time: 0.100010, dt: 0.000010, Target: 0.110000, Max vel: 1.4292, Min density: 1.3757e+00, Min pressure: 1.1010e+01
+Time: 0.101001, dt: 0.000010, Target: 0.110000, Max vel: 1.4224, Min density: 1.3755e+00, Min pressure: 1.1016e+01
+Time: 0.102003, dt: 0.000010, Target: 0.110000, Max vel: 1.4155, Min density: 1.3754e+00, Min pressure: 1.1022e+01
+Time: 0.103004, dt: 0.000010, Target: 0.110000, Max vel: 1.4086, Min density: 1.3751e+00, Min pressure: 1.1029e+01
+Time: 0.104005, dt: 0.000010, Target: 0.110000, Max vel: 1.4018, Min density: 1.3748e+00, Min pressure: 1.1036e+01
+Time: 0.105007, dt: 0.000010, Target: 0.110000, Max vel: 1.4038, Min density: 1.3745e+00, Min pressure: 1.1043e+01
+Time: 0.106008, dt: 0.000010, Target: 0.110000, Max vel: 1.4199, Min density: 1.3740e+00, Min pressure: 1.1051e+01
+Time: 0.107010, dt: 0.000010, Target: 0.110000, Max vel: 1.4351, Min density: 1.3735e+00, Min pressure: 1.1058e+01
+Time: 0.108001, dt: 0.000010, Target: 0.110000, Max vel: 1.4493, Min density: 1.3728e+00, Min pressure: 1.1066e+01
+Time: 0.109003, dt: 0.000010, Target: 0.110000, Max vel: 1.4627, Min density: 1.3721e+00, Min pressure: 1.1074e+01
+Time: 0.110010, dt: 0.000010, Target: 0.120000, Max vel: 1.4752, Min density: 1.3712e+00, Min pressure: 1.1083e+01
+Time: 0.111001, dt: 0.000010, Target: 0.120000, Max vel: 1.4866, Min density: 1.3702e+00, Min pressure: 1.1091e+01
+Time: 0.112003, dt: 0.000010, Target: 0.120000, Max vel: 1.4972, Min density: 1.3691e+00, Min pressure: 1.1100e+01
+Time: 0.113004, dt: 0.000010, Target: 0.120000, Max vel: 1.5069, Min density: 1.3679e+00, Min pressure: 1.1109e+01
+Time: 0.114005, dt: 0.000010, Target: 0.120000, Max vel: 1.5156, Min density: 1.3665e+00, Min pressure: 1.1118e+01
+Time: 0.115007, dt: 0.000010, Target: 0.120000, Max vel: 1.5235, Min density: 1.3652e+00, Min pressure: 1.1128e+01
+Time: 0.116008, dt: 0.000010, Target: 0.120000, Max vel: 1.5305, Min density: 1.3638e+00, Min pressure: 1.1138e+01
+Time: 0.117010, dt: 0.000010, Target: 0.120000, Max vel: 1.5366, Min density: 1.3624e+00, Min pressure: 1.1148e+01
+Time: 0.118001, dt: 0.000010, Target: 0.120000, Max vel: 1.5417, Min density: 1.3611e+00, Min pressure: 1.1158e+01
+Time: 0.119003, dt: 0.000010, Target: 0.120000, Max vel: 1.5461, Min density: 1.3597e+00, Min pressure: 1.1168e+01
+Time: 0.120010, dt: 0.000010, Target: 0.130000, Max vel: 1.5496, Min density: 1.3584e+00, Min pressure: 1.1179e+01
+Time: 0.121001, dt: 0.000010, Target: 0.130000, Max vel: 1.5522, Min density: 1.3572e+00, Min pressure: 1.1190e+01
+Time: 0.122003, dt: 0.000010, Target: 0.130000, Max vel: 1.5541, Min density: 1.3560e+00, Min pressure: 1.1201e+01
+Time: 0.123004, dt: 0.000010, Target: 0.130000, Max vel: 1.5552, Min density: 1.3548e+00, Min pressure: 1.1212e+01
+Time: 0.124005, dt: 0.000010, Target: 0.130000, Max vel: 1.5555, Min density: 1.3537e+00, Min pressure: 1.1224e+01
+Time: 0.125007, dt: 0.000010, Target: 0.130000, Max vel: 1.5550, Min density: 1.3526e+00, Min pressure: 1.1236e+01
+Time: 0.126008, dt: 0.000010, Target: 0.130000, Max vel: 1.5538, Min density: 1.3516e+00, Min pressure: 1.1248e+01
+Time: 0.127010, dt: 0.000010, Target: 0.130000, Max vel: 1.5519, Min density: 1.3506e+00, Min pressure: 1.1260e+01
+Time: 0.128001, dt: 0.000010, Target: 0.130000, Max vel: 1.5494, Min density: 1.3497e+00, Min pressure: 1.1272e+01
+Time: 0.129003, dt: 0.000010, Target: 0.130000, Max vel: 1.5461, Min density: 1.3488e+00, Min pressure: 1.1285e+01
+Time: 0.130010, dt: 0.000010, Target: 0.140000, Max vel: 1.5422, Min density: 1.3479e+00, Min pressure: 1.1298e+01
+Time: 0.131001, dt: 0.000010, Target: 0.140000, Max vel: 1.5377, Min density: 1.3471e+00, Min pressure: 1.1311e+01
+Time: 0.132003, dt: 0.000010, Target: 0.140000, Max vel: 1.5326, Min density: 1.3464e+00, Min pressure: 1.1325e+01
+Time: 0.133004, dt: 0.000010, Target: 0.140000, Max vel: 1.5269, Min density: 1.3457e+00, Min pressure: 1.1338e+01
+Time: 0.134005, dt: 0.000010, Target: 0.140000, Max vel: 1.5206, Min density: 1.3451e+00, Min pressure: 1.1352e+01
+Time: 0.135007, dt: 0.000010, Target: 0.140000, Max vel: 1.5138, Min density: 1.3445e+00, Min pressure: 1.1366e+01
+Time: 0.136008, dt: 0.000010, Target: 0.140000, Max vel: 1.5065, Min density: 1.3440e+00, Min pressure: 1.1380e+01
+Time: 0.137010, dt: 0.000010, Target: 0.140000, Max vel: 1.4988, Min density: 1.3435e+00, Min pressure: 1.1395e+01
+Time: 0.138001, dt: 0.000010, Target: 0.140000, Max vel: 1.4906, Min density: 1.3431e+00, Min pressure: 1.1409e+01
+Time: 0.139003, dt: 0.000010, Target: 0.140000, Max vel: 1.4820, Min density: 1.3428e+00, Min pressure: 1.1424e+01
+Time: 0.140000, dt: 0.000010, Target: 0.150000, Max vel: 1.4729, Min density: 1.3425e+00, Min pressure: 1.1439e+01
+Time: 0.141001, dt: 0.000010, Target: 0.150000, Max vel: 1.4635, Min density: 1.3422e+00, Min pressure: 1.1455e+01
+Time: 0.142003, dt: 0.000010, Target: 0.150000, Max vel: 1.4537, Min density: 1.3420e+00, Min pressure: 1.1470e+01
+Time: 0.143004, dt: 0.000010, Target: 0.150000, Max vel: 1.4435, Min density: 1.3419e+00, Min pressure: 1.1486e+01
+Time: 0.144005, dt: 0.000010, Target: 0.150000, Max vel: 1.4331, Min density: 1.3418e+00, Min pressure: 1.1502e+01
+Time: 0.145007, dt: 0.000010, Target: 0.150000, Max vel: 1.4224, Min density: 1.3417e+00, Min pressure: 1.1518e+01
+Time: 0.146008, dt: 0.000010, Target: 0.150000, Max vel: 1.4114, Min density: 1.3417e+00, Min pressure: 1.1534e+01
+Time: 0.147010, dt: 0.000010, Target: 0.150000, Max vel: 1.4002, Min density: 1.3418e+00, Min pressure: 1.1551e+01
+Time: 0.148001, dt: 0.000010, Target: 0.150000, Max vel: 1.3888, Min density: 1.3419e+00, Min pressure: 1.1568e+01
+Time: 0.149003, dt: 0.000010, Target: 0.150000, Max vel: 1.3772, Min density: 1.3421e+00, Min pressure: 1.1585e+01
+Time: 0.150010, dt: 0.000010, Target: 0.160000, Max vel: 1.3653, Min density: 1.3423e+00, Min pressure: 1.1602e+01
+Time: 0.151001, dt: 0.000010, Target: 0.160000, Max vel: 1.3535, Min density: 1.3425e+00, Min pressure: 1.1619e+01
+Time: 0.152003, dt: 0.000010, Target: 0.160000, Max vel: 1.3415, Min density: 1.3428e+00, Min pressure: 1.1637e+01
+Time: 0.153004, dt: 0.000010, Target: 0.160000, Max vel: 1.3293, Min density: 1.3432e+00, Min pressure: 1.1654e+01
+Time: 0.154005, dt: 0.000010, Target: 0.160000, Max vel: 1.3171, Min density: 1.3436e+00, Min pressure: 1.1672e+01
+Time: 0.155007, dt: 0.000010, Target: 0.160000, Max vel: 1.3049, Min density: 1.3440e+00, Min pressure: 1.1690e+01
+Time: 0.156008, dt: 0.000010, Target: 0.160000, Max vel: 1.2926, Min density: 1.3445e+00, Min pressure: 1.1709e+01
+Time: 0.157009, dt: 0.000010, Target: 0.160000, Max vel: 1.2804, Min density: 1.3450e+00, Min pressure: 1.1727e+01
+Time: 0.158001, dt: 0.000010, Target: 0.160000, Max vel: 1.2682, Min density: 1.3455e+00, Min pressure: 1.1746e+01
+Time: 0.159003, dt: 0.000010, Target: 0.160000, Max vel: 1.2561, Min density: 1.3461e+00, Min pressure: 1.1765e+01
+Time: 0.160010, dt: 0.000010, Target: 0.170000, Max vel: 1.2439, Min density: 1.3468e+00, Min pressure: 1.1784e+01
+Time: 0.161001, dt: 0.000010, Target: 0.170000, Max vel: 1.2321, Min density: 1.3474e+00, Min pressure: 1.1803e+01
+Time: 0.162003, dt: 0.000010, Target: 0.170000, Max vel: 1.2203, Min density: 1.3481e+00, Min pressure: 1.1822e+01
+Time: 0.163004, dt: 0.000010, Target: 0.170000, Max vel: 1.2087, Min density: 1.3488e+00, Min pressure: 1.1842e+01
+Time: 0.164005, dt: 0.000010, Target: 0.170000, Max vel: 1.1973, Min density: 1.3496e+00, Min pressure: 1.1861e+01
+Time: 0.165007, dt: 0.000010, Target: 0.170000, Max vel: 1.1862, Min density: 1.3504e+00, Min pressure: 1.1881e+01
+Time: 0.166008, dt: 0.000010, Target: 0.170000, Max vel: 1.1753, Min density: 1.3512e+00, Min pressure: 1.1901e+01
+Time: 0.167010, dt: 0.000010, Target: 0.170000, Max vel: 1.1649, Min density: 1.3521e+00, Min pressure: 1.1922e+01
+Time: 0.168001, dt: 0.000010, Target: 0.170000, Max vel: 1.1549, Min density: 1.3530e+00, Min pressure: 1.1942e+01
+Time: 0.169003, dt: 0.000010, Target: 0.170000, Max vel: 1.1453, Min density: 1.3539e+00, Min pressure: 1.1962e+01
+Time: 0.170000, dt: 0.000010, Target: 0.180000, Max vel: 1.1363, Min density: 1.3548e+00, Min pressure: 1.1983e+01
+Time: 0.171001, dt: 0.000010, Target: 0.180000, Max vel: 1.1279, Min density: 1.3557e+00, Min pressure: 1.2004e+01
+Time: 0.172003, dt: 0.000010, Target: 0.180000, Max vel: 1.1202, Min density: 1.3567e+00, Min pressure: 1.2025e+01
+Time: 0.173004, dt: 0.000010, Target: 0.180000, Max vel: 1.1133, Min density: 1.3577e+00, Min pressure: 1.2046e+01
+Time: 0.174005, dt: 0.000010, Target: 0.180000, Max vel: 1.1074, Min density: 1.3587e+00, Min pressure: 1.2067e+01
+Time: 0.175007, dt: 0.000010, Target: 0.180000, Max vel: 1.1025, Min density: 1.3597e+00, Min pressure: 1.2089e+01
+Time: 0.176008, dt: 0.000010, Target: 0.180000, Max vel: 1.0989, Min density: 1.3608e+00, Min pressure: 1.2110e+01
+Time: 0.177010, dt: 0.000010, Target: 0.180000, Max vel: 1.0965, Min density: 1.3618e+00, Min pressure: 1.2132e+01
+Time: 0.178001, dt: 0.000010, Target: 0.180000, Max vel: 1.0957, Min density: 1.3629e+00, Min pressure: 1.2154e+01
+Time: 0.179003, dt: 0.000010, Target: 0.180000, Max vel: 1.0963, Min density: 1.3640e+00, Min pressure: 1.2176e+01
+Time: 0.180010, dt: 0.000010, Target: 0.190000, Max vel: 1.0983, Min density: 1.3651e+00, Min pressure: 1.2198e+01
+Time: 0.181001, dt: 0.000010, Target: 0.190000, Max vel: 1.1016, Min density: 1.3662e+00, Min pressure: 1.2220e+01
+Time: 0.182003, dt: 0.000010, Target: 0.190000, Max vel: 1.1059, Min density: 1.3673e+00, Min pressure: 1.2243e+01
+Time: 0.183004, dt: 0.000010, Target: 0.190000, Max vel: 1.1110, Min density: 1.3684e+00, Min pressure: 1.2265e+01
+Time: 0.184005, dt: 0.000010, Target: 0.190000, Max vel: 1.1166, Min density: 1.3695e+00, Min pressure: 1.2288e+01
+Time: 0.185007, dt: 0.000010, Target: 0.190000, Max vel: 1.1226, Min density: 1.3707e+00, Min pressure: 1.2311e+01
+Time: 0.186008, dt: 0.000010, Target: 0.190000, Max vel: 1.1288, Min density: 1.3718e+00, Min pressure: 1.2334e+01
+Time: 0.187009, dt: 0.000010, Target: 0.190000, Max vel: 1.1351, Min density: 1.3729e+00, Min pressure: 1.2357e+01
+Time: 0.188001, dt: 0.000010, Target: 0.190000, Max vel: 1.1413, Min density: 1.3740e+00, Min pressure: 1.2380e+01
+Time: 0.189003, dt: 0.000010, Target: 0.190000, Max vel: 1.1475, Min density: 1.3752e+00, Min pressure: 1.2403e+01
+Time: 0.190010, dt: 0.000010, Target: 0.200000, Max vel: 1.1537, Min density: 1.3763e+00, Min pressure: 1.2426e+01
+Time: 0.191001, dt: 0.000010, Target: 0.200000, Max vel: 1.1596, Min density: 1.3774e+00, Min pressure: 1.2450e+01
+Time: 0.192003, dt: 0.000010, Target: 0.200000, Max vel: 1.1653, Min density: 1.3786e+00, Min pressure: 1.2473e+01
+Time: 0.193004, dt: 0.000010, Target: 0.200000, Max vel: 1.1709, Min density: 1.3797e+00, Min pressure: 1.2497e+01
+Time: 0.194005, dt: 0.000010, Target: 0.200000, Max vel: 1.1762, Min density: 1.3808e+00, Min pressure: 1.2521e+01
+Time: 0.195007, dt: 0.000010, Target: 0.200000, Max vel: 1.1813, Min density: 1.3819e+00, Min pressure: 1.2545e+01
+Time: 0.196008, dt: 0.000010, Target: 0.200000, Max vel: 1.1862, Min density: 1.3830e+00, Min pressure: 1.2569e+01
+Time: 0.197010, dt: 0.000010, Target: 0.200000, Max vel: 1.1908, Min density: 1.3841e+00, Min pressure: 1.2593e+01
+Time: 0.198001, dt: 0.000010, Target: 0.200000, Max vel: 1.1951, Min density: 1.3851e+00, Min pressure: 1.2617e+01
+Time: 0.199003, dt: 0.000010, Target: 0.200000, Max vel: 1.1992, Min density: 1.3862e+00, Min pressure: 1.2641e+01
+Time: 0.200010, dt: 0.000010, Target: 0.210000, Max vel: 1.2030, Min density: 1.3872e+00, Min pressure: 1.2666e+01
+Time: 0.201001, dt: 0.000010, Target: 0.210000, Max vel: 1.2064, Min density: 1.3882e+00, Min pressure: 1.2690e+01
+Time: 0.202003, dt: 0.000010, Target: 0.210000, Max vel: 1.2097, Min density: 1.3892e+00, Min pressure: 1.2715e+01
+Time: 0.203004, dt: 0.000010, Target: 0.210000, Max vel: 1.2126, Min density: 1.3902e+00, Min pressure: 1.2739e+01
+Time: 0.204005, dt: 0.000010, Target: 0.210000, Max vel: 1.2152, Min density: 1.3912e+00, Min pressure: 1.2764e+01
+Time: 0.205007, dt: 0.000010, Target: 0.210000, Max vel: 1.2176, Min density: 1.3921e+00, Min pressure: 1.2789e+01
+Time: 0.206008, dt: 0.000010, Target: 0.210000, Max vel: 1.2197, Min density: 1.3930e+00, Min pressure: 1.2814e+01
+Time: 0.207009, dt: 0.000010, Target: 0.210000, Max vel: 1.2215, Min density: 1.3939e+00, Min pressure: 1.2839e+01
+Time: 0.208001, dt: 0.000010, Target: 0.210000, Max vel: 1.2230, Min density: 1.3948e+00, Min pressure: 1.2864e+01
+Time: 0.209003, dt: 0.000010, Target: 0.210000, Max vel: 1.2242, Min density: 1.3956e+00, Min pressure: 1.2889e+01
+Time: 0.210010, dt: 0.000010, Target: 0.220000, Max vel: 1.2252, Min density: 1.3964e+00, Min pressure: 1.2915e+01
+Time: 0.211001, dt: 0.000010, Target: 0.220000, Max vel: 1.2258, Min density: 1.3972e+00, Min pressure: 1.2940e+01
+Time: 0.212003, dt: 0.000010, Target: 0.220000, Max vel: 1.2262, Min density: 1.3979e+00, Min pressure: 1.2965e+01
+Time: 0.213004, dt: 0.000010, Target: 0.220000, Max vel: 1.2264, Min density: 1.3987e+00, Min pressure: 1.2991e+01
+Time: 0.214005, dt: 0.000010, Target: 0.220000, Max vel: 1.2262, Min density: 1.3994e+00, Min pressure: 1.3016e+01
+Time: 0.215007, dt: 0.000010, Target: 0.220000, Max vel: 1.2258, Min density: 1.4001e+00, Min pressure: 1.3042e+01
+Time: 0.216008, dt: 0.000010, Target: 0.220000, Max vel: 1.2252, Min density: 1.4008e+00, Min pressure: 1.3068e+01
+Time: 0.217009, dt: 0.000010, Target: 0.220000, Max vel: 1.2243, Min density: 1.4014e+00, Min pressure: 1.3094e+01
+Time: 0.218001, dt: 0.000010, Target: 0.220000, Max vel: 1.2232, Min density: 1.4021e+00, Min pressure: 1.3119e+01
+Time: 0.219003, dt: 0.000010, Target: 0.220000, Max vel: 1.2218, Min density: 1.4027e+00, Min pressure: 1.3145e+01
+Time: 0.220010, dt: 0.000010, Target: 0.230000, Max vel: 1.2201, Min density: 1.4033e+00, Min pressure: 1.3171e+01
+Time: 0.221001, dt: 0.000010, Target: 0.230000, Max vel: 1.2183, Min density: 1.4039e+00, Min pressure: 1.3197e+01
+Time: 0.222003, dt: 0.000010, Target: 0.230000, Max vel: 1.2162, Min density: 1.4045e+00, Min pressure: 1.3223e+01
+Time: 0.223004, dt: 0.000010, Target: 0.230000, Max vel: 1.2139, Min density: 1.4051e+00, Min pressure: 1.3250e+01
+Time: 0.224005, dt: 0.000010, Target: 0.230000, Max vel: 1.2114, Min density: 1.4057e+00, Min pressure: 1.3276e+01
+Time: 0.225007, dt: 0.000010, Target: 0.230000, Max vel: 1.2087, Min density: 1.4063e+00, Min pressure: 1.3302e+01
+Time: 0.226008, dt: 0.000010, Target: 0.230000, Max vel: 1.2058, Min density: 1.4069e+00, Min pressure: 1.3329e+01
+Time: 0.227010, dt: 0.000010, Target: 0.230000, Max vel: 1.2027, Min density: 1.4075e+00, Min pressure: 1.3355e+01
+Time: 0.228001, dt: 0.000010, Target: 0.230000, Max vel: 1.1994, Min density: 1.4080e+00, Min pressure: 1.3382e+01
+Time: 0.229003, dt: 0.000010, Target: 0.230000, Max vel: 1.1959, Min density: 1.4086e+00, Min pressure: 1.3408e+01
+Time: 0.230010, dt: 0.000010, Target: 0.240000, Max vel: 1.1923, Min density: 1.4091e+00, Min pressure: 1.3435e+01
+Time: 0.231001, dt: 0.000010, Target: 0.240000, Max vel: 1.1885, Min density: 1.4097e+00, Min pressure: 1.3462e+01
+Time: 0.232003, dt: 0.000010, Target: 0.240000, Max vel: 1.1845, Min density: 1.4102e+00, Min pressure: 1.3488e+01
+Time: 0.233004, dt: 0.000010, Target: 0.240000, Max vel: 1.1804, Min density: 1.4107e+00, Min pressure: 1.3515e+01
+Time: 0.234005, dt: 0.000010, Target: 0.240000, Max vel: 1.1761, Min density: 1.4113e+00, Min pressure: 1.3542e+01
+Time: 0.235007, dt: 0.000010, Target: 0.240000, Max vel: 1.1717, Min density: 1.4118e+00, Min pressure: 1.3569e+01
+Time: 0.236008, dt: 0.000010, Target: 0.240000, Max vel: 1.1672, Min density: 1.4123e+00, Min pressure: 1.3596e+01
+Time: 0.237009, dt: 0.000010, Target: 0.240000, Max vel: 1.1625, Min density: 1.4128e+00, Min pressure: 1.3623e+01
+Time: 0.238001, dt: 0.000010, Target: 0.240000, Max vel: 1.1578, Min density: 1.4134e+00, Min pressure: 1.3650e+01
+Time: 0.239003, dt: 0.000010, Target: 0.240000, Max vel: 1.1529, Min density: 1.4139e+00, Min pressure: 1.3678e+01
+Time: 0.240010, dt: 0.000010, Target: 0.250000, Max vel: 1.1479, Min density: 1.4144e+00, Min pressure: 1.3705e+01
+Time: 0.241001, dt: 0.000010, Target: 0.250000, Max vel: 1.1429, Min density: 1.4149e+00, Min pressure: 1.3732e+01
+Time: 0.242003, dt: 0.000010, Target: 0.250000, Max vel: 1.1377, Min density: 1.4154e+00, Min pressure: 1.3760e+01
+Time: 0.243004, dt: 0.000010, Target: 0.250000, Max vel: 1.1325, Min density: 1.4159e+00, Min pressure: 1.3787e+01
+Time: 0.244005, dt: 0.000010, Target: 0.250000, Max vel: 1.1272, Min density: 1.4163e+00, Min pressure: 1.3815e+01
+Time: 0.245007, dt: 0.000010, Target: 0.250000, Max vel: 1.1218, Min density: 1.4168e+00, Min pressure: 1.3842e+01
+Time: 0.246008, dt: 0.000010, Target: 0.250000, Max vel: 1.1164, Min density: 1.4173e+00, Min pressure: 1.3870e+01
+Time: 0.247010, dt: 0.000010, Target: 0.250000, Max vel: 1.1109, Min density: 1.4178e+00, Min pressure: 1.3898e+01
+Time: 0.248001, dt: 0.000010, Target: 0.250000, Max vel: 1.1054, Min density: 1.4182e+00, Min pressure: 1.3925e+01
+Time: 0.249003, dt: 0.000010, Target: 0.250000, Max vel: 1.0999, Min density: 1.4187e+00, Min pressure: 1.3953e+01
+Time: 0.250010, dt: 0.000010, Target: 0.260000, Max vel: 1.0943, Min density: 1.4191e+00, Min pressure: 1.3981e+01
+Time: 0.251001, dt: 0.000010, Target: 0.260000, Max vel: 1.0887, Min density: 1.4196e+00, Min pressure: 1.4009e+01
+Time: 0.252003, dt: 0.000010, Target: 0.260000, Max vel: 1.0831, Min density: 1.4200e+00, Min pressure: 1.4037e+01
+Time: 0.253004, dt: 0.000010, Target: 0.260000, Max vel: 1.0775, Min density: 1.4205e+00, Min pressure: 1.4065e+01
+Time: 0.254005, dt: 0.000010, Target: 0.260000, Max vel: 1.0719, Min density: 1.4209e+00, Min pressure: 1.4093e+01
+Time: 0.255007, dt: 0.000010, Target: 0.260000, Max vel: 1.0664, Min density: 1.4213e+00, Min pressure: 1.4121e+01
+Time: 0.256008, dt: 0.000010, Target: 0.260000, Max vel: 1.0608, Min density: 1.4217e+00, Min pressure: 1.4149e+01
+Time: 0.257010, dt: 0.000010, Target: 0.260000, Max vel: 1.0553, Min density: 1.4221e+00, Min pressure: 1.4178e+01
+Time: 0.258001, dt: 0.000010, Target: 0.260000, Max vel: 1.0499, Min density: 1.4225e+00, Min pressure: 1.4206e+01
+Time: 0.259003, dt: 0.000010, Target: 0.260000, Max vel: 1.0445, Min density: 1.4229e+00, Min pressure: 1.4234e+01
+Time: 0.260010, dt: 0.000010, Target: 0.270000, Max vel: 1.0442, Min density: 1.4233e+00, Min pressure: 1.4263e+01
+Time: 0.261001, dt: 0.000010, Target: 0.270000, Max vel: 1.0454, Min density: 1.4237e+00, Min pressure: 1.4291e+01
+Time: 0.262003, dt: 0.000010, Target: 0.270000, Max vel: 1.0466, Min density: 1.4241e+00, Min pressure: 1.4320e+01
+Time: 0.263004, dt: 0.000010, Target: 0.270000, Max vel: 1.0479, Min density: 1.4244e+00, Min pressure: 1.4348e+01
+Time: 0.264005, dt: 0.000010, Target: 0.270000, Max vel: 1.0491, Min density: 1.4248e+00, Min pressure: 1.4377e+01
+Time: 0.265007, dt: 0.000010, Target: 0.270000, Max vel: 1.0503, Min density: 1.4251e+00, Min pressure: 1.4406e+01
+Time: 0.266008, dt: 0.000010, Target: 0.270000, Max vel: 1.0515, Min density: 1.4255e+00, Min pressure: 1.4434e+01
+Time: 0.267009, dt: 0.000010, Target: 0.270000, Max vel: 1.0527, Min density: 1.4258e+00, Min pressure: 1.4463e+01
+Time: 0.268001, dt: 0.000010, Target: 0.270000, Max vel: 1.0539, Min density: 1.4261e+00, Min pressure: 1.4492e+01
+Time: 0.269003, dt: 0.000010, Target: 0.270000, Max vel: 1.0550, Min density: 1.4264e+00, Min pressure: 1.4521e+01
+Time: 0.270010, dt: 0.000010, Target: 0.280000, Max vel: 1.0562, Min density: 1.4267e+00, Min pressure: 1.4550e+01
+Time: 0.271001, dt: 0.000010, Target: 0.280000, Max vel: 1.0573, Min density: 1.4270e+00, Min pressure: 1.4578e+01
+Time: 0.272003, dt: 0.000010, Target: 0.280000, Max vel: 1.0585, Min density: 1.4273e+00, Min pressure: 1.4607e+01
+Time: 0.273004, dt: 0.000010, Target: 0.280000, Max vel: 1.0596, Min density: 1.4276e+00, Min pressure: 1.4636e+01
+Time: 0.274005, dt: 0.000010, Target: 0.280000, Max vel: 1.0608, Min density: 1.4279e+00, Min pressure: 1.4665e+01
+Time: 0.275007, dt: 0.000010, Target: 0.280000, Max vel: 1.0619, Min density: 1.4281e+00, Min pressure: 1.4695e+01
+Time: 0.276008, dt: 0.000010, Target: 0.280000, Max vel: 1.0630, Min density: 1.4284e+00, Min pressure: 1.4724e+01
+Time: 0.277009, dt: 0.000010, Target: 0.280000, Max vel: 1.0640, Min density: 1.4286e+00, Min pressure: 1.4753e+01
+Time: 0.278001, dt: 0.000010, Target: 0.280000, Max vel: 1.0651, Min density: 1.4289e+00, Min pressure: 1.4782e+01
+Time: 0.279003, dt: 0.000010, Target: 0.280000, Max vel: 1.0661, Min density: 1.4291e+00, Min pressure: 1.4811e+01
+Time: 0.280000, dt: 0.000010, Target: 0.290000, Max vel: 1.0672, Min density: 1.4293e+00, Min pressure: 1.4840e+01
+Time: 0.281001, dt: 0.000010, Target: 0.290000, Max vel: 1.0682, Min density: 1.4295e+00, Min pressure: 1.4870e+01
+Time: 0.282003, dt: 0.000010, Target: 0.290000, Max vel: 1.0692, Min density: 1.4297e+00, Min pressure: 1.4899e+01
+Time: 0.283004, dt: 0.000010, Target: 0.290000, Max vel: 1.0702, Min density: 1.4299e+00, Min pressure: 1.4928e+01
+Time: 0.284005, dt: 0.000010, Target: 0.290000, Max vel: 1.0712, Min density: 1.4300e+00, Min pressure: 1.4958e+01
+Time: 0.285007, dt: 0.000010, Target: 0.290000, Max vel: 1.0721, Min density: 1.4302e+00, Min pressure: 1.4987e+01
+Time: 0.286008, dt: 0.000010, Target: 0.290000, Max vel: 1.0730, Min density: 1.4304e+00, Min pressure: 1.5016e+01
+Time: 0.287010, dt: 0.000010, Target: 0.290000, Max vel: 1.0739, Min density: 1.4305e+00, Min pressure: 1.5046e+01
+Time: 0.288001, dt: 0.000010, Target: 0.290000, Max vel: 1.0748, Min density: 1.4307e+00, Min pressure: 1.5075e+01
+Time: 0.289003, dt: 0.000010, Target: 0.290000, Max vel: 1.0757, Min density: 1.4308e+00, Min pressure: 1.5104e+01
+Time: 0.290010, dt: 0.000010, Target: 0.300000, Max vel: 1.0766, Min density: 1.4309e+00, Min pressure: 1.5134e+01
+Time: 0.291001, dt: 0.000010, Target: 0.300000, Max vel: 1.0774, Min density: 1.4310e+00, Min pressure: 1.5163e+01
+Time: 0.292003, dt: 0.000010, Target: 0.300000, Max vel: 1.0782, Min density: 1.4311e+00, Min pressure: 1.5193e+01
+Time: 0.293004, dt: 0.000010, Target: 0.300000, Max vel: 1.0790, Min density: 1.4312e+00, Min pressure: 1.5222e+01
+Time: 0.294005, dt: 0.000010, Target: 0.300000, Max vel: 1.0798, Min density: 1.4313e+00, Min pressure: 1.5251e+01
+Time: 0.295007, dt: 0.000010, Target: 0.300000, Max vel: 1.0805, Min density: 1.4314e+00, Min pressure: 1.5281e+01
+Time: 0.296008, dt: 0.000010, Target: 0.300000, Max vel: 1.0813, Min density: 1.4314e+00, Min pressure: 1.5310e+01
+Time: 0.297009, dt: 0.000010, Target: 0.300000, Max vel: 1.0820, Min density: 1.4315e+00, Min pressure: 1.5340e+01
+Time: 0.298001, dt: 0.000010, Target: 0.300000, Max vel: 1.0826, Min density: 1.4315e+00, Min pressure: 1.5369e+01
+Time: 0.299003, dt: 0.000010, Target: 0.300000, Max vel: 1.0833, Min density: 1.4316e+00, Min pressure: 1.5398e+01
+Time: 0.300010, dt: 0.000010, Target: 0.310000, Max vel: 1.0840, Min density: 1.4316e+00, Min pressure: 1.5428e+01
+Time: 0.301001, dt: 0.000010, Target: 0.310000, Max vel: 1.0846, Min density: 1.4316e+00, Min pressure: 1.5457e+01
+Time: 0.302003, dt: 0.000010, Target: 0.310000, Max vel: 1.0852, Min density: 1.4316e+00, Min pressure: 1.5486e+01
+Time: 0.303004, dt: 0.000010, Target: 0.310000, Max vel: 1.0857, Min density: 1.4316e+00, Min pressure: 1.5515e+01
+Time: 0.304005, dt: 0.000010, Target: 0.310000, Max vel: 1.0863, Min density: 1.4316e+00, Min pressure: 1.5544e+01
+Time: 0.305007, dt: 0.000010, Target: 0.310000, Max vel: 1.0868, Min density: 1.4316e+00, Min pressure: 1.5573e+01
+Time: 0.306008, dt: 0.000010, Target: 0.310000, Max vel: 1.0873, Min density: 1.4316e+00, Min pressure: 1.5602e+01
+Time: 0.307009, dt: 0.000010, Target: 0.310000, Max vel: 1.0878, Min density: 1.4316e+00, Min pressure: 1.5631e+01
+Time: 0.308001, dt: 0.000010, Target: 0.310000, Max vel: 1.0883, Min density: 1.4315e+00, Min pressure: 1.5660e+01
+Time: 0.309003, dt: 0.000010, Target: 0.310000, Max vel: 1.0887, Min density: 1.4315e+00, Min pressure: 1.5688e+01
+Time: 0.310000, dt: 0.000010, Target: 0.320000, Max vel: 1.0891, Min density: 1.4314e+00, Min pressure: 1.5717e+01
+Time: 0.311001, dt: 0.000010, Target: 0.320000, Max vel: 1.0895, Min density: 1.4314e+00, Min pressure: 1.5745e+01
+Time: 0.312003, dt: 0.000010, Target: 0.320000, Max vel: 1.0899, Min density: 1.4313e+00, Min pressure: 1.5774e+01
+Time: 0.313004, dt: 0.000010, Target: 0.320000, Max vel: 1.0902, Min density: 1.4312e+00, Min pressure: 1.5802e+01
+Time: 0.314005, dt: 0.000010, Target: 0.320000, Max vel: 1.0905, Min density: 1.4311e+00, Min pressure: 1.5830e+01
+Time: 0.315007, dt: 0.000010, Target: 0.320000, Max vel: 1.0908, Min density: 1.4310e+00, Min pressure: 1.5858e+01
+Time: 0.316008, dt: 0.000010, Target: 0.320000, Max vel: 1.0911, Min density: 1.4309e+00, Min pressure: 1.5885e+01
+Time: 0.317010, dt: 0.000010, Target: 0.320000, Max vel: 1.0914, Min density: 1.4308e+00, Min pressure: 1.5913e+01
+Time: 0.318001, dt: 0.000010, Target: 0.320000, Max vel: 1.0916, Min density: 1.4307e+00, Min pressure: 1.5940e+01
+Time: 0.319003, dt: 0.000010, Target: 0.320000, Max vel: 1.0918, Min density: 1.4306e+00, Min pressure: 1.5966e+01
+Time: 0.320010, dt: 0.000010, Target: 0.330000, Max vel: 1.0920, Min density: 1.4305e+00, Min pressure: 1.5992e+01
+Time: 0.321001, dt: 0.000010, Target: 0.330000, Max vel: 1.0921, Min density: 1.4303e+00, Min pressure: 1.6018e+01
+Time: 0.322003, dt: 0.000010, Target: 0.330000, Max vel: 1.0923, Min density: 1.4302e+00, Min pressure: 1.6042e+01
+Time: 0.323004, dt: 0.000010, Target: 0.330000, Max vel: 1.0924, Min density: 1.4301e+00, Min pressure: 1.6057e+01
+Time: 0.324005, dt: 0.000010, Target: 0.330000, Max vel: 1.0924, Min density: 1.4299e+00, Min pressure: 1.6064e+01
+Time: 0.325007, dt: 0.000010, Target: 0.330000, Max vel: 1.0933, Min density: 1.4297e+00, Min pressure: 1.6069e+01
+Time: 0.326008, dt: 0.000010, Target: 0.330000, Max vel: 1.0947, Min density: 1.4296e+00, Min pressure: 1.6072e+01
+Time: 0.327009, dt: 0.000010, Target: 0.330000, Max vel: 1.0961, Min density: 1.4294e+00, Min pressure: 1.6074e+01
+Time: 0.328001, dt: 0.000010, Target: 0.330000, Max vel: 1.0975, Min density: 1.4292e+00, Min pressure: 1.6075e+01
+Time: 0.329003, dt: 0.000010, Target: 0.330000, Max vel: 1.0988, Min density: 1.4290e+00, Min pressure: 1.6075e+01
+Time: 0.330010, dt: 0.000010, Target: 0.340000, Max vel: 1.1002, Min density: 1.4288e+00, Min pressure: 1.6074e+01
+Time: 0.331001, dt: 0.000010, Target: 0.340000, Max vel: 1.1015, Min density: 1.4286e+00, Min pressure: 1.6072e+01
+Time: 0.332003, dt: 0.000010, Target: 0.340000, Max vel: 1.1028, Min density: 1.4284e+00, Min pressure: 1.6070e+01
+Time: 0.333004, dt: 0.000010, Target: 0.340000, Max vel: 1.1040, Min density: 1.4282e+00, Min pressure: 1.6067e+01
+Time: 0.334005, dt: 0.000010, Target: 0.340000, Max vel: 1.1053, Min density: 1.4280e+00, Min pressure: 1.6063e+01
+Time: 0.335007, dt: 0.000010, Target: 0.340000, Max vel: 1.1065, Min density: 1.4278e+00, Min pressure: 1.6059e+01
+Time: 0.336008, dt: 0.000010, Target: 0.340000, Max vel: 1.1077, Min density: 1.4276e+00, Min pressure: 1.6055e+01
+Time: 0.337009, dt: 0.000010, Target: 0.340000, Max vel: 1.1089, Min density: 1.4273e+00, Min pressure: 1.6050e+01
+Time: 0.338001, dt: 0.000010, Target: 0.340000, Max vel: 1.1101, Min density: 1.4271e+00, Min pressure: 1.6044e+01
+Time: 0.339003, dt: 0.000010, Target: 0.340000, Max vel: 1.1112, Min density: 1.4269e+00, Min pressure: 1.6039e+01
+Time: 0.340000, dt: 0.000010, Target: 0.350000, Max vel: 1.1123, Min density: 1.4266e+00, Min pressure: 1.6032e+01
+Time: 0.341001, dt: 0.000010, Target: 0.350000, Max vel: 1.1134, Min density: 1.4264e+00, Min pressure: 1.6026e+01
+Time: 0.342003, dt: 0.000010, Target: 0.350000, Max vel: 1.1145, Min density: 1.4261e+00, Min pressure: 1.6019e+01
+Time: 0.343004, dt: 0.000010, Target: 0.350000, Max vel: 1.1155, Min density: 1.4258e+00, Min pressure: 1.6012e+01
+Time: 0.344005, dt: 0.000010, Target: 0.350000, Max vel: 1.1165, Min density: 1.4256e+00, Min pressure: 1.6005e+01
+Time: 0.345007, dt: 0.000010, Target: 0.350000, Max vel: 1.1175, Min density: 1.4253e+00, Min pressure: 1.5997e+01
+Time: 0.346008, dt: 0.000010, Target: 0.350000, Max vel: 1.1185, Min density: 1.4250e+00, Min pressure: 1.5989e+01
+Time: 0.347010, dt: 0.000010, Target: 0.350000, Max vel: 1.1195, Min density: 1.4248e+00, Min pressure: 1.5981e+01
+Time: 0.348001, dt: 0.000010, Target: 0.350000, Max vel: 1.1204, Min density: 1.4245e+00, Min pressure: 1.5973e+01
+Time: 0.349003, dt: 0.000010, Target: 0.350000, Max vel: 1.1213, Min density: 1.4242e+00, Min pressure: 1.5964e+01
+Time: 0.350010, dt: 0.000010, Target: 0.360000, Max vel: 1.1221, Min density: 1.4239e+00, Min pressure: 1.5955e+01
+Time: 0.351001, dt: 0.000010, Target: 0.360000, Max vel: 1.1230, Min density: 1.4236e+00, Min pressure: 1.5947e+01
+Time: 0.352003, dt: 0.000010, Target: 0.360000, Max vel: 1.1238, Min density: 1.4233e+00, Min pressure: 1.5938e+01
+Time: 0.353004, dt: 0.000010, Target: 0.360000, Max vel: 1.1246, Min density: 1.4230e+00, Min pressure: 1.5928e+01
+Time: 0.354005, dt: 0.000010, Target: 0.360000, Max vel: 1.1253, Min density: 1.4227e+00, Min pressure: 1.5919e+01
+Time: 0.355007, dt: 0.000010, Target: 0.360000, Max vel: 1.1261, Min density: 1.4224e+00, Min pressure: 1.5910e+01
+Time: 0.356008, dt: 0.000010, Target: 0.360000, Max vel: 1.1268, Min density: 1.4221e+00, Min pressure: 1.5900e+01
+Time: 0.357010, dt: 0.000010, Target: 0.360000, Max vel: 1.1275, Min density: 1.4218e+00, Min pressure: 1.5890e+01
+Time: 0.358001, dt: 0.000010, Target: 0.360000, Max vel: 1.1281, Min density: 1.4215e+00, Min pressure: 1.5880e+01
+Time: 0.359003, dt: 0.000010, Target: 0.360000, Max vel: 1.1288, Min density: 1.4212e+00, Min pressure: 1.5870e+01
+Time: 0.360010, dt: 0.000010, Target: 0.370000, Max vel: 1.1294, Min density: 1.4208e+00, Min pressure: 1.5860e+01
+Time: 0.361001, dt: 0.000010, Target: 0.370000, Max vel: 1.1300, Min density: 1.4205e+00, Min pressure: 1.5850e+01
+Time: 0.362003, dt: 0.000010, Target: 0.370000, Max vel: 1.1305, Min density: 1.4202e+00, Min pressure: 1.5840e+01
+Time: 0.363004, dt: 0.000010, Target: 0.370000, Max vel: 1.1310, Min density: 1.4199e+00, Min pressure: 1.5830e+01
+Time: 0.364005, dt: 0.000010, Target: 0.370000, Max vel: 1.1315, Min density: 1.4196e+00, Min pressure: 1.5819e+01
+Time: 0.365007, dt: 0.000010, Target: 0.370000, Max vel: 1.1320, Min density: 1.4192e+00, Min pressure: 1.5809e+01
+Time: 0.366008, dt: 0.000010, Target: 0.370000, Max vel: 1.1325, Min density: 1.4189e+00, Min pressure: 1.5798e+01
+Time: 0.367009, dt: 0.000010, Target: 0.370000, Max vel: 1.1329, Min density: 1.4186e+00, Min pressure: 1.5788e+01
+Time: 0.368001, dt: 0.000010, Target: 0.370000, Max vel: 1.1333, Min density: 1.4182e+00, Min pressure: 1.5777e+01
+Time: 0.369003, dt: 0.000010, Target: 0.370000, Max vel: 1.1337, Min density: 1.4179e+00, Min pressure: 1.5767e+01
+Time: 0.370000, dt: 0.000010, Target: 0.380000, Max vel: 1.1340, Min density: 1.4176e+00, Min pressure: 1.5756e+01
+Time: 0.371001, dt: 0.000010, Target: 0.380000, Max vel: 1.1343, Min density: 1.4173e+00, Min pressure: 1.5745e+01
+Time: 0.372003, dt: 0.000010, Target: 0.380000, Max vel: 1.1346, Min density: 1.4169e+00, Min pressure: 1.5734e+01
+Time: 0.373004, dt: 0.000010, Target: 0.380000, Max vel: 1.1349, Min density: 1.4166e+00, Min pressure: 1.5724e+01
+Time: 0.374005, dt: 0.000010, Target: 0.380000, Max vel: 1.1351, Min density: 1.4163e+00, Min pressure: 1.5713e+01
+Time: 0.375007, dt: 0.000010, Target: 0.380000, Max vel: 1.1353, Min density: 1.4159e+00, Min pressure: 1.5702e+01
+Time: 0.376008, dt: 0.000010, Target: 0.380000, Max vel: 1.1355, Min density: 1.4156e+00, Min pressure: 1.5691e+01
+Time: 0.377010, dt: 0.000010, Target: 0.380000, Max vel: 1.1357, Min density: 1.4153e+00, Min pressure: 1.5680e+01
+Time: 0.378001, dt: 0.000010, Target: 0.380000, Max vel: 1.1358, Min density: 1.4149e+00, Min pressure: 1.5669e+01
+Time: 0.379003, dt: 0.000010, Target: 0.380000, Max vel: 1.1359, Min density: 1.4146e+00, Min pressure: 1.5658e+01
+Time: 0.380010, dt: 0.000010, Target: 0.390000, Max vel: 1.1360, Min density: 1.4143e+00, Min pressure: 1.5647e+01
+Time: 0.381001, dt: 0.000010, Target: 0.390000, Max vel: 1.1360, Min density: 1.4140e+00, Min pressure: 1.5636e+01
+Time: 0.382003, dt: 0.000010, Target: 0.390000, Max vel: 1.1361, Min density: 1.4136e+00, Min pressure: 1.5625e+01
+Time: 0.383004, dt: 0.000010, Target: 0.390000, Max vel: 1.1361, Min density: 1.4133e+00, Min pressure: 1.5614e+01
+Time: 0.384005, dt: 0.000010, Target: 0.390000, Max vel: 1.1360, Min density: 1.4130e+00, Min pressure: 1.5603e+01
+Time: 0.385007, dt: 0.000010, Target: 0.390000, Max vel: 1.1360, Min density: 1.4127e+00, Min pressure: 1.5593e+01
+Time: 0.386008, dt: 0.000010, Target: 0.390000, Max vel: 1.1359, Min density: 1.4124e+00, Min pressure: 1.5582e+01
+Time: 0.387010, dt: 0.000010, Target: 0.390000, Max vel: 1.1358, Min density: 1.4121e+00, Min pressure: 1.5571e+01
+Time: 0.388001, dt: 0.000010, Target: 0.390000, Max vel: 1.1357, Min density: 1.4118e+00, Min pressure: 1.5560e+01
+Time: 0.389003, dt: 0.000010, Target: 0.390000, Max vel: 1.1356, Min density: 1.4114e+00, Min pressure: 1.5549e+01
+Time: 0.390010, dt: 0.000010, Target: 0.400000, Max vel: 1.1354, Min density: 1.4111e+00, Min pressure: 1.5538e+01
+Time: 0.391001, dt: 0.000010, Target: 0.400000, Max vel: 1.1352, Min density: 1.4108e+00, Min pressure: 1.5527e+01
+Time: 0.392003, dt: 0.000010, Target: 0.400000, Max vel: 1.1350, Min density: 1.4106e+00, Min pressure: 1.5516e+01
+Time: 0.393004, dt: 0.000010, Target: 0.400000, Max vel: 1.1347, Min density: 1.4103e+00, Min pressure: 1.5505e+01
+Time: 0.394005, dt: 0.000010, Target: 0.400000, Max vel: 1.1345, Min density: 1.4100e+00, Min pressure: 1.5494e+01
+Time: 0.395007, dt: 0.000010, Target: 0.400000, Max vel: 1.1342, Min density: 1.4097e+00, Min pressure: 1.5483e+01
+Time: 0.396008, dt: 0.000010, Target: 0.400000, Max vel: 1.1338, Min density: 1.4094e+00, Min pressure: 1.5473e+01
+Time: 0.397009, dt: 0.000010, Target: 0.400000, Max vel: 1.1335, Min density: 1.4091e+00, Min pressure: 1.5462e+01
+Time: 0.398001, dt: 0.000010, Target: 0.400000, Max vel: 1.1331, Min density: 1.4089e+00, Min pressure: 1.5451e+01
+Time: 0.399003, dt: 0.000010, Target: 0.400000, Max vel: 1.1328, Min density: 1.4086e+00, Min pressure: 1.5440e+01
+Time: 0.400010, dt: 0.000010, Target: 0.410000, Max vel: 1.1323, Min density: 1.4084e+00, Min pressure: 1.5430e+01
+Time: 0.401001, dt: 0.000010, Target: 0.410000, Max vel: 1.1319, Min density: 1.4081e+00, Min pressure: 1.5419e+01
+Time: 0.402003, dt: 0.000010, Target: 0.410000, Max vel: 1.1314, Min density: 1.4079e+00, Min pressure: 1.5408e+01
+Time: 0.403004, dt: 0.000010, Target: 0.410000, Max vel: 1.1310, Min density: 1.4076e+00, Min pressure: 1.5398e+01
+Time: 0.404005, dt: 0.000010, Target: 0.410000, Max vel: 1.1305, Min density: 1.4074e+00, Min pressure: 1.5387e+01
+Time: 0.405007, dt: 0.000010, Target: 0.410000, Max vel: 1.1299, Min density: 1.4072e+00, Min pressure: 1.5377e+01
+Time: 0.406008, dt: 0.000010, Target: 0.410000, Max vel: 1.1294, Min density: 1.4069e+00, Min pressure: 1.5366e+01
+Time: 0.407009, dt: 0.000010, Target: 0.410000, Max vel: 1.1288, Min density: 1.4067e+00, Min pressure: 1.5356e+01
+Time: 0.408001, dt: 0.000010, Target: 0.410000, Max vel: 1.1282, Min density: 1.4065e+00, Min pressure: 1.5345e+01
+Time: 0.409003, dt: 0.000010, Target: 0.410000, Max vel: 1.1276, Min density: 1.4063e+00, Min pressure: 1.5335e+01
+Time: 0.410010, dt: 0.000010, Target: 0.420000, Max vel: 1.1270, Min density: 1.4061e+00, Min pressure: 1.5324e+01
+Time: 0.411001, dt: 0.000010, Target: 0.420000, Max vel: 1.1263, Min density: 1.4059e+00, Min pressure: 1.5314e+01
+Time: 0.412003, dt: 0.000010, Target: 0.420000, Max vel: 1.1256, Min density: 1.4058e+00, Min pressure: 1.5304e+01
+Time: 0.413004, dt: 0.000010, Target: 0.420000, Max vel: 1.1249, Min density: 1.4056e+00, Min pressure: 1.5294e+01
+Time: 0.414005, dt: 0.000010, Target: 0.420000, Max vel: 1.1242, Min density: 1.4054e+00, Min pressure: 1.5284e+01
+Time: 0.415007, dt: 0.000010, Target: 0.420000, Max vel: 1.1235, Min density: 1.4053e+00, Min pressure: 1.5273e+01
+Time: 0.416008, dt: 0.000010, Target: 0.420000, Max vel: 1.1227, Min density: 1.4051e+00, Min pressure: 1.5263e+01
+Time: 0.417010, dt: 0.000010, Target: 0.420000, Max vel: 1.1219, Min density: 1.4050e+00, Min pressure: 1.5253e+01
+Time: 0.418001, dt: 0.000010, Target: 0.420000, Max vel: 1.1211, Min density: 1.4048e+00, Min pressure: 1.5243e+01
+Time: 0.419003, dt: 0.000010, Target: 0.420000, Max vel: 1.1203, Min density: 1.4047e+00, Min pressure: 1.5234e+01
+Time: 0.420010, dt: 0.000010, Target: 0.430000, Max vel: 1.1195, Min density: 1.4046e+00, Min pressure: 1.5224e+01
+Time: 0.421001, dt: 0.000010, Target: 0.430000, Max vel: 1.1186, Min density: 1.4045e+00, Min pressure: 1.5214e+01
+Time: 0.422003, dt: 0.000010, Target: 0.430000, Max vel: 1.1177, Min density: 1.4044e+00, Min pressure: 1.5204e+01
+Time: 0.423004, dt: 0.000010, Target: 0.430000, Max vel: 1.1168, Min density: 1.4043e+00, Min pressure: 1.5194e+01
+Time: 0.424005, dt: 0.000010, Target: 0.430000, Max vel: 1.1159, Min density: 1.4042e+00, Min pressure: 1.5185e+01
+Time: 0.425007, dt: 0.000010, Target: 0.430000, Max vel: 1.1150, Min density: 1.4041e+00, Min pressure: 1.5175e+01
+Time: 0.426008, dt: 0.000010, Target: 0.430000, Max vel: 1.1140, Min density: 1.4041e+00, Min pressure: 1.5166e+01
+Time: 0.427009, dt: 0.000010, Target: 0.430000, Max vel: 1.1130, Min density: 1.4040e+00, Min pressure: 1.5156e+01
+Time: 0.428001, dt: 0.000010, Target: 0.430000, Max vel: 1.1121, Min density: 1.4040e+00, Min pressure: 1.5147e+01
+Time: 0.429003, dt: 0.000010, Target: 0.430000, Max vel: 1.1111, Min density: 1.4039e+00, Min pressure: 1.5137e+01
+Time: 0.430010, dt: 0.000010, Target: 0.440000, Max vel: 1.1100, Min density: 1.4039e+00, Min pressure: 1.5128e+01
+Time: 0.431001, dt: 0.000010, Target: 0.440000, Max vel: 1.1090, Min density: 1.4039e+00, Min pressure: 1.5119e+01
+Time: 0.432003, dt: 0.000010, Target: 0.440000, Max vel: 1.1079, Min density: 1.4039e+00, Min pressure: 1.5110e+01
+Time: 0.433004, dt: 0.000010, Target: 0.440000, Max vel: 1.1068, Min density: 1.4039e+00, Min pressure: 1.5101e+01
+Time: 0.434005, dt: 0.000010, Target: 0.440000, Max vel: 1.1057, Min density: 1.4039e+00, Min pressure: 1.5092e+01
+Time: 0.435007, dt: 0.000010, Target: 0.440000, Max vel: 1.1046, Min density: 1.4039e+00, Min pressure: 1.5083e+01
+Time: 0.436008, dt: 0.000010, Target: 0.440000, Max vel: 1.1035, Min density: 1.4039e+00, Min pressure: 1.5074e+01
+Time: 0.437009, dt: 0.000010, Target: 0.440000, Max vel: 1.1023, Min density: 1.4040e+00, Min pressure: 1.5065e+01
+Time: 0.438001, dt: 0.000010, Target: 0.440000, Max vel: 1.1012, Min density: 1.4040e+00, Min pressure: 1.5056e+01
+Time: 0.439003, dt: 0.000010, Target: 0.440000, Max vel: 1.1000, Min density: 1.4041e+00, Min pressure: 1.5048e+01
+Time: 0.440010, dt: 0.000010, Target: 0.450000, Max vel: 1.0988, Min density: 1.4041e+00, Min pressure: 1.5039e+01
+Time: 0.441001, dt: 0.000010, Target: 0.450000, Max vel: 1.0976, Min density: 1.4042e+00, Min pressure: 1.5030e+01
+Time: 0.442003, dt: 0.000010, Target: 0.450000, Max vel: 1.0964, Min density: 1.4043e+00, Min pressure: 1.5022e+01
+Time: 0.443004, dt: 0.000010, Target: 0.450000, Max vel: 1.0951, Min density: 1.4044e+00, Min pressure: 1.5013e+01
+Time: 0.444005, dt: 0.000010, Target: 0.450000, Max vel: 1.0939, Min density: 1.4045e+00, Min pressure: 1.5005e+01
+Time: 0.445007, dt: 0.000010, Target: 0.450000, Max vel: 1.0926, Min density: 1.4046e+00, Min pressure: 1.4997e+01
+Time: 0.446008, dt: 0.000010, Target: 0.450000, Max vel: 1.0913, Min density: 1.4047e+00, Min pressure: 1.4989e+01
+Time: 0.447010, dt: 0.000010, Target: 0.450000, Max vel: 1.0900, Min density: 1.4048e+00, Min pressure: 1.4980e+01
+Time: 0.448001, dt: 0.000010, Target: 0.450000, Max vel: 1.0887, Min density: 1.4050e+00, Min pressure: 1.4973e+01
+Time: 0.449003, dt: 0.000010, Target: 0.450000, Max vel: 1.0874, Min density: 1.4051e+00, Min pressure: 1.4965e+01
+Time: 0.450010, dt: 0.000010, Target: 0.460000, Max vel: 1.0860, Min density: 1.4053e+00, Min pressure: 1.4957e+01
+Time: 0.451001, dt: 0.000010, Target: 0.460000, Max vel: 1.0847, Min density: 1.4054e+00, Min pressure: 1.4949e+01
+Time: 0.452003, dt: 0.000010, Target: 0.460000, Max vel: 1.0833, Min density: 1.4056e+00, Min pressure: 1.4941e+01
+Time: 0.453004, dt: 0.000010, Target: 0.460000, Max vel: 1.0819, Min density: 1.4058e+00, Min pressure: 1.4933e+01
+Time: 0.454005, dt: 0.000010, Target: 0.460000, Max vel: 1.0805, Min density: 1.4060e+00, Min pressure: 1.4926e+01
+Time: 0.455007, dt: 0.000010, Target: 0.460000, Max vel: 1.0791, Min density: 1.4062e+00, Min pressure: 1.4918e+01
+Time: 0.456008, dt: 0.000010, Target: 0.460000, Max vel: 1.0777, Min density: 1.4064e+00, Min pressure: 1.4911e+01
+Time: 0.457009, dt: 0.000010, Target: 0.460000, Max vel: 1.0763, Min density: 1.4066e+00, Min pressure: 1.4903e+01
+Time: 0.458001, dt: 0.000010, Target: 0.460000, Max vel: 1.0748, Min density: 1.4068e+00, Min pressure: 1.4896e+01
+Time: 0.459003, dt: 0.000010, Target: 0.460000, Max vel: 1.0734, Min density: 1.4071e+00, Min pressure: 1.4889e+01
+Time: 0.460010, dt: 0.000010, Target: 0.470000, Max vel: 1.0719, Min density: 1.4073e+00, Min pressure: 1.4882e+01
+Time: 0.461001, dt: 0.000010, Target: 0.470000, Max vel: 1.0704, Min density: 1.4075e+00, Min pressure: 1.4875e+01
+Time: 0.462003, dt: 0.000010, Target: 0.470000, Max vel: 1.0689, Min density: 1.4078e+00, Min pressure: 1.4868e+01
+Time: 0.463004, dt: 0.000010, Target: 0.470000, Max vel: 1.0674, Min density: 1.4081e+00, Min pressure: 1.4861e+01
+Time: 0.464005, dt: 0.000010, Target: 0.470000, Max vel: 1.0659, Min density: 1.4083e+00, Min pressure: 1.4854e+01
+Time: 0.465007, dt: 0.000010, Target: 0.470000, Max vel: 1.0644, Min density: 1.4086e+00, Min pressure: 1.4848e+01
+Time: 0.466008, dt: 0.000010, Target: 0.470000, Max vel: 1.0629, Min density: 1.4089e+00, Min pressure: 1.4841e+01
+Time: 0.467009, dt: 0.000010, Target: 0.470000, Max vel: 1.0613, Min density: 1.4092e+00, Min pressure: 1.4834e+01
+Time: 0.468001, dt: 0.000010, Target: 0.470000, Max vel: 1.0598, Min density: 1.4095e+00, Min pressure: 1.4828e+01
+Time: 0.469003, dt: 0.000010, Target: 0.470000, Max vel: 1.0582, Min density: 1.4098e+00, Min pressure: 1.4822e+01
+Time: 0.470010, dt: 0.000010, Target: 0.480000, Max vel: 1.0566, Min density: 1.4101e+00, Min pressure: 1.4815e+01
+Time: 0.471001, dt: 0.000010, Target: 0.480000, Max vel: 1.0550, Min density: 1.4104e+00, Min pressure: 1.4809e+01
+Time: 0.472003, dt: 0.000010, Target: 0.480000, Max vel: 1.0535, Min density: 1.4108e+00, Min pressure: 1.4803e+01
+Time: 0.473004, dt: 0.000010, Target: 0.480000, Max vel: 1.0518, Min density: 1.4111e+00, Min pressure: 1.4797e+01
+Time: 0.474005, dt: 0.000010, Target: 0.480000, Max vel: 1.0502, Min density: 1.4114e+00, Min pressure: 1.4791e+01
+Time: 0.475007, dt: 0.000010, Target: 0.480000, Max vel: 1.0486, Min density: 1.4118e+00, Min pressure: 1.4785e+01
+Time: 0.476008, dt: 0.000010, Target: 0.480000, Max vel: 1.0470, Min density: 1.4121e+00, Min pressure: 1.4780e+01
+Time: 0.477010, dt: 0.000010, Target: 0.480000, Max vel: 1.0453, Min density: 1.4125e+00, Min pressure: 1.4774e+01
+Time: 0.478001, dt: 0.000010, Target: 0.480000, Max vel: 1.0437, Min density: 1.4129e+00, Min pressure: 1.4768e+01
+Time: 0.479003, dt: 0.000010, Target: 0.480000, Max vel: 1.0421, Min density: 1.4132e+00, Min pressure: 1.4763e+01
+Time: 0.480010, dt: 0.000010, Target: 0.490000, Max vel: 1.0404, Min density: 1.4136e+00, Min pressure: 1.4757e+01
+Time: 0.481001, dt: 0.000010, Target: 0.490000, Max vel: 1.0387, Min density: 1.4140e+00, Min pressure: 1.4752e+01
+Time: 0.482003, dt: 0.000010, Target: 0.490000, Max vel: 1.0370, Min density: 1.4144e+00, Min pressure: 1.4747e+01
+Time: 0.483004, dt: 0.000010, Target: 0.490000, Max vel: 1.0354, Min density: 1.4147e+00, Min pressure: 1.4742e+01
+Time: 0.484005, dt: 0.000010, Target: 0.490000, Max vel: 1.0337, Min density: 1.4151e+00, Min pressure: 1.4737e+01
+Time: 0.485007, dt: 0.000010, Target: 0.490000, Max vel: 1.0320, Min density: 1.4155e+00, Min pressure: 1.4732e+01
+Time: 0.486008, dt: 0.000010, Target: 0.490000, Max vel: 1.0303, Min density: 1.4159e+00, Min pressure: 1.4727e+01
+Time: 0.487009, dt: 0.000010, Target: 0.490000, Max vel: 1.0285, Min density: 1.4163e+00, Min pressure: 1.4722e+01
+Time: 0.488001, dt: 0.000010, Target: 0.490000, Max vel: 1.0268, Min density: 1.4167e+00, Min pressure: 1.4718e+01
+Time: 0.489003, dt: 0.000010, Target: 0.490000, Max vel: 1.0251, Min density: 1.4171e+00, Min pressure: 1.4713e+01
+Time: 0.490010, dt: 0.000010, Target: 0.500000, Max vel: 1.0234, Min density: 1.4176e+00, Min pressure: 1.4709e+01
+Time: 0.491001, dt: 0.000010, Target: 0.500000, Max vel: 1.0217, Min density: 1.4180e+00, Min pressure: 1.4704e+01
+Time: 0.492003, dt: 0.000010, Target: 0.500000, Max vel: 1.0199, Min density: 1.4184e+00, Min pressure: 1.4700e+01
+Time: 0.493004, dt: 0.000010, Target: 0.500000, Max vel: 1.0182, Min density: 1.4188e+00, Min pressure: 1.4696e+01
+Time: 0.494005, dt: 0.000010, Target: 0.500000, Max vel: 1.0164, Min density: 1.4192e+00, Min pressure: 1.4692e+01
+Time: 0.495007, dt: 0.000010, Target: 0.500000, Max vel: 1.0147, Min density: 1.4197e+00, Min pressure: 1.4688e+01
+Time: 0.496008, dt: 0.000010, Target: 0.500000, Max vel: 1.0129, Min density: 1.4201e+00, Min pressure: 1.4684e+01
+Time: 0.497009, dt: 0.000010, Target: 0.500000, Max vel: 1.0111, Min density: 1.4205e+00, Min pressure: 1.4680e+01
+Time: 0.498001, dt: 0.000010, Target: 0.500000, Max vel: 1.0094, Min density: 1.4209e+00, Min pressure: 1.4676e+01
+Time: 0.499003, dt: 0.000010, Target: 0.500000, Max vel: 1.0076, Min density: 1.4214e+00, Min pressure: 1.4672e+01
+Time: 0.500010, dt: 0.000010, Target: 0.510000, Max vel: 1.0058, Min density: 1.4218e+00, Min pressure: 1.4669e+01
+Time: 0.501001, dt: 0.000010, Target: 0.510000, Max vel: 1.0041, Min density: 1.4222e+00, Min pressure: 1.4665e+01
+Time: 0.502003, dt: 0.000010, Target: 0.510000, Max vel: 1.0023, Min density: 1.4227e+00, Min pressure: 1.4662e+01
+Time: 0.503004, dt: 0.000010, Target: 0.510000, Max vel: 1.0005, Min density: 1.4231e+00, Min pressure: 1.4659e+01
+Time: 0.504005, dt: 0.000010, Target: 0.510000, Max vel: 0.9987, Min density: 1.4236e+00, Min pressure: 1.4656e+01
+Time: 0.505007, dt: 0.000010, Target: 0.510000, Max vel: 0.9969, Min density: 1.4240e+00, Min pressure: 1.4653e+01
+Time: 0.506008, dt: 0.000010, Target: 0.510000, Max vel: 0.9951, Min density: 1.4244e+00, Min pressure: 1.4650e+01
+Time: 0.507010, dt: 0.000010, Target: 0.510000, Max vel: 0.9933, Min density: 1.4249e+00, Min pressure: 1.4647e+01
+Time: 0.508001, dt: 0.000010, Target: 0.510000, Max vel: 0.9915, Min density: 1.4253e+00, Min pressure: 1.4644e+01
+Time: 0.509003, dt: 0.000010, Target: 0.510000, Max vel: 0.9897, Min density: 1.4257e+00, Min pressure: 1.4641e+01
+Time: 0.510010, dt: 0.000010, Target: 0.520000, Max vel: 0.9879, Min density: 1.4262e+00, Min pressure: 1.4639e+01
+Time: 0.511001, dt: 0.000010, Target: 0.520000, Max vel: 0.9861, Min density: 1.4266e+00, Min pressure: 1.4636e+01
+Time: 0.512003, dt: 0.000010, Target: 0.520000, Max vel: 0.9843, Min density: 1.4271e+00, Min pressure: 1.4634e+01
+Time: 0.513004, dt: 0.000010, Target: 0.520000, Max vel: 0.9825, Min density: 1.4275e+00, Min pressure: 1.4632e+01
+Time: 0.514005, dt: 0.000010, Target: 0.520000, Max vel: 0.9807, Min density: 1.4279e+00, Min pressure: 1.4629e+01
+Time: 0.515007, dt: 0.000010, Target: 0.520000, Max vel: 0.9789, Min density: 1.4284e+00, Min pressure: 1.4627e+01
+Time: 0.516008, dt: 0.000010, Target: 0.520000, Max vel: 0.9771, Min density: 1.4288e+00, Min pressure: 1.4625e+01
+Time: 0.517009, dt: 0.000010, Target: 0.520000, Max vel: 0.9753, Min density: 1.4292e+00, Min pressure: 1.4623e+01
+Time: 0.518001, dt: 0.000010, Target: 0.520000, Max vel: 0.9748, Min density: 1.4296e+00, Min pressure: 1.4621e+01
+Time: 0.519003, dt: 0.000010, Target: 0.520000, Max vel: 0.9749, Min density: 1.4301e+00, Min pressure: 1.4620e+01
+Time: 0.520010, dt: 0.000010, Target: 0.530000, Max vel: 0.9750, Min density: 1.4305e+00, Min pressure: 1.4618e+01
+Time: 0.521001, dt: 0.000010, Target: 0.530000, Max vel: 0.9750, Min density: 1.4309e+00, Min pressure: 1.4617e+01
+Time: 0.522003, dt: 0.000010, Target: 0.530000, Max vel: 0.9751, Min density: 1.4313e+00, Min pressure: 1.4615e+01
+Time: 0.523004, dt: 0.000010, Target: 0.530000, Max vel: 0.9752, Min density: 1.4317e+00, Min pressure: 1.4614e+01
+Time: 0.524005, dt: 0.000010, Target: 0.530000, Max vel: 0.9753, Min density: 1.4322e+00, Min pressure: 1.4613e+01
+Time: 0.525007, dt: 0.000010, Target: 0.530000, Max vel: 0.9754, Min density: 1.4326e+00, Min pressure: 1.4611e+01
+Time: 0.526008, dt: 0.000010, Target: 0.530000, Max vel: 0.9755, Min density: 1.4330e+00, Min pressure: 1.4610e+01
+Time: 0.527009, dt: 0.000010, Target: 0.530000, Max vel: 0.9755, Min density: 1.4334e+00, Min pressure: 1.4609e+01
+Time: 0.528001, dt: 0.000010, Target: 0.530000, Max vel: 0.9756, Min density: 1.4338e+00, Min pressure: 1.4609e+01
+Time: 0.529003, dt: 0.000010, Target: 0.530000, Max vel: 0.9757, Min density: 1.4342e+00, Min pressure: 1.4608e+01
+Time: 0.530010, dt: 0.000010, Target: 0.540000, Max vel: 0.9758, Min density: 1.4346e+00, Min pressure: 1.4607e+01
+Time: 0.531001, dt: 0.000010, Target: 0.540000, Max vel: 0.9759, Min density: 1.4350e+00, Min pressure: 1.4607e+01
+Time: 0.532003, dt: 0.000010, Target: 0.540000, Max vel: 0.9760, Min density: 1.4353e+00, Min pressure: 1.4606e+01
+Time: 0.533004, dt: 0.000010, Target: 0.540000, Max vel: 0.9761, Min density: 1.4357e+00, Min pressure: 1.4606e+01
+Time: 0.534005, dt: 0.000010, Target: 0.540000, Max vel: 0.9762, Min density: 1.4361e+00, Min pressure: 1.4606e+01
+Time: 0.535007, dt: 0.000010, Target: 0.540000, Max vel: 0.9763, Min density: 1.4365e+00, Min pressure: 1.4605e+01
+Time: 0.536008, dt: 0.000010, Target: 0.540000, Max vel: 0.9765, Min density: 1.4369e+00, Min pressure: 1.4605e+01
+Time: 0.537009, dt: 0.000010, Target: 0.540000, Max vel: 0.9766, Min density: 1.4372e+00, Min pressure: 1.4605e+01
+Time: 0.538001, dt: 0.000010, Target: 0.540000, Max vel: 0.9767, Min density: 1.4376e+00, Min pressure: 1.4605e+01
+Time: 0.539003, dt: 0.000010, Target: 0.540000, Max vel: 0.9768, Min density: 1.4380e+00, Min pressure: 1.4606e+01
+Time: 0.540009, dt: 0.000010, Target: 0.550000, Max vel: 0.9770, Min density: 1.4383e+00, Min pressure: 1.4606e+01
+Time: 0.541001, dt: 0.000010, Target: 0.550000, Max vel: 0.9771, Min density: 1.4387e+00, Min pressure: 1.4606e+01
+Time: 0.542003, dt: 0.000010, Target: 0.550000, Max vel: 0.9773, Min density: 1.4390e+00, Min pressure: 1.4607e+01
+Time: 0.543004, dt: 0.000010, Target: 0.550000, Max vel: 0.9774, Min density: 1.4394e+00, Min pressure: 1.4607e+01
+Time: 0.544005, dt: 0.000010, Target: 0.550000, Max vel: 0.9776, Min density: 1.4397e+00, Min pressure: 1.4608e+01
+Time: 0.545007, dt: 0.000010, Target: 0.550000, Max vel: 0.9777, Min density: 1.4400e+00, Min pressure: 1.4609e+01
+Time: 0.546008, dt: 0.000010, Target: 0.550000, Max vel: 0.9779, Min density: 1.4404e+00, Min pressure: 1.4610e+01
+Time: 0.547009, dt: 0.000010, Target: 0.550000, Max vel: 0.9781, Min density: 1.4407e+00, Min pressure: 1.4611e+01
+Time: 0.548001, dt: 0.000010, Target: 0.550000, Max vel: 0.9782, Min density: 1.4410e+00, Min pressure: 1.4612e+01
+Time: 0.549003, dt: 0.000010, Target: 0.550000, Max vel: 0.9784, Min density: 1.4413e+00, Min pressure: 1.4613e+01
+Time: 0.550000, dt: 0.000010, Target: 0.560000, Max vel: 0.9786, Min density: 1.4416e+00, Min pressure: 1.4614e+01
+Time: 0.551001, dt: 0.000010, Target: 0.560000, Max vel: 0.9787, Min density: 1.4419e+00, Min pressure: 1.4616e+01
+Time: 0.552003, dt: 0.000010, Target: 0.560000, Max vel: 0.9789, Min density: 1.4422e+00, Min pressure: 1.4617e+01
+Time: 0.553004, dt: 0.000010, Target: 0.560000, Max vel: 0.9790, Min density: 1.4425e+00, Min pressure: 1.4619e+01
+Time: 0.554005, dt: 0.000010, Target: 0.560000, Max vel: 0.9792, Min density: 1.4428e+00, Min pressure: 1.4620e+01
+Time: 0.555007, dt: 0.000010, Target: 0.560000, Max vel: 0.9793, Min density: 1.4431e+00, Min pressure: 1.4622e+01
+Time: 0.556008, dt: 0.000010, Target: 0.560000, Max vel: 0.9795, Min density: 1.4434e+00, Min pressure: 1.4624e+01
+Time: 0.557010, dt: 0.000010, Target: 0.560000, Max vel: 0.9796, Min density: 1.4436e+00, Min pressure: 1.4626e+01
+Time: 0.558001, dt: 0.000010, Target: 0.560000, Max vel: 0.9797, Min density: 1.4439e+00, Min pressure: 1.4628e+01
+Time: 0.559003, dt: 0.000010, Target: 0.560000, Max vel: 0.9798, Min density: 1.4442e+00, Min pressure: 1.4630e+01
+Time: 0.560000, dt: 0.000010, Target: 0.570000, Max vel: 0.9799, Min density: 1.4444e+00, Min pressure: 1.4632e+01
+Time: 0.561001, dt: 0.000010, Target: 0.570000, Max vel: 0.9800, Min density: 1.4447e+00, Min pressure: 1.4634e+01
+Time: 0.562003, dt: 0.000010, Target: 0.570000, Max vel: 0.9801, Min density: 1.4449e+00, Min pressure: 1.4637e+01
+Time: 0.563004, dt: 0.000010, Target: 0.570000, Max vel: 0.9802, Min density: 1.4452e+00, Min pressure: 1.4639e+01
+Time: 0.564005, dt: 0.000010, Target: 0.570000, Max vel: 0.9803, Min density: 1.4454e+00, Min pressure: 1.4642e+01
+Time: 0.565007, dt: 0.000010, Target: 0.570000, Max vel: 0.9803, Min density: 1.4456e+00, Min pressure: 1.4644e+01
+Time: 0.566008, dt: 0.000010, Target: 0.570000, Max vel: 0.9804, Min density: 1.4459e+00, Min pressure: 1.4647e+01
+Time: 0.567010, dt: 0.000010, Target: 0.570000, Max vel: 0.9804, Min density: 1.4461e+00, Min pressure: 1.4650e+01
+Time: 0.568001, dt: 0.000010, Target: 0.570000, Max vel: 0.9804, Min density: 1.4463e+00, Min pressure: 1.4653e+01
+Time: 0.569003, dt: 0.000010, Target: 0.570000, Max vel: 0.9804, Min density: 1.4465e+00, Min pressure: 1.4656e+01
+Time: 0.570010, dt: 0.000010, Target: 0.580000, Max vel: 0.9804, Min density: 1.4467e+00, Min pressure: 1.4659e+01
+Time: 0.571001, dt: 0.000010, Target: 0.580000, Max vel: 0.9804, Min density: 1.4469e+00, Min pressure: 1.4662e+01
+Time: 0.572003, dt: 0.000010, Target: 0.580000, Max vel: 0.9804, Min density: 1.4471e+00, Min pressure: 1.4665e+01
+Time: 0.573004, dt: 0.000010, Target: 0.580000, Max vel: 0.9803, Min density: 1.4473e+00, Min pressure: 1.4669e+01
+Time: 0.574005, dt: 0.000010, Target: 0.580000, Max vel: 0.9803, Min density: 1.4475e+00, Min pressure: 1.4672e+01
+Time: 0.575007, dt: 0.000010, Target: 0.580000, Max vel: 0.9802, Min density: 1.4477e+00, Min pressure: 1.4676e+01
+Time: 0.576008, dt: 0.000010, Target: 0.580000, Max vel: 0.9801, Min density: 1.4479e+00, Min pressure: 1.4679e+01
+Time: 0.577009, dt: 0.000010, Target: 0.580000, Max vel: 0.9800, Min density: 1.4480e+00, Min pressure: 1.4683e+01
+Time: 0.578001, dt: 0.000010, Target: 0.580000, Max vel: 0.9799, Min density: 1.4482e+00, Min pressure: 1.4687e+01
+Time: 0.579003, dt: 0.000010, Target: 0.580000, Max vel: 0.9798, Min density: 1.4484e+00, Min pressure: 1.4691e+01
+Time: 0.580010, dt: 0.000010, Target: 0.590000, Max vel: 0.9796, Min density: 1.4485e+00, Min pressure: 1.4695e+01
+Time: 0.581001, dt: 0.000010, Target: 0.590000, Max vel: 0.9795, Min density: 1.4487e+00, Min pressure: 1.4699e+01
+Time: 0.582003, dt: 0.000010, Target: 0.590000, Max vel: 0.9793, Min density: 1.4488e+00, Min pressure: 1.4703e+01
+Time: 0.583004, dt: 0.000010, Target: 0.590000, Max vel: 0.9791, Min density: 1.4489e+00, Min pressure: 1.4707e+01
+Time: 0.584005, dt: 0.000010, Target: 0.590000, Max vel: 0.9789, Min density: 1.4491e+00, Min pressure: 1.4711e+01
+Time: 0.585007, dt: 0.000010, Target: 0.590000, Max vel: 0.9787, Min density: 1.4492e+00, Min pressure: 1.4716e+01
+Time: 0.586008, dt: 0.000010, Target: 0.590000, Max vel: 0.9784, Min density: 1.4493e+00, Min pressure: 1.4720e+01
+Time: 0.587009, dt: 0.000010, Target: 0.590000, Max vel: 0.9782, Min density: 1.4494e+00, Min pressure: 1.4725e+01
+Time: 0.588001, dt: 0.000010, Target: 0.590000, Max vel: 0.9780, Min density: 1.4496e+00, Min pressure: 1.4730e+01
+Time: 0.589003, dt: 0.000010, Target: 0.590000, Max vel: 0.9777, Min density: 1.4497e+00, Min pressure: 1.4734e+01
+Time: 0.590010, dt: 0.000010, Target: 0.600000, Max vel: 0.9774, Min density: 1.4498e+00, Min pressure: 1.4739e+01
+Time: 0.591001, dt: 0.000010, Target: 0.600000, Max vel: 0.9771, Min density: 1.4499e+00, Min pressure: 1.4744e+01
+Time: 0.592003, dt: 0.000010, Target: 0.600000, Max vel: 0.9768, Min density: 1.4500e+00, Min pressure: 1.4749e+01
+Time: 0.593004, dt: 0.000010, Target: 0.600000, Max vel: 0.9765, Min density: 1.4501e+00, Min pressure: 1.4754e+01
+Time: 0.594005, dt: 0.000010, Target: 0.600000, Max vel: 0.9761, Min density: 1.4501e+00, Min pressure: 1.4759e+01
+Time: 0.595007, dt: 0.000010, Target: 0.600000, Max vel: 0.9758, Min density: 1.4502e+00, Min pressure: 1.4765e+01
+Time: 0.596008, dt: 0.000010, Target: 0.600000, Max vel: 0.9754, Min density: 1.4503e+00, Min pressure: 1.4770e+01
+Time: 0.597009, dt: 0.000010, Target: 0.600000, Max vel: 0.9750, Min density: 1.4504e+00, Min pressure: 1.4775e+01
+Time: 0.598001, dt: 0.000010, Target: 0.600000, Max vel: 0.9747, Min density: 1.4504e+00, Min pressure: 1.4781e+01
+Time: 0.599003, dt: 0.000010, Target: 0.600000, Max vel: 0.9743, Min density: 1.4505e+00, Min pressure: 1.4786e+01
+Time: 0.600010, dt: 0.000010, Target: 0.610000, Max vel: 0.9739, Min density: 1.4506e+00, Min pressure: 1.4792e+01
+Time: 0.601001, dt: 0.000010, Target: 0.610000, Max vel: 0.9734, Min density: 1.4506e+00, Min pressure: 1.4798e+01
+Time: 0.602003, dt: 0.000010, Target: 0.610000, Max vel: 0.9730, Min density: 1.4507e+00, Min pressure: 1.4803e+01
+Time: 0.603004, dt: 0.000010, Target: 0.610000, Max vel: 0.9726, Min density: 1.4507e+00, Min pressure: 1.4809e+01
+Time: 0.604005, dt: 0.000010, Target: 0.610000, Max vel: 0.9721, Min density: 1.4507e+00, Min pressure: 1.4815e+01
+Time: 0.605007, dt: 0.000010, Target: 0.610000, Max vel: 0.9717, Min density: 1.4508e+00, Min pressure: 1.4821e+01
+Time: 0.606008, dt: 0.000010, Target: 0.610000, Max vel: 0.9712, Min density: 1.4508e+00, Min pressure: 1.4827e+01
+Time: 0.607009, dt: 0.000010, Target: 0.610000, Max vel: 0.9707, Min density: 1.4508e+00, Min pressure: 1.4833e+01
+Time: 0.608001, dt: 0.000010, Target: 0.610000, Max vel: 0.9702, Min density: 1.4509e+00, Min pressure: 1.4840e+01
+Time: 0.609003, dt: 0.000010, Target: 0.610000, Max vel: 0.9697, Min density: 1.4509e+00, Min pressure: 1.4846e+01
+Time: 0.610000, dt: 0.000010, Target: 0.620000, Max vel: 0.9692, Min density: 1.4509e+00, Min pressure: 1.4852e+01
+Time: 0.611001, dt: 0.000010, Target: 0.620000, Max vel: 0.9687, Min density: 1.4509e+00, Min pressure: 1.4859e+01
+Time: 0.612003, dt: 0.000010, Target: 0.620000, Max vel: 0.9682, Min density: 1.4509e+00, Min pressure: 1.4865e+01
+Time: 0.613004, dt: 0.000010, Target: 0.620000, Max vel: 0.9677, Min density: 1.4509e+00, Min pressure: 1.4872e+01
+Time: 0.614005, dt: 0.000010, Target: 0.620000, Max vel: 0.9671, Min density: 1.4509e+00, Min pressure: 1.4879e+01
+Time: 0.615007, dt: 0.000010, Target: 0.620000, Max vel: 0.9666, Min density: 1.4509e+00, Min pressure: 1.4885e+01
+Time: 0.616008, dt: 0.000010, Target: 0.620000, Max vel: 0.9661, Min density: 1.4509e+00, Min pressure: 1.4892e+01
+Time: 0.617010, dt: 0.000010, Target: 0.620000, Max vel: 0.9655, Min density: 1.4509e+00, Min pressure: 1.4899e+01
+Time: 0.618001, dt: 0.000010, Target: 0.620000, Max vel: 0.9649, Min density: 1.4508e+00, Min pressure: 1.4906e+01
+Time: 0.619003, dt: 0.000010, Target: 0.620000, Max vel: 0.9644, Min density: 1.4508e+00, Min pressure: 1.4913e+01
+Time: 0.620000, dt: 0.000010, Target: 0.630000, Max vel: 0.9638, Min density: 1.4508e+00, Min pressure: 1.4920e+01
+Time: 0.621001, dt: 0.000010, Target: 0.630000, Max vel: 0.9632, Min density: 1.4508e+00, Min pressure: 1.4927e+01
+Time: 0.622003, dt: 0.000010, Target: 0.630000, Max vel: 0.9627, Min density: 1.4507e+00, Min pressure: 1.4935e+01
+Time: 0.623004, dt: 0.000010, Target: 0.630000, Max vel: 0.9621, Min density: 1.4507e+00, Min pressure: 1.4942e+01
+Time: 0.624005, dt: 0.000010, Target: 0.630000, Max vel: 0.9615, Min density: 1.4507e+00, Min pressure: 1.4949e+01
+Time: 0.625007, dt: 0.000010, Target: 0.630000, Max vel: 0.9609, Min density: 1.4506e+00, Min pressure: 1.4957e+01
+Time: 0.626008, dt: 0.000010, Target: 0.630000, Max vel: 0.9603, Min density: 1.4506e+00, Min pressure: 1.4964e+01
+Time: 0.627010, dt: 0.000010, Target: 0.630000, Max vel: 0.9598, Min density: 1.4505e+00, Min pressure: 1.4972e+01
+Time: 0.628001, dt: 0.000010, Target: 0.630000, Max vel: 0.9592, Min density: 1.4505e+00, Min pressure: 1.4979e+01
+Time: 0.629003, dt: 0.000010, Target: 0.630000, Max vel: 0.9586, Min density: 1.4504e+00, Min pressure: 1.4987e+01
+Time: 0.630010, dt: 0.000010, Target: 0.640000, Max vel: 0.9580, Min density: 1.4504e+00, Min pressure: 1.4995e+01
+Time: 0.631001, dt: 0.000010, Target: 0.640000, Max vel: 0.9574, Min density: 1.4503e+00, Min pressure: 1.5003e+01
+Time: 0.632003, dt: 0.000010, Target: 0.640000, Max vel: 0.9568, Min density: 1.4502e+00, Min pressure: 1.5011e+01
+Time: 0.633004, dt: 0.000010, Target: 0.640000, Max vel: 0.9562, Min density: 1.4502e+00, Min pressure: 1.5018e+01
+Time: 0.634005, dt: 0.000010, Target: 0.640000, Max vel: 0.9557, Min density: 1.4501e+00, Min pressure: 1.5026e+01
+Time: 0.635007, dt: 0.000010, Target: 0.640000, Max vel: 0.9551, Min density: 1.4500e+00, Min pressure: 1.5035e+01
+Time: 0.636008, dt: 0.000010, Target: 0.640000, Max vel: 0.9545, Min density: 1.4499e+00, Min pressure: 1.5043e+01
+Time: 0.637010, dt: 0.000010, Target: 0.640000, Max vel: 0.9540, Min density: 1.4499e+00, Min pressure: 1.5051e+01
+Time: 0.638001, dt: 0.000010, Target: 0.640000, Max vel: 0.9534, Min density: 1.4498e+00, Min pressure: 1.5059e+01
+Time: 0.639003, dt: 0.000010, Target: 0.640000, Max vel: 0.9529, Min density: 1.4497e+00, Min pressure: 1.5067e+01
+Time: 0.640010, dt: 0.000010, Target: 0.650000, Max vel: 0.9524, Min density: 1.4496e+00, Min pressure: 1.5076e+01
+Time: 0.641001, dt: 0.000010, Target: 0.650000, Max vel: 0.9518, Min density: 1.4495e+00, Min pressure: 1.5084e+01
+Time: 0.642003, dt: 0.000010, Target: 0.650000, Max vel: 0.9513, Min density: 1.4494e+00, Min pressure: 1.5092e+01
+Time: 0.643004, dt: 0.000010, Target: 0.650000, Max vel: 0.9509, Min density: 1.4494e+00, Min pressure: 1.5101e+01
+Time: 0.644005, dt: 0.000010, Target: 0.650000, Max vel: 0.9504, Min density: 1.4493e+00, Min pressure: 1.5110e+01
+Time: 0.645007, dt: 0.000010, Target: 0.650000, Max vel: 0.9499, Min density: 1.4492e+00, Min pressure: 1.5118e+01
+Time: 0.646008, dt: 0.000010, Target: 0.650000, Max vel: 0.9495, Min density: 1.4491e+00, Min pressure: 1.5127e+01
+Time: 0.647009, dt: 0.000010, Target: 0.650000, Max vel: 0.9491, Min density: 1.4490e+00, Min pressure: 1.5136e+01
+Time: 0.648001, dt: 0.000010, Target: 0.650000, Max vel: 0.9488, Min density: 1.4489e+00, Min pressure: 1.5144e+01
+Time: 0.649003, dt: 0.000010, Target: 0.650000, Max vel: 0.9484, Min density: 1.4488e+00, Min pressure: 1.5153e+01
+Time: 0.650010, dt: 0.000010, Target: 0.660000, Max vel: 0.9481, Min density: 1.4487e+00, Min pressure: 1.5162e+01
+Time: 0.651001, dt: 0.000010, Target: 0.660000, Max vel: 0.9478, Min density: 1.4486e+00, Min pressure: 1.5171e+01
+Time: 0.652003, dt: 0.000010, Target: 0.660000, Max vel: 0.9476, Min density: 1.4484e+00, Min pressure: 1.5180e+01
+Time: 0.653004, dt: 0.000010, Target: 0.660000, Max vel: 0.9474, Min density: 1.4483e+00, Min pressure: 1.5189e+01
+Time: 0.654005, dt: 0.000010, Target: 0.660000, Max vel: 0.9472, Min density: 1.4482e+00, Min pressure: 1.5198e+01
+Time: 0.655007, dt: 0.000010, Target: 0.660000, Max vel: 0.9471, Min density: 1.4481e+00, Min pressure: 1.5207e+01
+Time: 0.656008, dt: 0.000010, Target: 0.660000, Max vel: 0.9470, Min density: 1.4480e+00, Min pressure: 1.5216e+01
+Time: 0.657009, dt: 0.000010, Target: 0.660000, Max vel: 0.9469, Min density: 1.4479e+00, Min pressure: 1.5226e+01
+Time: 0.658001, dt: 0.000010, Target: 0.660000, Max vel: 0.9469, Min density: 1.4478e+00, Min pressure: 1.5235e+01
+Time: 0.659003, dt: 0.000010, Target: 0.660000, Max vel: 0.9469, Min density: 1.4477e+00, Min pressure: 1.5244e+01
+Time: 0.660010, dt: 0.000010, Target: 0.670000, Max vel: 0.9469, Min density: 1.4476e+00, Min pressure: 1.5253e+01
+Time: 0.661001, dt: 0.000010, Target: 0.670000, Max vel: 0.9469, Min density: 1.4474e+00, Min pressure: 1.5263e+01
+Time: 0.662003, dt: 0.000010, Target: 0.670000, Max vel: 0.9470, Min density: 1.4473e+00, Min pressure: 1.5272e+01
+Time: 0.663004, dt: 0.000010, Target: 0.670000, Max vel: 0.9471, Min density: 1.4472e+00, Min pressure: 1.5282e+01
+Time: 0.664005, dt: 0.000010, Target: 0.670000, Max vel: 0.9472, Min density: 1.4471e+00, Min pressure: 1.5291e+01
+Time: 0.665007, dt: 0.000010, Target: 0.670000, Max vel: 0.9473, Min density: 1.4470e+00, Min pressure: 1.5301e+01
+Time: 0.666008, dt: 0.000010, Target: 0.670000, Max vel: 0.9475, Min density: 1.4469e+00, Min pressure: 1.5310e+01
+Time: 0.667009, dt: 0.000010, Target: 0.670000, Max vel: 0.9476, Min density: 1.4467e+00, Min pressure: 1.5320e+01
+Time: 0.668001, dt: 0.000010, Target: 0.670000, Max vel: 0.9478, Min density: 1.4466e+00, Min pressure: 1.5330e+01
+Time: 0.669003, dt: 0.000010, Target: 0.670000, Max vel: 0.9479, Min density: 1.4465e+00, Min pressure: 1.5339e+01
+Time: 0.670009, dt: 0.000010, Target: 0.680000, Max vel: 0.9481, Min density: 1.4464e+00, Min pressure: 1.5349e+01
+Time: 0.671001, dt: 0.000010, Target: 0.680000, Max vel: 0.9483, Min density: 1.4463e+00, Min pressure: 1.5359e+01
+Time: 0.672003, dt: 0.000010, Target: 0.680000, Max vel: 0.9485, Min density: 1.4462e+00, Min pressure: 1.5369e+01
+Time: 0.673004, dt: 0.000010, Target: 0.680000, Max vel: 0.9488, Min density: 1.4460e+00, Min pressure: 1.5378e+01
+Time: 0.674005, dt: 0.000010, Target: 0.680000, Max vel: 0.9490, Min density: 1.4459e+00, Min pressure: 1.5388e+01
+Time: 0.675007, dt: 0.000010, Target: 0.680000, Max vel: 0.9492, Min density: 1.4458e+00, Min pressure: 1.5398e+01
+Time: 0.676008, dt: 0.000010, Target: 0.680000, Max vel: 0.9494, Min density: 1.4457e+00, Min pressure: 1.5408e+01
+Time: 0.677009, dt: 0.000010, Target: 0.680000, Max vel: 0.9497, Min density: 1.4456e+00, Min pressure: 1.5418e+01
+Time: 0.678001, dt: 0.000010, Target: 0.680000, Max vel: 0.9499, Min density: 1.4455e+00, Min pressure: 1.5428e+01
+Time: 0.679003, dt: 0.000010, Target: 0.680000, Max vel: 0.9501, Min density: 1.4454e+00, Min pressure: 1.5438e+01
+Time: 0.680000, dt: 0.000010, Target: 0.690000, Max vel: 0.9504, Min density: 1.4452e+00, Min pressure: 1.5448e+01
+Time: 0.681001, dt: 0.000010, Target: 0.690000, Max vel: 0.9506, Min density: 1.4451e+00, Min pressure: 1.5458e+01
+Time: 0.682003, dt: 0.000010, Target: 0.690000, Max vel: 0.9509, Min density: 1.4450e+00, Min pressure: 1.5468e+01
+Time: 0.683004, dt: 0.000010, Target: 0.690000, Max vel: 0.9511, Min density: 1.4449e+00, Min pressure: 1.5478e+01
+Time: 0.684005, dt: 0.000010, Target: 0.690000, Max vel: 0.9514, Min density: 1.4448e+00, Min pressure: 1.5489e+01
+Time: 0.685007, dt: 0.000010, Target: 0.690000, Max vel: 0.9516, Min density: 1.4447e+00, Min pressure: 1.5499e+01
+Time: 0.686008, dt: 0.000010, Target: 0.690000, Max vel: 0.9519, Min density: 1.4446e+00, Min pressure: 1.5509e+01
+Time: 0.687010, dt: 0.000010, Target: 0.690000, Max vel: 0.9521, Min density: 1.4445e+00, Min pressure: 1.5519e+01
+Time: 0.688001, dt: 0.000010, Target: 0.690000, Max vel: 0.9524, Min density: 1.4444e+00, Min pressure: 1.5529e+01
+Time: 0.689003, dt: 0.000010, Target: 0.690000, Max vel: 0.9527, Min density: 1.4443e+00, Min pressure: 1.5540e+01
+Time: 0.690010, dt: 0.000010, Target: 0.700000, Max vel: 0.9529, Min density: 1.4442e+00, Min pressure: 1.5550e+01
+Time: 0.691001, dt: 0.000010, Target: 0.700000, Max vel: 0.9532, Min density: 1.4441e+00, Min pressure: 1.5560e+01
+Time: 0.692003, dt: 0.000010, Target: 0.700000, Max vel: 0.9534, Min density: 1.4440e+00, Min pressure: 1.5571e+01
+Time: 0.693004, dt: 0.000010, Target: 0.700000, Max vel: 0.9537, Min density: 1.4439e+00, Min pressure: 1.5581e+01
+Time: 0.694005, dt: 0.000010, Target: 0.700000, Max vel: 0.9539, Min density: 1.4439e+00, Min pressure: 1.5591e+01
+Time: 0.695007, dt: 0.000010, Target: 0.700000, Max vel: 0.9542, Min density: 1.4438e+00, Min pressure: 1.5602e+01
+Time: 0.696008, dt: 0.000010, Target: 0.700000, Max vel: 0.9544, Min density: 1.4437e+00, Min pressure: 1.5612e+01
+Time: 0.697010, dt: 0.000010, Target: 0.700000, Max vel: 0.9546, Min density: 1.4436e+00, Min pressure: 1.5622e+01
+Time: 0.698001, dt: 0.000010, Target: 0.700000, Max vel: 0.9549, Min density: 1.4435e+00, Min pressure: 1.5633e+01
+Time: 0.699003, dt: 0.000010, Target: 0.700000, Max vel: 0.9551, Min density: 1.4435e+00, Min pressure: 1.5643e+01
+Time: 0.700010, dt: 0.000010, Target: 0.710000, Max vel: 0.9554, Min density: 1.4434e+00, Min pressure: 1.5654e+01
+Time: 0.701001, dt: 0.000010, Target: 0.710000, Max vel: 0.9556, Min density: 1.4433e+00, Min pressure: 1.5664e+01
+Time: 0.702003, dt: 0.000010, Target: 0.710000, Max vel: 0.9558, Min density: 1.4432e+00, Min pressure: 1.5675e+01
+Time: 0.703004, dt: 0.000010, Target: 0.710000, Max vel: 0.9561, Min density: 1.4432e+00, Min pressure: 1.5685e+01
+Time: 0.704005, dt: 0.000010, Target: 0.710000, Max vel: 0.9563, Min density: 1.4431e+00, Min pressure: 1.5696e+01
+Time: 0.705007, dt: 0.000010, Target: 0.710000, Max vel: 0.9565, Min density: 1.4431e+00, Min pressure: 1.5706e+01
+Time: 0.706008, dt: 0.000010, Target: 0.710000, Max vel: 0.9568, Min density: 1.4430e+00, Min pressure: 1.5717e+01
+Time: 0.707009, dt: 0.000010, Target: 0.710000, Max vel: 0.9570, Min density: 1.4429e+00, Min pressure: 1.5727e+01
+Time: 0.708001, dt: 0.000010, Target: 0.710000, Max vel: 0.9572, Min density: 1.4429e+00, Min pressure: 1.5738e+01
+Time: 0.709003, dt: 0.000010, Target: 0.710000, Max vel: 0.9574, Min density: 1.4428e+00, Min pressure: 1.5748e+01
+Time: 0.710010, dt: 0.000010, Target: 0.720000, Max vel: 0.9576, Min density: 1.4428e+00, Min pressure: 1.5759e+01
+Time: 0.711001, dt: 0.000010, Target: 0.720000, Max vel: 0.9578, Min density: 1.4428e+00, Min pressure: 1.5769e+01
+Time: 0.712003, dt: 0.000010, Target: 0.720000, Max vel: 0.9580, Min density: 1.4427e+00, Min pressure: 1.5780e+01
+Time: 0.713004, dt: 0.000010, Target: 0.720000, Max vel: 0.9582, Min density: 1.4427e+00, Min pressure: 1.5790e+01
+Time: 0.714005, dt: 0.000010, Target: 0.720000, Max vel: 0.9584, Min density: 1.4427e+00, Min pressure: 1.5801e+01
+Time: 0.715007, dt: 0.000010, Target: 0.720000, Max vel: 0.9586, Min density: 1.4426e+00, Min pressure: 1.5811e+01
+Time: 0.716008, dt: 0.000010, Target: 0.720000, Max vel: 0.9588, Min density: 1.4426e+00, Min pressure: 1.5822e+01
+Time: 0.717009, dt: 0.000010, Target: 0.720000, Max vel: 0.9590, Min density: 1.4426e+00, Min pressure: 1.5832e+01
+Time: 0.718001, dt: 0.000010, Target: 0.720000, Max vel: 0.9592, Min density: 1.4426e+00, Min pressure: 1.5843e+01
+Time: 0.719003, dt: 0.000010, Target: 0.720000, Max vel: 0.9593, Min density: 1.4425e+00, Min pressure: 1.5853e+01
+Time: 0.720010, dt: 0.000010, Target: 0.730000, Max vel: 0.9595, Min density: 1.4425e+00, Min pressure: 1.5864e+01
+Time: 0.721001, dt: 0.000010, Target: 0.730000, Max vel: 0.9597, Min density: 1.4425e+00, Min pressure: 1.5874e+01
+Time: 0.722003, dt: 0.000010, Target: 0.730000, Max vel: 0.9598, Min density: 1.4425e+00, Min pressure: 1.5885e+01
+Time: 0.723004, dt: 0.000010, Target: 0.730000, Max vel: 0.9600, Min density: 1.4425e+00, Min pressure: 1.5895e+01
+Time: 0.724005, dt: 0.000010, Target: 0.730000, Max vel: 0.9601, Min density: 1.4425e+00, Min pressure: 1.5906e+01
+Time: 0.725007, dt: 0.000010, Target: 0.730000, Max vel: 0.9603, Min density: 1.4425e+00, Min pressure: 1.5916e+01
+Time: 0.726008, dt: 0.000010, Target: 0.730000, Max vel: 0.9604, Min density: 1.4425e+00, Min pressure: 1.5926e+01
+Time: 0.727009, dt: 0.000010, Target: 0.730000, Max vel: 0.9606, Min density: 1.4425e+00, Min pressure: 1.5937e+01
+Time: 0.728001, dt: 0.000010, Target: 0.730000, Max vel: 0.9607, Min density: 1.4426e+00, Min pressure: 1.5947e+01
+Time: 0.729003, dt: 0.000010, Target: 0.730000, Max vel: 0.9608, Min density: 1.4426e+00, Min pressure: 1.5958e+01
+Time: 0.730009, dt: 0.000010, Target: 0.740000, Max vel: 0.9609, Min density: 1.4426e+00, Min pressure: 1.5968e+01
+Time: 0.731001, dt: 0.000010, Target: 0.740000, Max vel: 0.9610, Min density: 1.4426e+00, Min pressure: 1.5978e+01
+Time: 0.732003, dt: 0.000010, Target: 0.740000, Max vel: 0.9611, Min density: 1.4427e+00, Min pressure: 1.5989e+01
+Time: 0.733004, dt: 0.000010, Target: 0.740000, Max vel: 0.9612, Min density: 1.4427e+00, Min pressure: 1.5999e+01
+Time: 0.734005, dt: 0.000010, Target: 0.740000, Max vel: 0.9613, Min density: 1.4427e+00, Min pressure: 1.6009e+01
+Time: 0.735007, dt: 0.000010, Target: 0.740000, Max vel: 0.9614, Min density: 1.4428e+00, Min pressure: 1.6019e+01
+Time: 0.736008, dt: 0.000010, Target: 0.740000, Max vel: 0.9615, Min density: 1.4428e+00, Min pressure: 1.6030e+01
+Time: 0.737009, dt: 0.000010, Target: 0.740000, Max vel: 0.9615, Min density: 1.4429e+00, Min pressure: 1.6040e+01
+Time: 0.738001, dt: 0.000010, Target: 0.740000, Max vel: 0.9616, Min density: 1.4429e+00, Min pressure: 1.6050e+01
+Time: 0.739003, dt: 0.000010, Target: 0.740000, Max vel: 0.9617, Min density: 1.4430e+00, Min pressure: 1.6060e+01
+Time: 0.740000, dt: 0.000010, Target: 0.750000, Max vel: 0.9617, Min density: 1.4431e+00, Min pressure: 1.6070e+01
+Time: 0.741001, dt: 0.000010, Target: 0.750000, Max vel: 0.9617, Min density: 1.4431e+00, Min pressure: 1.6080e+01
+Time: 0.742003, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4432e+00, Min pressure: 1.6090e+01
+Time: 0.743004, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4433e+00, Min pressure: 1.6100e+01
+Time: 0.744005, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4433e+00, Min pressure: 1.6110e+01
+Time: 0.745007, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4434e+00, Min pressure: 1.6120e+01
+Time: 0.746008, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4435e+00, Min pressure: 1.6130e+01
+Time: 0.747010, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4436e+00, Min pressure: 1.6135e+01
+Time: 0.748001, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4437e+00, Min pressure: 1.6137e+01
+Time: 0.749003, dt: 0.000010, Target: 0.750000, Max vel: 0.9618, Min density: 1.4438e+00, Min pressure: 1.6138e+01
+Time: 0.750010, dt: 0.000010, Target: 0.760000, Max vel: 0.9618, Min density: 1.4439e+00, Min pressure: 1.6139e+01
+Time: 0.751001, dt: 0.000010, Target: 0.760000, Max vel: 0.9618, Min density: 1.4440e+00, Min pressure: 1.6141e+01
+Time: 0.752003, dt: 0.000010, Target: 0.760000, Max vel: 0.9617, Min density: 1.4441e+00, Min pressure: 1.6142e+01
+Time: 0.753004, dt: 0.000010, Target: 0.760000, Max vel: 0.9617, Min density: 1.4442e+00, Min pressure: 1.6143e+01
+Time: 0.754005, dt: 0.000010, Target: 0.760000, Max vel: 0.9616, Min density: 1.4443e+00, Min pressure: 1.6145e+01
+Time: 0.755007, dt: 0.000010, Target: 0.760000, Max vel: 0.9616, Min density: 1.4444e+00, Min pressure: 1.6146e+01
+Time: 0.756008, dt: 0.000010, Target: 0.760000, Max vel: 0.9615, Min density: 1.4445e+00, Min pressure: 1.6147e+01
+Time: 0.757010, dt: 0.000010, Target: 0.760000, Max vel: 0.9614, Min density: 1.4446e+00, Min pressure: 1.6149e+01
+Time: 0.758001, dt: 0.000010, Target: 0.760000, Max vel: 0.9613, Min density: 1.4448e+00, Min pressure: 1.6150e+01
+Time: 0.759003, dt: 0.000010, Target: 0.760000, Max vel: 0.9612, Min density: 1.4449e+00, Min pressure: 1.6151e+01
+Time: 0.760010, dt: 0.000010, Target: 0.770000, Max vel: 0.9611, Min density: 1.4450e+00, Min pressure: 1.6153e+01
+Time: 0.761001, dt: 0.000010, Target: 0.770000, Max vel: 0.9610, Min density: 1.4452e+00, Min pressure: 1.6154e+01
+Time: 0.762003, dt: 0.000010, Target: 0.770000, Max vel: 0.9609, Min density: 1.4453e+00, Min pressure: 1.6156e+01
+Time: 0.763004, dt: 0.000010, Target: 0.770000, Max vel: 0.9608, Min density: 1.4454e+00, Min pressure: 1.6157e+01
+Time: 0.764005, dt: 0.000010, Target: 0.770000, Max vel: 0.9607, Min density: 1.4456e+00, Min pressure: 1.6158e+01
+Time: 0.765007, dt: 0.000010, Target: 0.770000, Max vel: 0.9605, Min density: 1.4457e+00, Min pressure: 1.6160e+01
+Time: 0.766008, dt: 0.000010, Target: 0.770000, Max vel: 0.9604, Min density: 1.4459e+00, Min pressure: 1.6161e+01
+Time: 0.767009, dt: 0.000010, Target: 0.770000, Max vel: 0.9602, Min density: 1.4460e+00, Min pressure: 1.6162e+01
+Time: 0.768001, dt: 0.000010, Target: 0.770000, Max vel: 0.9601, Min density: 1.4462e+00, Min pressure: 1.6164e+01
+Time: 0.769003, dt: 0.000010, Target: 0.770000, Max vel: 0.9599, Min density: 1.4463e+00, Min pressure: 1.6165e+01
+Time: 0.770010, dt: 0.000010, Target: 0.780000, Max vel: 0.9598, Min density: 1.4465e+00, Min pressure: 1.6166e+01
+Time: 0.771001, dt: 0.000010, Target: 0.780000, Max vel: 0.9596, Min density: 1.4467e+00, Min pressure: 1.6168e+01
+Time: 0.772003, dt: 0.000010, Target: 0.780000, Max vel: 0.9594, Min density: 1.4468e+00, Min pressure: 1.6169e+01
+Time: 0.773004, dt: 0.000010, Target: 0.780000, Max vel: 0.9592, Min density: 1.4470e+00, Min pressure: 1.6170e+01
+Time: 0.774005, dt: 0.000010, Target: 0.780000, Max vel: 0.9590, Min density: 1.4472e+00, Min pressure: 1.6172e+01
+Time: 0.775007, dt: 0.000010, Target: 0.780000, Max vel: 0.9588, Min density: 1.4473e+00, Min pressure: 1.6173e+01
+Time: 0.776008, dt: 0.000010, Target: 0.780000, Max vel: 0.9586, Min density: 1.4475e+00, Min pressure: 1.6174e+01
+Time: 0.777009, dt: 0.000010, Target: 0.780000, Max vel: 0.9584, Min density: 1.4477e+00, Min pressure: 1.6176e+01
+Time: 0.778001, dt: 0.000010, Target: 0.780000, Max vel: 0.9582, Min density: 1.4479e+00, Min pressure: 1.6177e+01
+Time: 0.779003, dt: 0.000010, Target: 0.780000, Max vel: 0.9579, Min density: 1.4481e+00, Min pressure: 1.6178e+01
+Time: 0.780010, dt: 0.000010, Target: 0.790000, Max vel: 0.9577, Min density: 1.4482e+00, Min pressure: 1.6180e+01
+Time: 0.781001, dt: 0.000010, Target: 0.790000, Max vel: 0.9575, Min density: 1.4484e+00, Min pressure: 1.6181e+01
+Time: 0.782003, dt: 0.000010, Target: 0.790000, Max vel: 0.9572, Min density: 1.4486e+00, Min pressure: 1.6182e+01
+Time: 0.783004, dt: 0.000010, Target: 0.790000, Max vel: 0.9570, Min density: 1.4488e+00, Min pressure: 1.6183e+01
+Time: 0.784005, dt: 0.000010, Target: 0.790000, Max vel: 0.9567, Min density: 1.4490e+00, Min pressure: 1.6185e+01
+Time: 0.785007, dt: 0.000010, Target: 0.790000, Max vel: 0.9564, Min density: 1.4492e+00, Min pressure: 1.6186e+01
+Time: 0.786008, dt: 0.000010, Target: 0.790000, Max vel: 0.9562, Min density: 1.4494e+00, Min pressure: 1.6187e+01
+Time: 0.787009, dt: 0.000010, Target: 0.790000, Max vel: 0.9559, Min density: 1.4496e+00, Min pressure: 1.6189e+01
+Time: 0.788001, dt: 0.000010, Target: 0.790000, Max vel: 0.9556, Min density: 1.4498e+00, Min pressure: 1.6190e+01
+Time: 0.789003, dt: 0.000010, Target: 0.790000, Max vel: 0.9553, Min density: 1.4500e+00, Min pressure: 1.6191e+01
+Time: 0.790009, dt: 0.000010, Target: 0.800000, Max vel: 0.9551, Min density: 1.4502e+00, Min pressure: 1.6193e+01
+Time: 0.791001, dt: 0.000010, Target: 0.800000, Max vel: 0.9548, Min density: 1.4504e+00, Min pressure: 1.6194e+01
+Time: 0.792003, dt: 0.000010, Target: 0.800000, Max vel: 0.9545, Min density: 1.4506e+00, Min pressure: 1.6195e+01
+Time: 0.793004, dt: 0.000010, Target: 0.800000, Max vel: 0.9542, Min density: 1.4508e+00, Min pressure: 1.6196e+01
+Time: 0.794005, dt: 0.000010, Target: 0.800000, Max vel: 0.9539, Min density: 1.4510e+00, Min pressure: 1.6198e+01
+Time: 0.795007, dt: 0.000010, Target: 0.800000, Max vel: 0.9536, Min density: 1.4512e+00, Min pressure: 1.6199e+01
+Time: 0.796008, dt: 0.000010, Target: 0.800000, Max vel: 0.9533, Min density: 1.4514e+00, Min pressure: 1.6200e+01
+Time: 0.797009, dt: 0.000010, Target: 0.800000, Max vel: 0.9529, Min density: 1.4516e+00, Min pressure: 1.6202e+01
+Time: 0.798001, dt: 0.000010, Target: 0.800000, Max vel: 0.9526, Min density: 1.4518e+00, Min pressure: 1.6203e+01
+Time: 0.799003, dt: 0.000010, Target: 0.800000, Max vel: 0.9523, Min density: 1.4520e+00, Min pressure: 1.6204e+01
+Time: 0.800009, dt: 0.000010, Target: 0.810000, Max vel: 0.9520, Min density: 1.4522e+00, Min pressure: 1.6205e+01
+Time: 0.801001, dt: 0.000010, Target: 0.810000, Max vel: 0.9517, Min density: 1.4525e+00, Min pressure: 1.6207e+01
+Time: 0.802003, dt: 0.000010, Target: 0.810000, Max vel: 0.9513, Min density: 1.4527e+00, Min pressure: 1.6208e+01
+Time: 0.803004, dt: 0.000010, Target: 0.810000, Max vel: 0.9510, Min density: 1.4529e+00, Min pressure: 1.6209e+01
+Time: 0.804005, dt: 0.000010, Target: 0.810000, Max vel: 0.9507, Min density: 1.4531e+00, Min pressure: 1.6210e+01
+Time: 0.805007, dt: 0.000010, Target: 0.810000, Max vel: 0.9504, Min density: 1.4533e+00, Min pressure: 1.6212e+01
+Time: 0.806008, dt: 0.000010, Target: 0.810000, Max vel: 0.9500, Min density: 1.4535e+00, Min pressure: 1.6213e+01
+Time: 0.807009, dt: 0.000010, Target: 0.810000, Max vel: 0.9497, Min density: 1.4537e+00, Min pressure: 1.6214e+01
+Time: 0.808001, dt: 0.000010, Target: 0.810000, Max vel: 0.9494, Min density: 1.4539e+00, Min pressure: 1.6215e+01
+Time: 0.809003, dt: 0.000010, Target: 0.810000, Max vel: 0.9490, Min density: 1.4542e+00, Min pressure: 1.6217e+01
+Time: 0.810000, dt: 0.000010, Target: 0.820000, Max vel: 0.9487, Min density: 1.4544e+00, Min pressure: 1.6218e+01
+Time: 0.811001, dt: 0.000010, Target: 0.820000, Max vel: 0.9484, Min density: 1.4546e+00, Min pressure: 1.6219e+01
+Time: 0.812003, dt: 0.000010, Target: 0.820000, Max vel: 0.9480, Min density: 1.4548e+00, Min pressure: 1.6220e+01
+Time: 0.813004, dt: 0.000010, Target: 0.820000, Max vel: 0.9477, Min density: 1.4550e+00, Min pressure: 1.6222e+01
+Time: 0.814005, dt: 0.000010, Target: 0.820000, Max vel: 0.9474, Min density: 1.4552e+00, Min pressure: 1.6223e+01
+Time: 0.815007, dt: 0.000010, Target: 0.820000, Max vel: 0.9470, Min density: 1.4554e+00, Min pressure: 1.6224e+01
+Time: 0.816008, dt: 0.000010, Target: 0.820000, Max vel: 0.9467, Min density: 1.4556e+00, Min pressure: 1.6225e+01
+Time: 0.817010, dt: 0.000010, Target: 0.820000, Max vel: 0.9464, Min density: 1.4559e+00, Min pressure: 1.6227e+01
+Time: 0.818001, dt: 0.000010, Target: 0.820000, Max vel: 0.9461, Min density: 1.4561e+00, Min pressure: 1.6228e+01
+Time: 0.819003, dt: 0.000010, Target: 0.820000, Max vel: 0.9458, Min density: 1.4563e+00, Min pressure: 1.6229e+01
+Time: 0.820010, dt: 0.000010, Target: 0.830000, Max vel: 0.9454, Min density: 1.4565e+00, Min pressure: 1.6230e+01
+Time: 0.821001, dt: 0.000010, Target: 0.830000, Max vel: 0.9451, Min density: 1.4567e+00, Min pressure: 1.6231e+01
+Time: 0.822003, dt: 0.000010, Target: 0.830000, Max vel: 0.9448, Min density: 1.4569e+00, Min pressure: 1.6233e+01
+Time: 0.823004, dt: 0.000010, Target: 0.830000, Max vel: 0.9445, Min density: 1.4571e+00, Min pressure: 1.6234e+01
+Time: 0.824005, dt: 0.000010, Target: 0.830000, Max vel: 0.9443, Min density: 1.4573e+00, Min pressure: 1.6235e+01
+Time: 0.825007, dt: 0.000010, Target: 0.830000, Max vel: 0.9440, Min density: 1.4575e+00, Min pressure: 1.6236e+01
+Time: 0.826008, dt: 0.000010, Target: 0.830000, Max vel: 0.9437, Min density: 1.4577e+00, Min pressure: 1.6237e+01
+Time: 0.827009, dt: 0.000010, Target: 0.830000, Max vel: 0.9434, Min density: 1.4579e+00, Min pressure: 1.6239e+01
+Time: 0.828001, dt: 0.000010, Target: 0.830000, Max vel: 0.9432, Min density: 1.4581e+00, Min pressure: 1.6240e+01
+Time: 0.829003, dt: 0.000010, Target: 0.830000, Max vel: 0.9429, Min density: 1.4583e+00, Min pressure: 1.6241e+01
+Time: 0.830010, dt: 0.000010, Target: 0.840000, Max vel: 0.9427, Min density: 1.4585e+00, Min pressure: 1.6242e+01
+Time: 0.831001, dt: 0.000010, Target: 0.840000, Max vel: 0.9425, Min density: 1.4587e+00, Min pressure: 1.6243e+01
+Time: 0.832003, dt: 0.000010, Target: 0.840000, Max vel: 0.9423, Min density: 1.4589e+00, Min pressure: 1.6244e+01
+Time: 0.833004, dt: 0.000010, Target: 0.840000, Max vel: 0.9421, Min density: 1.4591e+00, Min pressure: 1.6246e+01
+Time: 0.834005, dt: 0.000010, Target: 0.840000, Max vel: 0.9419, Min density: 1.4593e+00, Min pressure: 1.6247e+01
+Time: 0.835007, dt: 0.000010, Target: 0.840000, Max vel: 0.9417, Min density: 1.4595e+00, Min pressure: 1.6248e+01
+Time: 0.836008, dt: 0.000010, Target: 0.840000, Max vel: 0.9415, Min density: 1.4597e+00, Min pressure: 1.6249e+01
+Time: 0.837009, dt: 0.000010, Target: 0.840000, Max vel: 0.9414, Min density: 1.4598e+00, Min pressure: 1.6250e+01
+Time: 0.838001, dt: 0.000010, Target: 0.840000, Max vel: 0.9413, Min density: 1.4600e+00, Min pressure: 1.6251e+01
+Time: 0.839003, dt: 0.000010, Target: 0.840000, Max vel: 0.9412, Min density: 1.4602e+00, Min pressure: 1.6252e+01
+Time: 0.840010, dt: 0.000010, Target: 0.850000, Max vel: 0.9411, Min density: 1.4604e+00, Min pressure: 1.6254e+01
+Time: 0.841001, dt: 0.000010, Target: 0.850000, Max vel: 0.9410, Min density: 1.4606e+00, Min pressure: 1.6255e+01
+Time: 0.842003, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4607e+00, Min pressure: 1.6256e+01
+Time: 0.843004, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4609e+00, Min pressure: 1.6257e+01
+Time: 0.844005, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4611e+00, Min pressure: 1.6258e+01
+Time: 0.845007, dt: 0.000010, Target: 0.850000, Max vel: 0.9408, Min density: 1.4613e+00, Min pressure: 1.6259e+01
+Time: 0.846008, dt: 0.000010, Target: 0.850000, Max vel: 0.9408, Min density: 1.4614e+00, Min pressure: 1.6260e+01
+Time: 0.847009, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4616e+00, Min pressure: 1.6261e+01
+Time: 0.848001, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4618e+00, Min pressure: 1.6263e+01
+Time: 0.849003, dt: 0.000010, Target: 0.850000, Max vel: 0.9409, Min density: 1.4619e+00, Min pressure: 1.6264e+01
+Time: 0.850010, dt: 0.000010, Target: 0.860000, Max vel: 0.9410, Min density: 1.4621e+00, Min pressure: 1.6265e+01
+Time: 0.851001, dt: 0.000010, Target: 0.860000, Max vel: 0.9410, Min density: 1.4622e+00, Min pressure: 1.6266e+01
+Time: 0.852003, dt: 0.000010, Target: 0.860000, Max vel: 0.9411, Min density: 1.4624e+00, Min pressure: 1.6267e+01
+Time: 0.853004, dt: 0.000010, Target: 0.860000, Max vel: 0.9412, Min density: 1.4625e+00, Min pressure: 1.6268e+01
+Time: 0.854005, dt: 0.000010, Target: 0.860000, Max vel: 0.9413, Min density: 1.4627e+00, Min pressure: 1.6269e+01
+Time: 0.855007, dt: 0.000010, Target: 0.860000, Max vel: 0.9414, Min density: 1.4628e+00, Min pressure: 1.6270e+01
+Time: 0.856008, dt: 0.000010, Target: 0.860000, Max vel: 0.9416, Min density: 1.4630e+00, Min pressure: 1.6271e+01
+Time: 0.857009, dt: 0.000010, Target: 0.860000, Max vel: 0.9417, Min density: 1.4631e+00, Min pressure: 1.6272e+01
+Time: 0.858001, dt: 0.000010, Target: 0.860000, Max vel: 0.9418, Min density: 1.4633e+00, Min pressure: 1.6273e+01
+Time: 0.859003, dt: 0.000010, Target: 0.860000, Max vel: 0.9420, Min density: 1.4634e+00, Min pressure: 1.6274e+01
+Time: 0.860009, dt: 0.000010, Target: 0.870000, Max vel: 0.9421, Min density: 1.4635e+00, Min pressure: 1.6275e+01
+Time: 0.861001, dt: 0.000010, Target: 0.870000, Max vel: 0.9423, Min density: 1.4637e+00, Min pressure: 1.6276e+01
+Time: 0.862003, dt: 0.000010, Target: 0.870000, Max vel: 0.9424, Min density: 1.4638e+00, Min pressure: 1.6277e+01
+Time: 0.863004, dt: 0.000010, Target: 0.870000, Max vel: 0.9426, Min density: 1.4639e+00, Min pressure: 1.6278e+01
+Time: 0.864005, dt: 0.000010, Target: 0.870000, Max vel: 0.9428, Min density: 1.4641e+00, Min pressure: 1.6279e+01
+Time: 0.865007, dt: 0.000010, Target: 0.870000, Max vel: 0.9429, Min density: 1.4642e+00, Min pressure: 1.6280e+01
+Time: 0.866008, dt: 0.000010, Target: 0.870000, Max vel: 0.9431, Min density: 1.4643e+00, Min pressure: 1.6280e+01
+Time: 0.867009, dt: 0.000010, Target: 0.870000, Max vel: 0.9433, Min density: 1.4644e+00, Min pressure: 1.6281e+01
+Time: 0.868001, dt: 0.000010, Target: 0.870000, Max vel: 0.9435, Min density: 1.4645e+00, Min pressure: 1.6281e+01
+Time: 0.869003, dt: 0.000010, Target: 0.870000, Max vel: 0.9437, Min density: 1.4647e+00, Min pressure: 1.6281e+01
+Time: 0.870000, dt: 0.000010, Target: 0.880000, Max vel: 0.9438, Min density: 1.4648e+00, Min pressure: 1.6280e+01
+Time: 0.871001, dt: 0.000010, Target: 0.880000, Max vel: 0.9440, Min density: 1.4649e+00, Min pressure: 1.6280e+01
+Time: 0.872003, dt: 0.000010, Target: 0.880000, Max vel: 0.9442, Min density: 1.4650e+00, Min pressure: 1.6279e+01
+Time: 0.873004, dt: 0.000010, Target: 0.880000, Max vel: 0.9444, Min density: 1.4651e+00, Min pressure: 1.6278e+01
+Time: 0.874005, dt: 0.000010, Target: 0.880000, Max vel: 0.9446, Min density: 1.4652e+00, Min pressure: 1.6277e+01
+Time: 0.875007, dt: 0.000010, Target: 0.880000, Max vel: 0.9448, Min density: 1.4653e+00, Min pressure: 1.6276e+01
+Time: 0.876008, dt: 0.000010, Target: 0.880000, Max vel: 0.9450, Min density: 1.4654e+00, Min pressure: 1.6275e+01
+Time: 0.877010, dt: 0.000010, Target: 0.880000, Max vel: 0.9452, Min density: 1.4655e+00, Min pressure: 1.6274e+01
+Time: 0.878001, dt: 0.000010, Target: 0.880000, Max vel: 0.9453, Min density: 1.4656e+00, Min pressure: 1.6273e+01
+Time: 0.879003, dt: 0.000010, Target: 0.880000, Max vel: 0.9455, Min density: 1.4657e+00, Min pressure: 1.6272e+01
+Time: 0.880010, dt: 0.000010, Target: 0.890000, Max vel: 0.9457, Min density: 1.4658e+00, Min pressure: 1.6271e+01
+Time: 0.881001, dt: 0.000010, Target: 0.890000, Max vel: 0.9459, Min density: 1.4658e+00, Min pressure: 1.6270e+01
+Time: 0.882003, dt: 0.000010, Target: 0.890000, Max vel: 0.9461, Min density: 1.4659e+00, Min pressure: 1.6269e+01
+Time: 0.883004, dt: 0.000010, Target: 0.890000, Max vel: 0.9463, Min density: 1.4660e+00, Min pressure: 1.6267e+01
+Time: 0.884005, dt: 0.000010, Target: 0.890000, Max vel: 0.9465, Min density: 1.4661e+00, Min pressure: 1.6262e+01
+Time: 0.885007, dt: 0.000010, Target: 0.890000, Max vel: 0.9466, Min density: 1.4662e+00, Min pressure: 1.6258e+01
+Time: 0.886008, dt: 0.000010, Target: 0.890000, Max vel: 0.9468, Min density: 1.4662e+00, Min pressure: 1.6253e+01
+Time: 0.887010, dt: 0.000010, Target: 0.890000, Max vel: 0.9470, Min density: 1.4663e+00, Min pressure: 1.6249e+01
+Time: 0.888001, dt: 0.000010, Target: 0.890000, Max vel: 0.9471, Min density: 1.4664e+00, Min pressure: 1.6244e+01
+Time: 0.889003, dt: 0.000010, Target: 0.890000, Max vel: 0.9473, Min density: 1.4664e+00, Min pressure: 1.6240e+01
+Time: 0.890010, dt: 0.000010, Target: 0.900000, Max vel: 0.9475, Min density: 1.4665e+00, Min pressure: 1.6235e+01
+Time: 0.891001, dt: 0.000010, Target: 0.900000, Max vel: 0.9476, Min density: 1.4666e+00, Min pressure: 1.6231e+01
+Time: 0.892003, dt: 0.000010, Target: 0.900000, Max vel: 0.9478, Min density: 1.4666e+00, Min pressure: 1.6227e+01
+Time: 0.893004, dt: 0.000010, Target: 0.900000, Max vel: 0.9480, Min density: 1.4667e+00, Min pressure: 1.6222e+01
+Time: 0.894005, dt: 0.000010, Target: 0.900000, Max vel: 0.9481, Min density: 1.4667e+00, Min pressure: 1.6218e+01
+Time: 0.895007, dt: 0.000010, Target: 0.900000, Max vel: 0.9483, Min density: 1.4668e+00, Min pressure: 1.6214e+01
+Time: 0.896008, dt: 0.000010, Target: 0.900000, Max vel: 0.9484, Min density: 1.4668e+00, Min pressure: 1.6210e+01
+Time: 0.897009, dt: 0.000010, Target: 0.900000, Max vel: 0.9485, Min density: 1.4669e+00, Min pressure: 1.6205e+01
+Time: 0.898001, dt: 0.000010, Target: 0.900000, Max vel: 0.9487, Min density: 1.4669e+00, Min pressure: 1.6201e+01
+Time: 0.899003, dt: 0.000010, Target: 0.900000, Max vel: 0.9488, Min density: 1.4670e+00, Min pressure: 1.6197e+01
+Time: 0.900010, dt: 0.000010, Target: 0.910000, Max vel: 0.9489, Min density: 1.4670e+00, Min pressure: 1.6193e+01
+Time: 0.901001, dt: 0.000010, Target: 0.910000, Max vel: 0.9491, Min density: 1.4670e+00, Min pressure: 1.6189e+01
+Time: 0.902003, dt: 0.000010, Target: 0.910000, Max vel: 0.9492, Min density: 1.4671e+00, Min pressure: 1.6185e+01
+Time: 0.903004, dt: 0.000010, Target: 0.910000, Max vel: 0.9493, Min density: 1.4671e+00, Min pressure: 1.6181e+01
+Time: 0.904005, dt: 0.000010, Target: 0.910000, Max vel: 0.9494, Min density: 1.4671e+00, Min pressure: 1.6177e+01
+Time: 0.905007, dt: 0.000010, Target: 0.910000, Max vel: 0.9495, Min density: 1.4672e+00, Min pressure: 1.6173e+01
+Time: 0.906008, dt: 0.000010, Target: 0.910000, Max vel: 0.9496, Min density: 1.4672e+00, Min pressure: 1.6169e+01
+Time: 0.907009, dt: 0.000010, Target: 0.910000, Max vel: 0.9497, Min density: 1.4672e+00, Min pressure: 1.6165e+01
+Time: 0.908001, dt: 0.000010, Target: 0.910000, Max vel: 0.9498, Min density: 1.4672e+00, Min pressure: 1.6162e+01
+Time: 0.909003, dt: 0.000010, Target: 0.910000, Max vel: 0.9499, Min density: 1.4673e+00, Min pressure: 1.6158e+01
+Time: 0.910010, dt: 0.000010, Target: 0.920000, Max vel: 0.9500, Min density: 1.4673e+00, Min pressure: 1.6154e+01
+Time: 0.911001, dt: 0.000010, Target: 0.920000, Max vel: 0.9501, Min density: 1.4673e+00, Min pressure: 1.6150e+01
+Time: 0.912003, dt: 0.000010, Target: 0.920000, Max vel: 0.9501, Min density: 1.4673e+00, Min pressure: 1.6147e+01
+Time: 0.913004, dt: 0.000010, Target: 0.920000, Max vel: 0.9502, Min density: 1.4673e+00, Min pressure: 1.6143e+01
+Time: 0.914005, dt: 0.000010, Target: 0.920000, Max vel: 0.9503, Min density: 1.4673e+00, Min pressure: 1.6139e+01
+Time: 0.915007, dt: 0.000010, Target: 0.920000, Max vel: 0.9503, Min density: 1.4674e+00, Min pressure: 1.6136e+01
+Time: 0.916008, dt: 0.000010, Target: 0.920000, Max vel: 0.9504, Min density: 1.4674e+00, Min pressure: 1.6132e+01
+Time: 0.917009, dt: 0.000010, Target: 0.920000, Max vel: 0.9504, Min density: 1.4674e+00, Min pressure: 1.6129e+01
+Time: 0.918001, dt: 0.000010, Target: 0.920000, Max vel: 0.9505, Min density: 1.4674e+00, Min pressure: 1.6125e+01
+Time: 0.919003, dt: 0.000010, Target: 0.920000, Max vel: 0.9505, Min density: 1.4674e+00, Min pressure: 1.6122e+01
+Time: 0.920009, dt: 0.000010, Target: 0.930000, Max vel: 0.9506, Min density: 1.4674e+00, Min pressure: 1.6119e+01
+Time: 0.921001, dt: 0.000010, Target: 0.930000, Max vel: 0.9506, Min density: 1.4674e+00, Min pressure: 1.6115e+01
+Time: 0.922003, dt: 0.000010, Target: 0.930000, Max vel: 0.9506, Min density: 1.4674e+00, Min pressure: 1.6112e+01
+Time: 0.923004, dt: 0.000010, Target: 0.930000, Max vel: 0.9506, Min density: 1.4674e+00, Min pressure: 1.6109e+01
+Time: 0.924005, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4674e+00, Min pressure: 1.6106e+01
+Time: 0.925007, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4674e+00, Min pressure: 1.6103e+01
+Time: 0.926008, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4674e+00, Min pressure: 1.6099e+01
+Time: 0.927009, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4673e+00, Min pressure: 1.6096e+01
+Time: 0.928001, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4673e+00, Min pressure: 1.6093e+01
+Time: 0.929003, dt: 0.000010, Target: 0.930000, Max vel: 0.9507, Min density: 1.4673e+00, Min pressure: 1.6090e+01
+Time: 0.930000, dt: 0.000010, Target: 0.940000, Max vel: 0.9506, Min density: 1.4673e+00, Min pressure: 1.6087e+01
+Time: 0.931001, dt: 0.000010, Target: 0.940000, Max vel: 0.9506, Min density: 1.4673e+00, Min pressure: 1.6085e+01
+Time: 0.932003, dt: 0.000010, Target: 0.940000, Max vel: 0.9506, Min density: 1.4673e+00, Min pressure: 1.6082e+01
+Time: 0.933004, dt: 0.000010, Target: 0.940000, Max vel: 0.9506, Min density: 1.4673e+00, Min pressure: 1.6079e+01
+Time: 0.934005, dt: 0.000010, Target: 0.940000, Max vel: 0.9505, Min density: 1.4672e+00, Min pressure: 1.6076e+01
+Time: 0.935007, dt: 0.000010, Target: 0.940000, Max vel: 0.9505, Min density: 1.4672e+00, Min pressure: 1.6073e+01
+Time: 0.936008, dt: 0.000010, Target: 0.940000, Max vel: 0.9505, Min density: 1.4672e+00, Min pressure: 1.6071e+01
+Time: 0.937010, dt: 0.000010, Target: 0.940000, Max vel: 0.9504, Min density: 1.4672e+00, Min pressure: 1.6068e+01
+Time: 0.938001, dt: 0.000010, Target: 0.940000, Max vel: 0.9504, Min density: 1.4671e+00, Min pressure: 1.6065e+01
+Time: 0.939003, dt: 0.000010, Target: 0.940000, Max vel: 0.9503, Min density: 1.4671e+00, Min pressure: 1.6063e+01
+Time: 0.940010, dt: 0.000010, Target: 0.950000, Max vel: 0.9502, Min density: 1.4671e+00, Min pressure: 1.6060e+01
+Time: 0.941001, dt: 0.000010, Target: 0.950000, Max vel: 0.9502, Min density: 1.4671e+00, Min pressure: 1.6058e+01
+Time: 0.942003, dt: 0.000010, Target: 0.950000, Max vel: 0.9501, Min density: 1.4670e+00, Min pressure: 1.6055e+01
+Time: 0.943004, dt: 0.000010, Target: 0.950000, Max vel: 0.9500, Min density: 1.4670e+00, Min pressure: 1.6053e+01
+Time: 0.944005, dt: 0.000010, Target: 0.950000, Max vel: 0.9499, Min density: 1.4670e+00, Min pressure: 1.6051e+01
+Time: 0.945007, dt: 0.000010, Target: 0.950000, Max vel: 0.9498, Min density: 1.4669e+00, Min pressure: 1.6048e+01
+Time: 0.946008, dt: 0.000010, Target: 0.950000, Max vel: 0.9498, Min density: 1.4669e+00, Min pressure: 1.6046e+01
+Time: 0.947010, dt: 0.000010, Target: 0.950000, Max vel: 0.9497, Min density: 1.4669e+00, Min pressure: 1.6044e+01
+Time: 0.948001, dt: 0.000010, Target: 0.950000, Max vel: 0.9496, Min density: 1.4668e+00, Min pressure: 1.6042e+01
+Time: 0.949003, dt: 0.000010, Target: 0.950000, Max vel: 0.9495, Min density: 1.4668e+00, Min pressure: 1.6040e+01
+Time: 0.950010, dt: 0.000010, Target: 0.960000, Max vel: 0.9494, Min density: 1.4668e+00, Min pressure: 1.6037e+01
+Time: 0.951001, dt: 0.000010, Target: 0.960000, Max vel: 0.9492, Min density: 1.4667e+00, Min pressure: 1.6035e+01
+Time: 0.952003, dt: 0.000010, Target: 0.960000, Max vel: 0.9491, Min density: 1.4667e+00, Min pressure: 1.6033e+01
+Time: 0.953004, dt: 0.000010, Target: 0.960000, Max vel: 0.9490, Min density: 1.4667e+00, Min pressure: 1.6031e+01
+Time: 0.954005, dt: 0.000010, Target: 0.960000, Max vel: 0.9489, Min density: 1.4666e+00, Min pressure: 1.6029e+01
+Time: 0.955007, dt: 0.000010, Target: 0.960000, Max vel: 0.9488, Min density: 1.4666e+00, Min pressure: 1.6028e+01
+Time: 0.956008, dt: 0.000010, Target: 0.960000, Max vel: 0.9486, Min density: 1.4666e+00, Min pressure: 1.6026e+01
+Time: 0.957009, dt: 0.000010, Target: 0.960000, Max vel: 0.9485, Min density: 1.4665e+00, Min pressure: 1.6024e+01
+Time: 0.958001, dt: 0.000010, Target: 0.960000, Max vel: 0.9483, Min density: 1.4665e+00, Min pressure: 1.6022e+01
+Time: 0.959003, dt: 0.000010, Target: 0.960000, Max vel: 0.9482, Min density: 1.4664e+00, Min pressure: 1.6020e+01
+Time: 0.960010, dt: 0.000010, Target: 0.970000, Max vel: 0.9481, Min density: 1.4664e+00, Min pressure: 1.6019e+01
+Time: 0.961001, dt: 0.000010, Target: 0.970000, Max vel: 0.9479, Min density: 1.4664e+00, Min pressure: 1.6017e+01
+Time: 0.962003, dt: 0.000010, Target: 0.970000, Max vel: 0.9477, Min density: 1.4663e+00, Min pressure: 1.6016e+01
+Time: 0.963004, dt: 0.000010, Target: 0.970000, Max vel: 0.9476, Min density: 1.4663e+00, Min pressure: 1.6014e+01
+Time: 0.964005, dt: 0.000010, Target: 0.970000, Max vel: 0.9474, Min density: 1.4662e+00, Min pressure: 1.6013e+01
+Time: 0.965007, dt: 0.000010, Target: 0.970000, Max vel: 0.9473, Min density: 1.4662e+00, Min pressure: 1.6011e+01
+Time: 0.966008, dt: 0.000010, Target: 0.970000, Max vel: 0.9471, Min density: 1.4661e+00, Min pressure: 1.6010e+01
+Time: 0.967009, dt: 0.000010, Target: 0.970000, Max vel: 0.9469, Min density: 1.4661e+00, Min pressure: 1.6008e+01
+Time: 0.968001, dt: 0.000010, Target: 0.970000, Max vel: 0.9468, Min density: 1.4661e+00, Min pressure: 1.6007e+01
+Time: 0.969003, dt: 0.000010, Target: 0.970000, Max vel: 0.9466, Min density: 1.4660e+00, Min pressure: 1.6006e+01
+Time: 0.970010, dt: 0.000010, Target: 0.980000, Max vel: 0.9464, Min density: 1.4660e+00, Min pressure: 1.6004e+01
+Time: 0.971001, dt: 0.000010, Target: 0.980000, Max vel: 0.9462, Min density: 1.4659e+00, Min pressure: 1.6003e+01
+Time: 0.972003, dt: 0.000010, Target: 0.980000, Max vel: 0.9460, Min density: 1.4659e+00, Min pressure: 1.6002e+01
+Time: 0.973004, dt: 0.000010, Target: 0.980000, Max vel: 0.9459, Min density: 1.4659e+00, Min pressure: 1.6001e+01
+Time: 0.974005, dt: 0.000010, Target: 0.980000, Max vel: 0.9457, Min density: 1.4658e+00, Min pressure: 1.6000e+01
+Time: 0.975007, dt: 0.000010, Target: 0.980000, Max vel: 0.9455, Min density: 1.4658e+00, Min pressure: 1.5999e+01
+Time: 0.976008, dt: 0.000010, Target: 0.980000, Max vel: 0.9453, Min density: 1.4657e+00, Min pressure: 1.5998e+01
+Time: 0.977009, dt: 0.000010, Target: 0.980000, Max vel: 0.9451, Min density: 1.4657e+00, Min pressure: 1.5997e+01
+Time: 0.978001, dt: 0.000010, Target: 0.980000, Max vel: 0.9449, Min density: 1.4657e+00, Min pressure: 1.5996e+01
+Time: 0.979003, dt: 0.000010, Target: 0.980000, Max vel: 0.9447, Min density: 1.4656e+00, Min pressure: 1.5995e+01
+Time: 0.980009, dt: 0.000010, Target: 0.990000, Max vel: 0.9445, Min density: 1.4656e+00, Min pressure: 1.5994e+01
+Time: 0.981001, dt: 0.000010, Target: 0.990000, Max vel: 0.9443, Min density: 1.4655e+00, Min pressure: 1.5993e+01
+Time: 0.982003, dt: 0.000010, Target: 0.990000, Max vel: 0.9441, Min density: 1.4655e+00, Min pressure: 1.5993e+01
+Time: 0.983004, dt: 0.000010, Target: 0.990000, Max vel: 0.9439, Min density: 1.4655e+00, Min pressure: 1.5992e+01
+Time: 0.984005, dt: 0.000010, Target: 0.990000, Max vel: 0.9437, Min density: 1.4654e+00, Min pressure: 1.5991e+01
+Time: 0.985007, dt: 0.000010, Target: 0.990000, Max vel: 0.9435, Min density: 1.4654e+00, Min pressure: 1.5991e+01
+Time: 0.986008, dt: 0.000010, Target: 0.990000, Max vel: 0.9433, Min density: 1.4654e+00, Min pressure: 1.5990e+01
+Time: 0.987009, dt: 0.000010, Target: 0.990000, Max vel: 0.9431, Min density: 1.4653e+00, Min pressure: 1.5990e+01
+Time: 0.988001, dt: 0.000010, Target: 0.990000, Max vel: 0.9429, Min density: 1.4653e+00, Min pressure: 1.5989e+01
+Time: 0.989003, dt: 0.000010, Target: 0.990000, Max vel: 0.9426, Min density: 1.4653e+00, Min pressure: 1.5989e+01
+Time: 0.990009, dt: 0.000010, Target: 1.000000, Max vel: 0.9424, Min density: 1.4652e+00, Min pressure: 1.5988e+01
+Time: 0.991001, dt: 0.000010, Target: 1.000000, Max vel: 0.9422, Min density: 1.4652e+00, Min pressure: 1.5988e+01
+Time: 0.992003, dt: 0.000010, Target: 1.000000, Max vel: 0.9420, Min density: 1.4652e+00, Min pressure: 1.5988e+01
+Time: 0.993004, dt: 0.000010, Target: 1.000000, Max vel: 0.9418, Min density: 1.4652e+00, Min pressure: 1.5987e+01
+Time: 0.994005, dt: 0.000010, Target: 1.000000, Max vel: 0.9416, Min density: 1.4651e+00, Min pressure: 1.5987e+01
+Time: 0.995007, dt: 0.000010, Target: 1.000000, Max vel: 0.9414, Min density: 1.4651e+00, Min pressure: 1.5987e+01
+Time: 0.996008, dt: 0.000010, Target: 1.000000, Max vel: 0.9412, Min density: 1.4651e+00, Min pressure: 1.5987e+01
+Time: 0.997009, dt: 0.000010, Target: 1.000000, Max vel: 0.9410, Min density: 1.4650e+00, Min pressure: 1.5986e+01
+Time: 0.998001, dt: 0.000010, Target: 1.000000, Max vel: 0.9408, Min density: 1.4650e+00, Min pressure: 1.5986e+01
+Time: 0.999003, dt: 0.000010, Target: 1.000000, Max vel: 0.9406, Min density: 1.4650e+00, Min pressure: 1.5986e+01
 ##### Finished #####
-nRMSE: 0.129
+nRMSE: 0.043
 ##### Running convergence test for the solver #####
 **** Spatio resolution 256 ****
-JAX is using GPU
-Time step 1/11: Using 10000 sub-steps with dt=0.000001
-Time step 2/11: Using 10000 sub-steps with dt=0.000001
-Time step 3/11: Using 10000 sub-steps with dt=0.000001
-Time step 4/11: Using 10000 sub-steps with dt=0.000001
-Time step 5/11: Using 10001 sub-steps with dt=0.000001
-Time step 6/11: Using 10000 sub-steps with dt=0.000001
-Time step 7/11: Using 10001 sub-steps with dt=0.000001
-Time step 8/11: Using 10000 sub-steps with dt=0.000001
-Time step 9/11: Using 10001 sub-steps with dt=0.000001
-Time step 10/11: Using 10000 sub-steps with dt=0.000001
-Time step 11/11: Using 10000 sub-steps with dt=0.000001
+Using device: cuda
+Time: 0.000000, dt: 0.000153, Target: 0.010000, Max vel: 4.7746, Min density: 1.0000e-06, Min pressure: 1.0000e-06
+Time: 0.001000, dt: 0.000000, Target: 0.010000, Max vel: 238.8290, Min density: 2.5950e-02, Min pressure: 2.4250e+03
+Time: 0.002000, dt: 0.000000, Target: 0.010000, Max vel: 125.6910, Min density: 3.3721e-02, Min pressure: 2.4402e+03
+Time: 0.003000, dt: 0.000000, Target: 0.010000, Max vel: 29.8233, Min density: 3.6219e-02, Min pressure: 2.4458e+03
+Time: 0.004000, dt: 0.000000, Target: 0.010000, Max vel: 18.9469, Min density: 3.7707e-02, Min pressure: 2.4481e+03
+Time: 0.005000, dt: 0.000000, Target: 0.010000, Max vel: 6.8124, Min density: 3.8271e-02, Min pressure: 2.4490e+03
+Time: 0.006000, dt: 0.000000, Target: 0.010000, Max vel: 3.8748, Min density: 3.8393e-02, Min pressure: 2.4494e+03
+Time: 0.007000, dt: 0.000000, Target: 0.010000, Max vel: 2.2489, Min density: 3.8441e-02, Min pressure: 2.4495e+03
+Time: 0.008000, dt: 0.000000, Target: 0.010000, Max vel: 1.8666, Min density: 3.8474e-02, Min pressure: 2.4496e+03
+Time: 0.009000, dt: 0.000000, Target: 0.010000, Max vel: 1.7251, Min density: 3.8486e-02, Min pressure: 2.4496e+03
+Time: 0.010000, dt: 0.000000, Target: 0.020000, Max vel: 1.6781, Min density: 3.8489e-02, Min pressure: 2.4496e+03
+Time: 0.010000, dt: 0.000000, Target: 0.020000, Max vel: 1.6780, Min density: 3.8489e-02, Min pressure: 2.4496e+03
+Time: 0.011000, dt: 0.000000, Target: 0.020000, Max vel: 1.6645, Min density: 3.8490e-02, Min pressure: 2.4496e+03
+Time: 0.012000, dt: 0.000000, Target: 0.020000, Max vel: 1.6628, Min density: 3.8490e-02, Min pressure: 2.4496e+03
+Time: 0.013000, dt: 0.000000, Target: 0.020000, Max vel: 1.6630, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.014000, dt: 0.000000, Target: 0.020000, Max vel: 1.6627, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.015000, dt: 0.000000, Target: 0.020000, Max vel: 1.6624, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.016000, dt: 0.000000, Target: 0.020000, Max vel: 1.6623, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.017000, dt: 0.000000, Target: 0.020000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.018000, dt: 0.000000, Target: 0.020000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.019000, dt: 0.000000, Target: 0.020000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.020000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.021000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.022000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.023000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.024000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.025000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.026000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.027000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.028000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.029000, dt: 0.000000, Target: 0.030000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.030000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.031000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.032000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.033000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.034000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.035000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.036000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.037000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.038000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.039000, dt: 0.000000, Target: 0.040000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.040000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.040000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.041000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.042000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.043000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.044000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.045000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.046000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.047000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.048000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.049000, dt: 0.000000, Target: 0.050000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.050000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.050000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.051000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.052000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.053000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.054000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.055000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.056000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.057000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.058000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.059000, dt: 0.000000, Target: 0.060000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.060000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.061000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.062000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.063000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.064000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.065000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.066000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.067000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.068000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.069000, dt: 0.000000, Target: 0.070000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.070000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.071000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.072000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.073000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.074000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.075000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.076000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.077000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.078000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.079000, dt: 0.000000, Target: 0.080000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.080000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.081000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.082000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.083000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.084000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.085000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.086000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.087000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.088000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.089000, dt: 0.000000, Target: 0.090000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.090000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.091000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.092000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.093000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.094000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.095000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.096000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.097000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.098000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.099000, dt: 0.000000, Target: 0.100000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.100000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.101000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.102000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.103000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.104000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.105000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.106000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.107000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.108000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
+Time: 0.109000, dt: 0.000000, Target: 0.110000, Max vel: 1.6622, Min density: 3.8491e-02, Min pressure: 2.4496e+03
 **** Finished ****
 **** Spatio resolution 512 ****
-JAX is using GPU
-Time step 1/11: Using 10000 sub-steps with dt=0.000001
-Time step 2/11: Using 10000 sub-steps with dt=0.000001
-Time step 3/11: Using 10000 sub-steps with dt=0.000001
-Time step 4/11: Using 10000 sub-steps with dt=0.000001
-Time step 5/11: Using 10001 sub-steps with dt=0.000001
-Time step 6/11: Using 10000 sub-steps with dt=0.000001
-Time step 7/11: Using 10001 sub-steps with dt=0.000001
-Time step 8/11: Using 10000 sub-steps with dt=0.000001
-Time step 9/11: Using 10001 sub-steps with dt=0.000001
-Time step 10/11: Using 10000 sub-steps with dt=0.000001
-Time step 11/11: Using 10000 sub-steps with dt=0.000001
+Using device: cuda
+Time: 0.000000, dt: 0.000038, Target: 0.010000, Max vel: 4.7924, Min density: 1.0000e-06, Min pressure: 1.0000e-06
+NaN or Inf detected in tensors! Stopping simulation.
+NaN or Inf detected at time 3.815656130298746e-05. Filling remaining time steps with last valid values.
 **** Finished ****
 **** Spatio resolution 1024 ****
-JAX is using GPU
-Time step 1/11: Using 10000 sub-steps with dt=0.000001
-Time step 2/11: Using 10000 sub-steps with dt=0.000001
-Time step 3/11: Using 10000 sub-steps with dt=0.000001
-Time step 4/11: Using 10000 sub-steps with dt=0.000001
-Time step 5/11: Using 10001 sub-steps with dt=0.000001
-Time step 6/11: Using 10000 sub-steps with dt=0.000001
-Time step 7/11: Using 10001 sub-steps with dt=0.000001
-Time step 8/11: Using 10000 sub-steps with dt=0.000001
-Time step 9/11: Using 10001 sub-steps with dt=0.000001
-Time step 10/11: Using 10000 sub-steps with dt=0.000001
-Time step 11/11: Using 10000 sub-steps with dt=0.000001
+Using device: cuda
+Time: 0.000000, dt: 0.000010, Target: 0.010000, Max vel: 4.7901, Min density: 1.0000e-06, Min pressure: 1.0000e-06
+NaN or Inf detected in tensors! Stopping simulation.
+NaN or Inf detected at time 9.549360454287167e-06. Filling remaining time steps with last valid values.
 **** Finished ****
 **** Spatio resolution 2048 ****
-JAX is using GPU
-Time step 1/11: Using 10000 sub-steps with dt=0.000001
-Time step 2/11: Using 10000 sub-steps with dt=0.000001
-Time step 3/11: Using 10000 sub-steps with dt=0.000001
-Time step 4/11: Using 10000 sub-steps with dt=0.000001
-Time step 5/11: Using 10001 sub-steps with dt=0.000001
-Time step 6/11: Using 10000 sub-steps with dt=0.000001
-Time step 7/11: Using 10001 sub-steps with dt=0.000001
-Time step 8/11: Using 10000 sub-steps with dt=0.000001
-Time step 9/11: Using 10001 sub-steps with dt=0.000001
-Time step 10/11: Using 10000 sub-steps with dt=0.000001
-Time step 11/11: Using 10000 sub-steps with dt=0.000001
+Using device: cuda
+Time: 0.000000, dt: 0.000002, Target: 0.010000, Max vel: 4.7931, Min density: 1.0000e-06, Min pressure: 1.0000e-06
+NaN or Inf detected in tensors! Stopping simulation.
+NaN or Inf detected at time 2.4062379703480342e-06. Filling remaining time steps with last valid values.
 **** Finished ****
-(8, 12, 256, 3)
-(8, 12, 512, 3)
-(8, 12, 1024, 3)
 Rate of convergence measured at spatio resolution 256 is nan
 Rate of convergence measured at spatio resolution 512 is nan
 Result summary
-nRMSE: 1.286e-01	| Time: 142.68s	| Average convergence rate: nan	|
+nRMSE: 4.255e-02	| Time: 181.78s	| Average convergence rate: nan	|
